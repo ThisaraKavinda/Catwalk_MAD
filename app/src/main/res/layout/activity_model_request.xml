@@ -61,14 +61,13 @@
 
                     <LinearLayout
                         android:orientation="horizontal"
-
                         android:paddingTop="16dp"
                         android:paddingRight="16dp"
                         android:paddingLeft="16dp"
                         android:paddingBottom="8dp"
                         android:gravity="left"
                         android:layout_width="match_parent"
-                        android:layout_height="170dp"
+                        android:layout_height="200dp"
                         android:layout_marginBottom="0dp">
 
                         <ImageView
@@ -103,7 +102,8 @@
                                 android:text="Want modelling jobs near you? And also ads to your modelling career? This is the what are you all waiting for, Glamworldface.com is here to help you out. Who says you may be..."
                                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                 android:textColor="#6f6f6f"
-                                android:textSize="12sp"/>
+                                android:textSize="13sp"
+                                android:lineHeight="18sp"/>
 
                             <LinearLayout
                                 android:orientation="horizontal"
@@ -115,13 +115,12 @@
                                     style="@style/Widget.AppCompat.Button"
                                     android:layout_width="80dp"
                                     android:layout_height="35dp"
-                                    android:layout_marginTop="5dp"
                                     android:alpha="0.7"
                                     android:capitalize="none"
                                     android:clickable="true"
-                                    android:text="Request"
+                                    android:text="View"
                                     android:textAllCaps="false"
-                                    android:textSize="10sp"
+                                    android:textSize="15sp"
                                     android:layout_marginRight="40dp"
                                     android:background="@drawable/rounded_button_color"/>
 
@@ -129,13 +128,12 @@
                                     style="@style/Widget.AppCompat.Button"
                                     android:layout_width="80dp"
                                     android:layout_height="35dp"
-                                    android:layout_marginTop="5dp"
                                     android:alpha="0.7"
                                     android:capitalize="none"
                                     android:clickable="true"
                                     android:text="Cancel"
                                     android:textAllCaps="false"
-                                    android:textSize="10sp"
+                                    android:textSize="15sp"
                                     app:backgroundTint="@null"
                                     android:background="@drawable/rounded_button_white"/>
 
@@ -167,7 +165,7 @@
                         android:paddingBottom="8dp"
                         android:gravity="left"
                         android:layout_width="match_parent"
-                        android:layout_height="170dp"
+                        android:layout_height="200dp"
                         android:layout_marginBottom="0dp">
 
                         <ImageView
@@ -199,10 +197,11 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="0dp"
-                                android:text="Want modelling jobs near you? And also ads to your modelling career? Then what are you all waiting for, Glamworldface.com is here to help you out. Who says you may be..."
+                                android:text="Want modelling jobs near you? And also ads to your modelling career? This is the what are you all waiting for, Glamworldface.com is here to help you out. Who says you may be..."
                                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                 android:textColor="#6f6f6f"
-                                android:textSize="12sp"/>
+                                android:textSize="13sp"
+                                android:lineHeight="18sp"/>
 
                             <LinearLayout
                                 android:orientation="horizontal"
@@ -214,13 +213,12 @@
                                     style="@style/Widget.AppCompat.Button"
                                     android:layout_width="80dp"
                                     android:layout_height="35dp"
-                                    android:layout_marginTop="5dp"
                                     android:alpha="0.7"
                                     android:capitalize="none"
                                     android:clickable="true"
-                                    android:text="Request"
+                                    android:text="View"
                                     android:textAllCaps="false"
-                                    android:textSize="10sp"
+                                    android:textSize="15sp"
                                     android:layout_marginRight="40dp"
                                     android:background="@drawable/rounded_button_color"/>
 
@@ -228,13 +226,12 @@
                                     style="@style/Widget.AppCompat.Button"
                                     android:layout_width="80dp"
                                     android:layout_height="35dp"
-                                    android:layout_marginTop="5dp"
                                     android:alpha="0.7"
                                     android:capitalize="none"
                                     android:clickable="true"
                                     android:text="Cancel"
                                     android:textAllCaps="false"
-                                    android:textSize="10sp"
+                                    android:textSize="15sp"
                                     app:backgroundTint="@null"
                                     android:background="@drawable/rounded_button_white"/>
 
@@ -266,7 +263,7 @@
                         android:paddingBottom="8dp"
                         android:gravity="left"
                         android:layout_width="match_parent"
-                        android:layout_height="170dp"
+                        android:layout_height="200dp"
                         android:layout_marginBottom="0dp">
 
                         <ImageView
@@ -298,10 +295,11 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="0dp"
-                                android:text="Want modelling jobs near you? And also ads to your modelling career? Then what are you all waiting for, Glamworldface.com is here to help you out. Who says you may be..."
+                                android:text="Want modelling jobs near you? And also ads to your modelling career? This is the what are you all waiting for, Glamworldface.com is here to help you out. Who says you may be..."
                                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                 android:textColor="#6f6f6f"
-                                android:textSize="12sp"/>
+                                android:textSize="13sp"
+                                android:lineHeight="18sp"/>
 
                             <LinearLayout
                                 android:orientation="horizontal"
@@ -313,13 +311,12 @@
                                     style="@style/Widget.AppCompat.Button"
                                     android:layout_width="80dp"
                                     android:layout_height="35dp"
-                                    android:layout_marginTop="5dp"
                                     android:alpha="0.7"
                                     android:capitalize="none"
                                     android:clickable="true"
-                                    android:text="Request"
+                                    android:text="View"
                                     android:textAllCaps="false"
-                                    android:textSize="10sp"
+                                    android:textSize="15sp"
                                     android:layout_marginRight="40dp"
                                     android:background="@drawable/rounded_button_color"/>
 
@@ -327,13 +324,12 @@
                                     style="@style/Widget.AppCompat.Button"
                                     android:layout_width="80dp"
                                     android:layout_height="35dp"
-                                    android:layout_marginTop="5dp"
                                     android:alpha="0.7"
                                     android:capitalize="none"
                                     android:clickable="true"
                                     android:text="Cancel"
                                     android:textAllCaps="false"
-                                    android:textSize="10sp"
+                                    android:textSize="15sp"
                                     app:backgroundTint="@null"
                                     android:background="@drawable/rounded_button_white"/>
 
@@ -365,7 +361,7 @@
                         android:paddingBottom="8dp"
                         android:gravity="left"
                         android:layout_width="match_parent"
-                        android:layout_height="170dp"
+                        android:layout_height="200dp"
                         android:layout_marginBottom="0dp">
 
                         <ImageView
@@ -397,10 +393,11 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="0dp"
-                                android:text="Want modelling jobs near you? And also ads to your modelling career? Then what are you all waiting for, Glamworldface.com is here to help you out. Who says you may be..."
+                                android:text="Want modelling jobs near you? And also ads to your modelling career? This is the what are you all waiting for, Glamworldface.com is here to help you out. Who says you may be..."
                                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                 android:textColor="#6f6f6f"
-                                android:textSize="12sp"/>
+                                android:textSize="13sp"
+                                android:lineHeight="18sp"/>
 
                             <LinearLayout
                                 android:orientation="horizontal"
@@ -412,13 +409,12 @@
                                     style="@style/Widget.AppCompat.Button"
                                     android:layout_width="80dp"
                                     android:layout_height="35dp"
-                                    android:layout_marginTop="5dp"
                                     android:alpha="0.7"
                                     android:capitalize="none"
                                     android:clickable="true"
-                                    android:text="Request"
+                                    android:text="View"
                                     android:textAllCaps="false"
-                                    android:textSize="10sp"
+                                    android:textSize="15sp"
                                     android:layout_marginRight="40dp"
                                     android:background="@drawable/rounded_button_color"/>
 
@@ -426,13 +422,12 @@
                                     style="@style/Widget.AppCompat.Button"
                                     android:layout_width="80dp"
                                     android:layout_height="35dp"
-                                    android:layout_marginTop="5dp"
                                     android:alpha="0.7"
                                     android:capitalize="none"
                                     android:clickable="true"
                                     android:text="Cancel"
                                     android:textAllCaps="false"
-                                    android:textSize="10sp"
+                                    android:textSize="15sp"
                                     app:backgroundTint="@null"
                                     android:background="@drawable/rounded_button_white"/>
 
@@ -464,7 +459,7 @@
                         android:paddingBottom="8dp"
                         android:gravity="left"
                         android:layout_width="match_parent"
-                        android:layout_height="170dp"
+                        android:layout_height="200dp"
                         android:layout_marginBottom="0dp">
 
                         <ImageView
@@ -496,10 +491,11 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="0dp"
-                                android:text="Want modelling jobs near you? And also ads to your modelling career? Then what are you all waiting for, Glamworldface.com is here to help you out. Who says you may be..."
+                                android:text="Want modelling jobs near you? And also ads to your modelling career? This is the what are you all waiting for, Glamworldface.com is here to help you out. Who says you may be..."
                                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                 android:textColor="#6f6f6f"
-                                android:textSize="12sp"/>
+                                android:textSize="13sp"
+                                android:lineHeight="18sp"/>
 
                             <LinearLayout
                                 android:orientation="horizontal"
@@ -511,13 +507,12 @@
                                     style="@style/Widget.AppCompat.Button"
                                     android:layout_width="80dp"
                                     android:layout_height="35dp"
-                                    android:layout_marginTop="5dp"
                                     android:alpha="0.7"
                                     android:capitalize="none"
                                     android:clickable="true"
-                                    android:text="Request"
+                                    android:text="View"
                                     android:textAllCaps="false"
-                                    android:textSize="10sp"
+                                    android:textSize="15sp"
                                     android:layout_marginRight="40dp"
                                     android:background="@drawable/rounded_button_color"/>
 
@@ -525,13 +520,12 @@
                                     style="@style/Widget.AppCompat.Button"
                                     android:layout_width="80dp"
                                     android:layout_height="35dp"
-                                    android:layout_marginTop="5dp"
                                     android:alpha="0.7"
                                     android:capitalize="none"
                                     android:clickable="true"
                                     android:text="Cancel"
                                     android:textAllCaps="false"
-                                    android:textSize="10sp"
+                                    android:textSize="15sp"
                                     app:backgroundTint="@null"
                                     android:background="@drawable/rounded_button_white"/>
 
