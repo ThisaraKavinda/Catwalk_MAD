@@ -66,7 +66,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
 
-                            android:layout_height="200dp"
+                            android:layout_height="215dp"
                             android:layout_marginBottom="0dp"
                             android:gravity="center_vertical"
                             android:orientation="horizontal"
@@ -103,7 +103,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
+                                    android:layout_marginTop="3dp"
                                     android:text="Gender : Female"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#6f6f6f"
@@ -112,7 +112,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
+                                    android:layout_marginTop="3dp"
                                     android:text="Age : 25 years"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#6f6f6f"
@@ -121,7 +121,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
+                                    android:layout_marginTop="3dp"
                                     android:text="Height: 5 feet 5 inches"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#6f6f6f"
@@ -130,7 +130,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
+                                    android:layout_marginTop="3dp"
                                     android:text="Type : Commercial"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#6f6f6f"
@@ -199,8 +199,7 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-
-                            android:layout_height="200dp"
+                            android:layout_height="215dp"
                             android:layout_marginBottom="0dp"
                             android:gravity="center_vertical"
                             android:orientation="horizontal"
@@ -237,7 +236,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
+                                    android:layout_marginTop="3dp"
                                     android:text="Gender : Female"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#6f6f6f"
@@ -246,7 +245,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
+                                    android:layout_marginTop="3dp"
                                     android:text="Age : 25 years"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#6f6f6f"
@@ -255,7 +254,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
+                                    android:layout_marginTop="3dp"
                                     android:text="Height: 5 feet 5 inches"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#6f6f6f"
@@ -264,7 +263,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
+                                    android:layout_marginTop="3dp"
                                     android:text="Type : Commercial"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#6f6f6f"
@@ -333,8 +332,7 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-
-                            android:layout_height="200dp"
+                            android:layout_height="215dp"
                             android:layout_marginBottom="0dp"
                             android:gravity="center_vertical"
                             android:orientation="horizontal"
@@ -371,7 +369,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
+                                    android:layout_marginTop="3dp"
                                     android:text="Gender : Female"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#6f6f6f"
@@ -380,7 +378,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
+                                    android:layout_marginTop="3dp"
                                     android:text="Age : 25 years"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#6f6f6f"
@@ -389,7 +387,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
+                                    android:layout_marginTop="3dp"
                                     android:text="Height: 5 feet 5 inches"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#6f6f6f"
@@ -398,7 +396,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
+                                    android:layout_marginTop="3dp"
                                     android:text="Type : Commercial"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#6f6f6f"
@@ -467,8 +465,7 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-
-                            android:layout_height="200dp"
+                            android:layout_height="215dp"
                             android:layout_marginBottom="0dp"
                             android:gravity="center_vertical"
                             android:orientation="horizontal"
@@ -505,7 +502,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
+                                    android:layout_marginTop="3dp"
                                     android:text="Gender : Female"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#6f6f6f"
@@ -514,7 +511,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
+                                    android:layout_marginTop="3dp"
                                     android:text="Age : 25 years"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#6f6f6f"
@@ -523,7 +520,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
+                                    android:layout_marginTop="3dp"
                                     android:text="Height: 5 feet 5 inches"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#6f6f6f"
@@ -532,7 +529,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
+                                    android:layout_marginTop="3dp"
                                     android:text="Type : Commercial"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#6f6f6f"
