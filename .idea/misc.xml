@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/drawable/rounded_button.xml" value="0.2595" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/drawable/rounded_button_color.xml" value="0.124" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/drawable/rounded_button_white.xml" value="0.124" />
         <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_admin_home.xml" value="0.22826086956521738" />
         <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_model_history.xml" value="0.17255434782608695" />

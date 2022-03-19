@@ -56,29 +56,92 @@
                     app:cardElevation="6dp"
                     app:cardCornerRadius="12dp"
                     android:layout_margin="12dp"
+                    android:paddingBottom="0dp"
                     >
 
                     <LinearLayout
                         android:orientation="horizontal"
-                        android:padding="16dp"
+
+                        android:paddingTop="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingLeft="16dp"
+                        android:paddingBottom="8dp"
                         android:gravity="left"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="170dp"
+                        android:layout_marginBottom="0dp">
 
                         <ImageView
-                            android:src="@drawable/icons8_request_100"
+                            android:src="@drawable/model1"
                             android:layout_width="80dp"
-                            android:layout_height="80dp"/>
+                            android:layout_height="120dp"
+                            android:layout_marginVertical="10dp"/>
 
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:paddingLeft="15dp"
+                            android:layout_marginLeft="8dp"
+                            android:gravity="left"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingBottom="0dp">
 
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4sp"
+                                android:text="Need a talented Young lady"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="#000"
+                                android:textSize="18sp"/>
 
-                        <TextView
-                            android:layout_marginTop="12dp"
-                            android:textColor="#6f6f6f"
-                            android:textSize="18sp"
-                            android:text="Model Requests"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
+                                android:text="Want modelling jobs near you? And also ads to your modelling career? Then what are you all waiting for, Glamworldface.com is here to help you out. Who says you may be..."
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="#6f6f6f"
+                                android:textSize="12sp"/>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Button
+                                    style="@style/Widget.AppCompat.Button"
+                                    android:layout_width="80dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginTop="5dp"
+                                    android:alpha="0.7"
+                                    android:capitalize="none"
+                                    android:clickable="true"
+                                    android:text="Request"
+                                    android:textAllCaps="false"
+                                    android:textSize="10sp"
+                                    android:layout_marginRight="40dp"
+                                    android:background="@drawable/rounded_button_color"/>
+
+                                <Button
+                                    style="@style/Widget.AppCompat.Button"
+                                    android:layout_width="80dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginTop="5dp"
+                                    android:alpha="0.7"
+                                    android:capitalize="none"
+                                    android:clickable="true"
+                                    android:text="Cancel"
+                                    android:textAllCaps="false"
+                                    android:textSize="10sp"
+                                    app:backgroundTint="@null"
+                                    android:background="@drawable/rounded_button_white"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
 
                     </LinearLayout>
 
@@ -92,27 +155,92 @@
                     app:cardElevation="6dp"
                     app:cardCornerRadius="12dp"
                     android:layout_margin="12dp"
+                    android:paddingBottom="0dp"
                     >
 
                     <LinearLayout
-                        android:orientation="vertical"
-                        android:padding="16dp"
-                        android:gravity="center"
+                        android:orientation="horizontal"
+
+                        android:paddingTop="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingLeft="16dp"
+                        android:paddingBottom="8dp"
+                        android:gravity="left"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="170dp"
+                        android:layout_marginBottom="0dp">
 
                         <ImageView
-                            android:src="@drawable/icons8_request_100"
+                            android:src="@drawable/model2"
                             android:layout_width="80dp"
-                            android:layout_height="80dp"/>
+                            android:layout_height="120dp"
+                            android:layout_marginVertical="10dp"/>
 
-                        <TextView
-                            android:layout_marginTop="12dp"
-                            android:textColor="#6f6f6f"
-                            android:textSize="18sp"
-                            android:text="Model Requests"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:paddingLeft="15dp"
+                            android:layout_marginLeft="8dp"
+                            android:gravity="left"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingBottom="0dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4sp"
+                                android:text="Need a talented Young lady"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="#000"
+                                android:textSize="18sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
+                                android:text="Want modelling jobs near you? And also ads to your modelling career? Then what are you all waiting for, Glamworldface.com is here to help you out. Who says you may be..."
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="#6f6f6f"
+                                android:textSize="12sp"/>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Button
+                                    style="@style/Widget.AppCompat.Button"
+                                    android:layout_width="80dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginTop="5dp"
+                                    android:alpha="0.7"
+                                    android:capitalize="none"
+                                    android:clickable="true"
+                                    android:text="Request"
+                                    android:textAllCaps="false"
+                                    android:textSize="10sp"
+                                    android:layout_marginRight="40dp"
+                                    android:background="@drawable/rounded_button_color"/>
+
+                                <Button
+                                    style="@style/Widget.AppCompat.Button"
+                                    android:layout_width="80dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginTop="5dp"
+                                    android:alpha="0.7"
+                                    android:capitalize="none"
+                                    android:clickable="true"
+                                    android:text="Cancel"
+                                    android:textAllCaps="false"
+                                    android:textSize="10sp"
+                                    app:backgroundTint="@null"
+                                    android:background="@drawable/rounded_button_white"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
 
                     </LinearLayout>
 
@@ -126,27 +254,92 @@
                     app:cardElevation="6dp"
                     app:cardCornerRadius="12dp"
                     android:layout_margin="12dp"
+                    android:paddingBottom="0dp"
                     >
 
                     <LinearLayout
-                        android:orientation="vertical"
-                        android:padding="16dp"
-                        android:gravity="center"
+                        android:orientation="horizontal"
+
+                        android:paddingTop="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingLeft="16dp"
+                        android:paddingBottom="8dp"
+                        android:gravity="left"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="170dp"
+                        android:layout_marginBottom="0dp">
 
                         <ImageView
-                            android:src="@drawable/icons8_request_100"
+                            android:src="@drawable/model4"
                             android:layout_width="80dp"
-                            android:layout_height="80dp"/>
+                            android:layout_height="120dp"
+                            android:layout_marginVertical="10dp"/>
 
-                        <TextView
-                            android:layout_marginTop="12dp"
-                            android:textColor="#6f6f6f"
-                            android:textSize="18sp"
-                            android:text="Model Requests"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:paddingLeft="15dp"
+                            android:layout_marginLeft="8dp"
+                            android:gravity="left"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingBottom="0dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4sp"
+                                android:text="Need a talented Young lady"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="#000"
+                                android:textSize="18sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
+                                android:text="Want modelling jobs near you? And also ads to your modelling career? Then what are you all waiting for, Glamworldface.com is here to help you out. Who says you may be..."
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="#6f6f6f"
+                                android:textSize="12sp"/>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Button
+                                    style="@style/Widget.AppCompat.Button"
+                                    android:layout_width="80dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginTop="5dp"
+                                    android:alpha="0.7"
+                                    android:capitalize="none"
+                                    android:clickable="true"
+                                    android:text="Request"
+                                    android:textAllCaps="false"
+                                    android:textSize="10sp"
+                                    android:layout_marginRight="40dp"
+                                    android:background="@drawable/rounded_button_color"/>
+
+                                <Button
+                                    style="@style/Widget.AppCompat.Button"
+                                    android:layout_width="80dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginTop="5dp"
+                                    android:alpha="0.7"
+                                    android:capitalize="none"
+                                    android:clickable="true"
+                                    android:text="Cancel"
+                                    android:textAllCaps="false"
+                                    android:textSize="10sp"
+                                    app:backgroundTint="@null"
+                                    android:background="@drawable/rounded_button_white"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
 
                     </LinearLayout>
 
@@ -160,27 +353,92 @@
                     app:cardElevation="6dp"
                     app:cardCornerRadius="12dp"
                     android:layout_margin="12dp"
+                    android:paddingBottom="0dp"
                     >
 
                     <LinearLayout
-                        android:orientation="vertical"
-                        android:padding="16dp"
-                        android:gravity="center"
+                        android:orientation="horizontal"
+
+                        android:paddingTop="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingLeft="16dp"
+                        android:paddingBottom="8dp"
+                        android:gravity="left"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="170dp"
+                        android:layout_marginBottom="0dp">
 
                         <ImageView
-                            android:src="@drawable/icons8_request_100"
+                            android:src="@drawable/model5"
                             android:layout_width="80dp"
-                            android:layout_height="80dp"/>
+                            android:layout_height="120dp"
+                            android:layout_marginVertical="10dp"/>
 
-                        <TextView
-                            android:layout_marginTop="12dp"
-                            android:textColor="#6f6f6f"
-                            android:textSize="18sp"
-                            android:text="Model Requests"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:paddingLeft="15dp"
+                            android:layout_marginLeft="8dp"
+                            android:gravity="left"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingBottom="0dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4sp"
+                                android:text="Need a talented Young lady"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="#000"
+                                android:textSize="18sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
+                                android:text="Want modelling jobs near you? And also ads to your modelling career? Then what are you all waiting for, Glamworldface.com is here to help you out. Who says you may be..."
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="#6f6f6f"
+                                android:textSize="12sp"/>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <Button
+                                    style="@style/Widget.AppCompat.Button"
+                                    android:layout_width="80dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginTop="5dp"
+                                    android:alpha="0.7"
+                                    android:capitalize="none"
+                                    android:clickable="true"
+                                    android:text="Request"
+                                    android:textAllCaps="false"
+                                    android:textSize="10sp"
+                                    android:layout_marginRight="40dp"
+                                    android:background="@drawable/rounded_button_color"/>
+
+                                <Button
+                                    style="@style/Widget.AppCompat.Button"
+                                    android:layout_width="80dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginTop="5dp"
+                                    android:alpha="0.7"
+                                    android:capitalize="none"
+                                    android:clickable="true"
+                                    android:text="Cancel"
+                                    android:textAllCaps="false"
+                                    android:textSize="10sp"
+                                    app:backgroundTint="@null"
+                                    android:background="@drawable/rounded_button_white"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
 
                     </LinearLayout>
 
@@ -194,129 +452,92 @@
                     app:cardElevation="6dp"
                     app:cardCornerRadius="12dp"
                     android:layout_margin="12dp"
+                    android:paddingBottom="0dp"
                     >
 
                     <LinearLayout
-                        android:orientation="vertical"
-                        android:padding="16dp"
-                        android:gravity="center"
+                        android:orientation="horizontal"
+
+                        android:paddingTop="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingLeft="16dp"
+                        android:paddingBottom="8dp"
+                        android:gravity="left"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="170dp"
+                        android:layout_marginBottom="0dp">
 
                         <ImageView
-                            android:src="@drawable/icons8_request_100"
+                            android:src="@drawable/mnodel3"
                             android:layout_width="80dp"
-                            android:layout_height="80dp"/>
+                            android:layout_height="120dp"
+                            android:layout_marginVertical="10dp"/>
 
-                        <TextView
-                            android:layout_marginTop="12dp"
-                            android:textColor="#6f6f6f"
-                            android:textSize="18sp"
-                            android:text="Model Requests"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:paddingLeft="15dp"
+                            android:layout_marginLeft="8dp"
+                            android:gravity="left"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingBottom="0dp">
 
-                    </LinearLayout>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4sp"
+                                android:text="Need a talented Young lady"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="#000"
+                                android:textSize="18sp"/>
 
-                </androidx.cardview.widget.CardView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
+                                android:text="Want modelling jobs near you? And also ads to your modelling career? Then what are you all waiting for, Glamworldface.com is here to help you out. Who says you may be..."
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="#6f6f6f"
+                                android:textSize="12sp"/>
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_rowWeight="1"
-                    app:cardElevation="6dp"
-                    app:cardCornerRadius="12dp"
-                    android:layout_margin="12dp"
-                    >
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
 
-                    <LinearLayout
-                        android:orientation="vertical"
-                        android:padding="16dp"
-                        android:gravity="center"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                                <Button
+                                    style="@style/Widget.AppCompat.Button"
+                                    android:layout_width="80dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginTop="5dp"
+                                    android:alpha="0.7"
+                                    android:capitalize="none"
+                                    android:clickable="true"
+                                    android:text="Request"
+                                    android:textAllCaps="false"
+                                    android:textSize="10sp"
+                                    android:layout_marginRight="40dp"
+                                    android:background="@drawable/rounded_button_color"/>
 
-                        <ImageView
-                            android:src="@drawable/icons8_request_100"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"/>
+                                <Button
+                                    style="@style/Widget.AppCompat.Button"
+                                    android:layout_width="80dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginTop="5dp"
+                                    android:alpha="0.7"
+                                    android:capitalize="none"
+                                    android:clickable="true"
+                                    android:text="Cancel"
+                                    android:textAllCaps="false"
+                                    android:textSize="10sp"
+                                    app:backgroundTint="@null"
+                                    android:background="@drawable/rounded_button_white"/>
 
-                        <TextView
-                            android:layout_marginTop="12dp"
-                            android:textColor="#6f6f6f"
-                            android:textSize="18sp"
-                            android:text="Model Requests"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                            </LinearLayout>
 
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_rowWeight="1"
-                    app:cardElevation="6dp"
-                    app:cardCornerRadius="12dp"
-                    android:layout_margin="12dp"
-                    >
-
-                    <LinearLayout
-                        android:orientation="vertical"
-                        android:padding="16dp"
-                        android:gravity="center"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <ImageView
-                            android:src="@drawable/icons8_request_100"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"/>
-
-                        <TextView
-                            android:layout_marginTop="12dp"
-                            android:textColor="#6f6f6f"
-                            android:textSize="18sp"
-                            android:text="Model Requests"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_rowWeight="1"
-                    app:cardElevation="6dp"
-                    app:cardCornerRadius="12dp"
-                    android:layout_margin="12dp"
-                    >
-
-                    <LinearLayout
-                        android:orientation="vertical"
-                        android:padding="16dp"
-                        android:gravity="center"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <ImageView
-                            android:src="@drawable/icons8_request_100"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"/>
-
-                        <TextView
-                            android:layout_marginTop="12dp"
-                            android:textColor="#6f6f6f"
-                            android:textSize="18sp"
-                            android:text="Model Requests"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
+                        </LinearLayout>
 
                     </LinearLayout>
 
