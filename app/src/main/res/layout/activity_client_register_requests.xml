@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/menu_admin_back"
-    tools:context=".ModelRegisterRequests">
+    tools:context=".ClientRegisterRequests">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,7 +13,7 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/modelrqstbackbtn1"
+            android:id="@+id/clientrqstbackbtn1"
             android:layout_width="80dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
@@ -42,7 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Models Registration Requests"
+                android:text="Clients Registration Requests"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -79,13 +79,11 @@
                     android:padding="16dp"
                     android:paddingEnd="10dp">
 
-
-
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_marginTop="5dp"
-                        android:src="@drawable/client1" />
+                        android:src="@drawable/model1" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -97,7 +95,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="-5dp"
-                            android:text="Inuri Gamage"
+                            android:text="Shehan Gunasekara"
                             android:textColor="#6f6f6f"
                             android:textSize="18sp" />
 
@@ -105,7 +103,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="0dp"
-                            android:text="Female"
+                            android:text="Male"
                             android:textColor="#6f6f6f"
                             android:textSize="18sp" />
 
@@ -129,10 +127,10 @@
                         android:orientation="vertical">
 
                         <Button
-                            android:id="@+id/modelrequestacceptbtn1"
+                            android:id="@+id/clientrequestacceptbtn1"
                             android:layout_width="100dp"
                             android:layout_height="48dp"
-                            android:contentDescription="@string/modelrequestacceptbtn1"
+
                             android:text="Accept"
                             android:textAlignment="center"
                             app:backgroundTint="#01D60A"
@@ -142,10 +140,10 @@
                         </Button>
 
                         <Button
-                            android:id="@+id/modelrequestviewbtn1"
+                            android:id="@+id/clientrequestviewbtn1"
                             android:layout_width="100dp"
                             android:layout_height="48dp"
-                            android:contentDescription="@string/modelrequestviewbtn1"
+
                             android:text="View"
                             android:textAlignment="center"
                             app:backgroundTint="#891ABC"
@@ -183,7 +181,7 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_marginTop="5dp"
-                        android:src="@drawable/client1" />
+                        android:src="@drawable/model1" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -195,7 +193,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="-5dp"
-                            android:text="Inuri Gamage"
+                            android:text="Shehan Gunasekara"
                             android:textColor="#6f6f6f"
                             android:textSize="18sp" />
 
@@ -203,7 +201,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="0dp"
-                            android:text="Female"
+                            android:text="Male"
                             android:textColor="#6f6f6f"
                             android:textSize="18sp" />
 
@@ -280,7 +278,7 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_marginTop="5dp"
-                        android:src="@drawable/client1" />
+                        android:src="@drawable/model1" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -292,7 +290,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="-5dp"
-                            android:text="Inuri Gamage"
+                            android:text="Shehan Gunasekara"
                             android:textColor="#6f6f6f"
                             android:textSize="18sp" />
 
@@ -300,7 +298,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="0dp"
-                            android:text="Female"
+                            android:text="Male"
                             android:textColor="#6f6f6f"
                             android:textSize="18sp" />
 
@@ -354,197 +352,308 @@
 
                 </LinearLayout>
 
-            </androidx.cardview.widget.CardView> <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="12dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="6dp">
+            </androidx.cardview.widget.CardView>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="left"
-                android:orientation="horizontal"
-                android:padding="16dp"
-                android:paddingEnd="10dp">
-
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_marginTop="5dp"
-                    android:src="@drawable/client1" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="10dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="-5dp"
-                        android:text="Inuri Gamage"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="0dp"
-                        android:text="Female"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="0dp"
-                        android:text="24 years o0ld"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                </LinearLayout>
-
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:paddingEnd="10dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/model1" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-5dp"
+                            android:text="Shehan Gunasekara"
+                            android:textColor="#6f6f6f"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:text="Male"
+                            android:textColor="#6f6f6f"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:text="24 years o0ld"
+                            android:textColor="#6f6f6f"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
 
 
-                    android:layout_height="91dp"
-                    android:gravity="right"
-                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
 
-                    <Button
 
-                        android:layout_width="100dp"
-                        android:layout_height="48dp"
+                        android:layout_height="91dp"
+                        android:gravity="right"
+                        android:orientation="vertical">
 
-                        android:text="Accept"
-                        android:textAlignment="center"
-                        app:backgroundTint="#01D60A"
-                        app:cornerRadius="20dp"
-                        tools:ignore="SpeakableTextPresentCheck">
+                        <Button
 
-                    </Button>
+                            android:layout_width="100dp"
+                            android:layout_height="48dp"
 
-                    <Button
+                            android:text="Accept"
+                            android:textAlignment="center"
+                            app:backgroundTint="#01D60A"
+                            app:cornerRadius="20dp"
+                            tools:ignore="SpeakableTextPresentCheck">
 
-                        android:layout_width="100dp"
-                        android:layout_height="48dp"
+                        </Button>
 
-                        android:text="View"
-                        android:textAlignment="center"
-                        app:backgroundTint="#891ABC"
-                        app:cornerRadius="20dp"
-                        tools:ignore="SpeakableTextPresentCheck">
+                        <Button
 
-                    </Button>
+                            android:layout_width="100dp"
+                            android:layout_height="48dp"
+
+                            android:text="View"
+                            android:textAlignment="center"
+                            app:backgroundTint="#891ABC"
+                            app:cornerRadius="20dp"
+                            tools:ignore="SpeakableTextPresentCheck">
+
+                        </Button>
+
+                    </LinearLayout>
+
 
                 </LinearLayout>
 
+            </androidx.cardview.widget.CardView>
 
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView> <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="12dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="6dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="left"
-                android:orientation="horizontal"
-                android:padding="16dp"
-                android:paddingEnd="10dp">
-
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_marginTop="5dp"
-                    android:src="@drawable/client1" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="10dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="-5dp"
-                        android:text="Inuri Gamage"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="0dp"
-                        android:text="Female"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="0dp"
-                        android:text="24 years o0ld"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                </LinearLayout>
-
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:paddingEnd="10dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/model1" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-5dp"
+                            android:text="Shehan Gunasekara"
+                            android:textColor="#6f6f6f"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:text="Male"
+                            android:textColor="#6f6f6f"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:text="24 years o0ld"
+                            android:textColor="#6f6f6f"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
 
 
-                    android:layout_height="91dp"
-                    android:gravity="right"
-                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
 
-                    <Button
 
-                        android:layout_width="100dp"
-                        android:layout_height="48dp"
+                        android:layout_height="91dp"
+                        android:gravity="right"
+                        android:orientation="vertical">
 
-                        android:text="Accept"
-                        android:textAlignment="center"
-                        app:backgroundTint="#01D60A"
-                        app:cornerRadius="20dp"
-                        tools:ignore="SpeakableTextPresentCheck">
+                        <Button
 
-                    </Button>
+                            android:layout_width="100dp"
+                            android:layout_height="48dp"
 
-                    <Button
+                            android:text="Accept"
+                            android:textAlignment="center"
+                            app:backgroundTint="#01D60A"
+                            app:cornerRadius="20dp"
+                            tools:ignore="SpeakableTextPresentCheck">
 
-                        android:layout_width="100dp"
-                        android:layout_height="48dp"
+                        </Button>
 
-                        android:text="View"
-                        android:textAlignment="center"
-                        app:backgroundTint="#891ABC"
-                        app:cornerRadius="20dp"
-                        tools:ignore="SpeakableTextPresentCheck">
+                        <Button
 
-                    </Button>
+                            android:layout_width="100dp"
+                            android:layout_height="48dp"
+
+                            android:text="View"
+                            android:textAlignment="center"
+                            app:backgroundTint="#891ABC"
+                            app:cornerRadius="20dp"
+                            tools:ignore="SpeakableTextPresentCheck">
+
+                        </Button>
+
+                    </LinearLayout>
+
 
                 </LinearLayout>
 
+            </androidx.cardview.widget.CardView>
 
-            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
 
-        </androidx.cardview.widget.CardView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:paddingEnd="10dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/model1" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-5dp"
+                            android:text="Shehan Gunasekara"
+                            android:textColor="#6f6f6f"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:text="Male"
+                            android:textColor="#6f6f6f"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:text="24 years o0ld"
+                            android:textColor="#6f6f6f"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+
+
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:orientation="vertical">
+
+                        <Button
+
+                            android:layout_width="100dp"
+                            android:layout_height="48dp"
+
+                            android:text="Accept"
+                            android:textAlignment="center"
+                            app:backgroundTint="#01D60A"
+                            app:cornerRadius="20dp"
+                            tools:ignore="SpeakableTextPresentCheck">
+
+                        </Button>
+
+                        <Button
+
+                            android:layout_width="100dp"
+                            android:layout_height="48dp"
+
+                            android:text="View"
+                            android:textAlignment="center"
+                            app:backgroundTint="#891ABC"
+                            app:cornerRadius="20dp"
+                            tools:ignore="SpeakableTextPresentCheck">
+
+                        </Button>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="5"
+                android:clickable="true"
+                tools:srcCompat="@tools:sample/avatars" />
+
 
         </GridLayout>
 
