@@ -171,7 +171,7 @@
                         android:layout_marginBottom="0dp">
 
                         <ImageView
-                            android:src="@drawable/model2"
+                            android:src="@drawable/model7"
                             android:layout_width="80dp"
                             android:layout_height="120dp"
                             android:layout_marginVertical="10dp"/>
