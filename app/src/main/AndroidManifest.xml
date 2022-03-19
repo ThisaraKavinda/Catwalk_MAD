@@ -22,6 +22,9 @@
             android:name=".ModelHistoryActivity"
             android:exported="false" />
         <activity
+            android:name=".ModelRequestActivity"
+            android:exported="false" />
+        <activity
             android:name=".AdminHome"
             android:exported="false" />
         <activity
