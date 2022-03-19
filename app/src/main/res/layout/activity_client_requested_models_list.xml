@@ -76,9 +76,10 @@
                             android:paddingBottom="8dp">
 
                             <ImageView
-                                android:layout_width="80dp"
-                                android:layout_height="120dp"
+                                android:layout_width="100dp"
+                                android:layout_height="150dp"
                                 android:layout_marginVertical="10dp"
+                                android:layout_marginRight="8dp"
                                 android:src="@drawable/model6" />
 
                             <LinearLayout
@@ -209,9 +210,10 @@
                             android:paddingBottom="8dp">
 
                             <ImageView
-                                android:layout_width="80dp"
-                                android:layout_height="120dp"
+                                android:layout_width="100dp"
+                                android:layout_height="150dp"
                                 android:layout_marginVertical="10dp"
+                                android:layout_marginRight="8dp"
                                 android:src="@drawable/mnodel3" />
 
                             <LinearLayout
@@ -342,9 +344,10 @@
                             android:paddingBottom="8dp">
 
                             <ImageView
-                                android:layout_width="80dp"
-                                android:layout_height="120dp"
+                                android:layout_width="100dp"
+                                android:layout_height="150dp"
                                 android:layout_marginVertical="10dp"
+                                android:layout_marginRight="8dp"
                                 android:src="@drawable/model7" />
 
                             <LinearLayout
@@ -475,9 +478,10 @@
                             android:paddingBottom="8dp">
 
                             <ImageView
-                                android:layout_width="80dp"
-                                android:layout_height="120dp"
+                                android:layout_width="100dp"
+                                android:layout_height="150dp"
                                 android:layout_marginVertical="10dp"
+                                android:layout_marginRight="8dp"
                                 android:src="@drawable/model6" />
 
                             <LinearLayout
