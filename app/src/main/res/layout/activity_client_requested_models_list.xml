@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClientRequestedModelsList">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ClientRequestedModelsList">
+
+        <ScrollView
+            android:id="@+id/scrollView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/menu_admin_back">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginRight="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Available Models"
+                        android:textColor="#FFFFFF"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/profilepic" />
+                </RelativeLayout>
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="1"
+                    android:columnOrderPreserved="false"
+                    android:rowCount="4">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="12dp"
+                        android:paddingBottom="0dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+
+                            android:layout_height="200dp"
+                            android:layout_marginBottom="0dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="16dp"
+                            android:paddingTop="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingBottom="8dp">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
+                                android:layout_marginVertical="10dp"
+                                android:src="@drawable/model6" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="8dp"
+                                android:gravity="left"
+                                android:orientation="vertical"
+                                android:padding="5dp"
+                                android:paddingLeft="15dp"
+                                android:paddingBottom="0dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="4sp"
+                                    android:text="Nishadi Sanjeewani"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                    android:textColor="#000"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="0dp"
+                                    android:text="Gender : Female"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                    android:textColor="#6f6f6f"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="0dp"
+                                    android:text="Age : 25 years"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                    android:textColor="#6f6f6f"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="0dp"
+                                    android:text="Height: 5 feet 5 inches"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                    android:textColor="#6f6f6f"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="0dp"
+                                    android:text="Type : Commercial"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                    android:textColor="#6f6f6f"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Budget : 3000.00LKR"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:paddingTop="5dp"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        style="@style/Widget.AppCompat.Button"
+                                        android:layout_width="80dp"
+                                        android:layout_height="35dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginRight="40dp"
+                                        android:alpha="0.7"
+                                        android:background="@drawable/rounded_button_color"
+                                        android:capitalize="none"
+                                        android:clickable="true"
+                                        android:text="Confirm"
+                                        android:textAllCaps="false"
+                                        android:textSize="13sp" />
+
+                                    <Button
+                                        style="@style/Widget.AppCompat.Button"
+                                        android:layout_width="80dp"
+                                        android:layout_height="35dp"
+                                        android:layout_marginTop="5dp"
+                                        android:alpha="0.7"
+                                        android:background="@drawable/rounded_button_white"
+                                        android:capitalize="none"
+                                        android:clickable="true"
+                                        android:text="Cancel"
+                                        android:textAllCaps="false"
+                                        android:textSize="13sp"
+                                        app:backgroundTint="@null" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="12dp"
+                        android:paddingBottom="0dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+
+                            android:layout_height="200dp"
+                            android:layout_marginBottom="0dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="16dp"
+                            android:paddingTop="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingBottom="8dp">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
+                                android:layout_marginVertical="10dp"
+                                android:src="@drawable/mnodel3" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="8dp"
+                                android:gravity="left"
+                                android:orientation="vertical"
+                                android:padding="5dp"
+                                android:paddingLeft="15dp"
+                                android:paddingBottom="0dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="4sp"
+                                    android:text="Tyni Shehara"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                    android:textColor="#000"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="0dp"
+                                    android:text="Gender : Female"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                    android:textColor="#6f6f6f"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="0dp"
+                                    android:text="Age : 25 years"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                    android:textColor="#6f6f6f"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="0dp"
+                                    android:text="Height: 5 feet 5 inches"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                    android:textColor="#6f6f6f"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="0dp"
+                                    android:text="Type : Commercial"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                    android:textColor="#6f6f6f"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Budget : 3500.00LKR"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:paddingTop="5dp"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        style="@style/Widget.AppCompat.Button"
+                                        android:layout_width="80dp"
+                                        android:layout_height="35dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginRight="40dp"
+                                        android:alpha="0.7"
+                                        android:background="@drawable/rounded_button_color"
+                                        android:capitalize="none"
+                                        android:clickable="true"
+                                        android:text="Confirm"
+                                        android:textAllCaps="false"
+                                        android:textSize="13sp" />
+
+                                    <Button
+                                        style="@style/Widget.AppCompat.Button"
+                                        android:layout_width="80dp"
+                                        android:layout_height="35dp"
+                                        android:layout_marginTop="5dp"
+                                        android:alpha="0.7"
+                                        android:background="@drawable/rounded_button_white"
+                                        android:capitalize="none"
+                                        android:clickable="true"
+                                        android:text="Cancel"
+                                        android:textAllCaps="false"
+                                        android:textSize="13sp"
+                                        app:backgroundTint="@null" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="12dp"
+                        android:paddingBottom="0dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+
+                            android:layout_height="200dp"
+                            android:layout_marginBottom="0dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="16dp"
+                            android:paddingTop="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingBottom="8dp">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
+                                android:layout_marginVertical="10dp"
+                                android:src="@drawable/model7" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="8dp"
+                                android:gravity="left"
+                                android:orientation="vertical"
+                                android:padding="5dp"
+                                android:paddingLeft="15dp"
+                                android:paddingBottom="0dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="4sp"
+                                    android:text="Shashi Nishadi"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                    android:textColor="#000"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="0dp"
+                                    android:text="Gender : Female"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                    android:textColor="#6f6f6f"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="0dp"
+                                    android:text="Age : 25 years"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                    android:textColor="#6f6f6f"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="0dp"
+                                    android:text="Height: 5 feet 5 inches"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                    android:textColor="#6f6f6f"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="0dp"
+                                    android:text="Type : Commercial"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                    android:textColor="#6f6f6f"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Budget : 2500.00LKR"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:paddingTop="5dp"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        style="@style/Widget.AppCompat.Button"
+                                        android:layout_width="80dp"
+                                        android:layout_height="35dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginRight="40dp"
+                                        android:alpha="0.7"
+                                        android:background="@drawable/rounded_button_color"
+                                        android:capitalize="none"
+                                        android:clickable="true"
+                                        android:text="Confirm"
+                                        android:textAllCaps="false"
+                                        android:textSize="13sp" />
+
+                                    <Button
+                                        style="@style/Widget.AppCompat.Button"
+                                        android:layout_width="80dp"
+                                        android:layout_height="35dp"
+                                        android:layout_marginTop="5dp"
+                                        android:alpha="0.7"
+                                        android:background="@drawable/rounded_button_white"
+                                        android:capitalize="none"
+                                        android:clickable="true"
+                                        android:text="Cancel"
+                                        android:textAllCaps="false"
+                                        android:textSize="13sp"
+                                        app:backgroundTint="@null" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="12dp"
+                        android:paddingBottom="0dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+
+                            android:layout_height="200dp"
+                            android:layout_marginBottom="0dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="16dp"
+                            android:paddingTop="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingBottom="8dp">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
+                                android:layout_marginVertical="10dp"
+                                android:src="@drawable/model6" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="8dp"
+                                android:gravity="left"
+                                android:orientation="vertical"
+                                android:padding="5dp"
+                                android:paddingLeft="15dp"
+                                android:paddingBottom="0dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="4sp"
+                                    android:text="Nishadi Sanjeewani"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                    android:textColor="#000"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="0dp"
+                                    android:text="Gender : Female"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                    android:textColor="#6f6f6f"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="0dp"
+                                    android:text="Age : 25 years"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                    android:textColor="#6f6f6f"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="0dp"
+                                    android:text="Height: 5 feet 5 inches"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                    android:textColor="#6f6f6f"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="0dp"
+                                    android:text="Type : Commercial"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                    android:textColor="#6f6f6f"
+                                    android:textSize="13sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Budget : 3000.00LKR"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:paddingTop="5dp"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        style="@style/Widget.AppCompat.Button"
+                                        android:layout_width="80dp"
+                                        android:layout_height="35dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginRight="40dp"
+                                        android:alpha="0.7"
+                                        android:background="@drawable/rounded_button_color"
+                                        android:capitalize="none"
+                                        android:clickable="true"
+                                        android:text="Confirm"
+                                        android:textAllCaps="false"
+                                        android:textSize="13sp" />
+
+                                    <Button
+                                        style="@style/Widget.AppCompat.Button"
+                                        android:layout_width="80dp"
+                                        android:layout_height="35dp"
+                                        android:layout_marginTop="5dp"
+                                        android:alpha="0.7"
+                                        android:background="@drawable/rounded_button_white"
+                                        android:capitalize="none"
+                                        android:clickable="true"
+                                        android:text="Cancel"
+                                        android:textAllCaps="false"
+                                        android:textSize="13sp"
+                                        app:backgroundTint="@null" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </GridLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
