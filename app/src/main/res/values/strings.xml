@@ -13,4 +13,13 @@
     <string name="modelrequestacceptbtn1" />
     <string name="modelrequestviewbtn1" />
 
+    <string name="predefined_type">Choose a country</string>
+
+    <string-array name="model_types">
+        <item>Commercial</item>
+        <item>Commercial</item>
+        <item>Commercial</item>
+        <item>Commercial</item>
+    </string-array>
+
 </resources>
