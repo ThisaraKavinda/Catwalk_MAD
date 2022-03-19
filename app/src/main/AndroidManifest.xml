@@ -10,13 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".ModelHistoryActivity"
+            android:name=".ModelRegisterRequests"
             android:exported="false" />
         <activity
-            android:name=".ModelRequestActivity"
-            android:exported="false"
-            android:label="@string/title_activity_model_request"
-            android:theme="@style/Theme.MyApplication.NoActionBar" />
+            android:name=".ModelHistoryActivity"
+            android:exported="false" />
         <activity
             android:name=".AdminHome"
             android:exported="false" />
