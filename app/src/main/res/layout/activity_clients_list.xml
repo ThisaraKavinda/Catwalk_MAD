@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/menu_admin_back"
-    tools:context=".ModelRegisterRequests">
+    tools:context=".ClientsList">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,9 +42,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Models Registration Requests"
+                android:text="Clients List"
                 android:textColor="#FFFFFF"
-                android:textSize="20sp"
+                android:textSize="26sp"
                 android:textStyle="bold" />
 
             <ImageView
@@ -85,7 +85,7 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_marginTop="5dp"
-                        android:src="@drawable/client1" />
+                        android:src="@drawable/profilepic" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -97,7 +97,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="-5dp"
-                            android:text="Inuri Gamage"
+                            android:text="Umesh Madushan"
                             android:textColor="#6f6f6f"
                             android:textSize="18sp" />
 
@@ -105,7 +105,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="0dp"
-                            android:text="Female"
+                            android:text="Male"
                             android:textColor="#6f6f6f"
                             android:textSize="18sp" />
 
@@ -129,11 +129,11 @@
                         android:orientation="vertical">
 
                         <Button
-                            android:id="@+id/modelrequestacceptbtn1"
+                            android:id="@+id/clientrequestviewbtn2"
                             android:layout_width="100dp"
                             android:layout_height="48dp"
-                            android:contentDescription="@string/modelrequestacceptbtn1"
-                            android:text="Accept"
+
+                            android:text="View"
                             android:textAlignment="center"
                             app:backgroundTint="#01D60A"
                             app:cornerRadius="20dp"
@@ -142,13 +142,13 @@
                         </Button>
 
                         <Button
-                            android:id="@+id/modelrequestviewbtn1"
+                            android:id="@+id/clientrequestdeletebtn1"
                             android:layout_width="100dp"
                             android:layout_height="48dp"
-                            android:contentDescription="@string/modelrequestviewbtn1"
-                            android:text="View"
+
+                            android:text="Delete"
                             android:textAlignment="center"
-                            app:backgroundTint="#891ABC"
+                            app:backgroundTint="#D0342C"
                             app:cornerRadius="20dp"
                             tools:ignore="SpeakableTextPresentCheck">
 
@@ -179,11 +179,13 @@
                     android:padding="16dp"
                     android:paddingEnd="10dp">
 
+
+
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_marginTop="5dp"
-                        android:src="@drawable/client1" />
+                        android:src="@drawable/profilepic" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -195,7 +197,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="-5dp"
-                            android:text="Inuri Gamage"
+                            android:text="Umesh Madushan"
                             android:textColor="#6f6f6f"
                             android:textSize="18sp" />
 
@@ -203,7 +205,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="0dp"
-                            android:text="Female"
+                            android:text="Male"
                             android:textColor="#6f6f6f"
                             android:textSize="18sp" />
 
@@ -231,7 +233,7 @@
                             android:layout_width="100dp"
                             android:layout_height="48dp"
 
-                            android:text="Accept"
+                            android:text="View"
                             android:textAlignment="center"
                             app:backgroundTint="#01D60A"
                             app:cornerRadius="20dp"
@@ -244,9 +246,9 @@
                             android:layout_width="100dp"
                             android:layout_height="48dp"
 
-                            android:text="View"
+                            android:text="Delete"
                             android:textAlignment="center"
-                            app:backgroundTint="#891ABC"
+                            app:backgroundTint="#D0342C"
                             app:cornerRadius="20dp"
                             tools:ignore="SpeakableTextPresentCheck">
 
@@ -276,11 +278,13 @@
                     android:padding="16dp"
                     android:paddingEnd="10dp">
 
+
+
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_marginTop="5dp"
-                        android:src="@drawable/client1" />
+                        android:src="@drawable/profilepic" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -292,7 +296,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="-5dp"
-                            android:text="Inuri Gamage"
+                            android:text="Umesh Madushan"
                             android:textColor="#6f6f6f"
                             android:textSize="18sp" />
 
@@ -300,7 +304,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="0dp"
-                            android:text="Female"
+                            android:text="Male"
                             android:textColor="#6f6f6f"
                             android:textSize="18sp" />
 
@@ -328,7 +332,7 @@
                             android:layout_width="100dp"
                             android:layout_height="48dp"
 
-                            android:text="Accept"
+                            android:text="View"
                             android:textAlignment="center"
                             app:backgroundTint="#01D60A"
                             app:cornerRadius="20dp"
@@ -341,9 +345,9 @@
                             android:layout_width="100dp"
                             android:layout_height="48dp"
 
-                            android:text="View"
+                            android:text="Delete"
                             android:textAlignment="center"
-                            app:backgroundTint="#891ABC"
+                            app:backgroundTint="#D0342C"
                             app:cornerRadius="20dp"
                             tools:ignore="SpeakableTextPresentCheck">
 
@@ -354,197 +358,208 @@
 
                 </LinearLayout>
 
-            </androidx.cardview.widget.CardView> <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="12dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="6dp">
+            </androidx.cardview.widget.CardView>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="left"
-                android:orientation="horizontal"
-                android:padding="16dp"
-                android:paddingEnd="10dp">
-
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_marginTop="5dp"
-                    android:src="@drawable/client1" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="10dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="-5dp"
-                        android:text="Inuri Gamage"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="0dp"
-                        android:text="Female"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="0dp"
-                        android:text="24 years old"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                </LinearLayout>
-
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:paddingEnd="10dp">
 
 
-                    android:layout_height="91dp"
-                    android:gravity="right"
-                    android:orientation="vertical">
 
-                    <Button
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/profilepic" />
 
-                        android:layout_width="100dp"
-                        android:layout_height="48dp"
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
 
-                        android:text="Accept"
-                        android:textAlignment="center"
-                        app:backgroundTint="#01D60A"
-                        app:cornerRadius="20dp"
-                        tools:ignore="SpeakableTextPresentCheck">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-5dp"
+                            android:text="Umesh Madushan"
+                            android:textColor="#6f6f6f"
+                            android:textSize="18sp" />
 
-                    </Button>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:text="Male"
+                            android:textColor="#6f6f6f"
+                            android:textSize="18sp" />
 
-                    <Button
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:text="24 years old"
+                            android:textColor="#6f6f6f"
+                            android:textSize="18sp" />
 
-                        android:layout_width="100dp"
-                        android:layout_height="48dp"
+                    </LinearLayout>
 
-                        android:text="View"
-                        android:textAlignment="center"
-                        app:backgroundTint="#891ABC"
-                        app:cornerRadius="20dp"
-                        tools:ignore="SpeakableTextPresentCheck">
 
-                    </Button>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+
+
+                        android:layout_height="91dp"
+                        android:gravity="right"
+                        android:orientation="vertical">
+
+                        <Button
+
+                            android:layout_width="100dp"
+                            android:layout_height="48dp"
+
+                            android:text="View"
+                            android:textAlignment="center"
+                            app:backgroundTint="#01D60A"
+                            app:cornerRadius="20dp"
+                            tools:ignore="SpeakableTextPresentCheck">
+
+                        </Button>
+
+                        <Button
+
+                            android:layout_width="100dp"
+                            android:layout_height="48dp"
+
+                            android:text="Delete"
+                            android:textAlignment="center"
+                            app:backgroundTint="#D0342C"
+                            app:cornerRadius="20dp"
+                            tools:ignore="SpeakableTextPresentCheck">
+
+                        </Button>
+
+                    </LinearLayout>
+
 
                 </LinearLayout>
 
+            </androidx.cardview.widget.CardView>
 
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView> <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="12dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="6dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="left"
-                android:orientation="horizontal"
-                android:padding="16dp"
-                android:paddingEnd="10dp">
-
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_marginTop="5dp"
-                    android:src="@drawable/client1" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="10dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="-5dp"
-                        android:text="Inuri Gamage"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="0dp"
-                        android:text="Female"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="0dp"
-                        android:text="24 years old"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp" />
-
-                </LinearLayout>
-
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:paddingEnd="10dp">
 
 
-                    android:layout_height="91dp"
-                    android:gravity="right"
-                    android:orientation="vertical">
 
-                    <Button
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/profilepic" />
 
-                        android:layout_width="100dp"
-                        android:layout_height="48dp"
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
 
-                        android:text="Accept"
-                        android:textAlignment="center"
-                        app:backgroundTint="#01D60A"
-                        app:cornerRadius="20dp"
-                        tools:ignore="SpeakableTextPresentCheck">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-5dp"
+                            android:text="Umesh Madushan"
+                            android:textColor="#6f6f6f"
+                            android:textSize="18sp" />
 
-                    </Button>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:text="Male"
+                            android:textColor="#6f6f6f"
+                            android:textSize="18sp" />
 
-                    <Button
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:text="24 years old"
+                            android:textColor="#6f6f6f"
+                            android:textSize="18sp" />
 
-                        android:layout_width="100dp"
-                        android:layout_height="48dp"
+                    </LinearLayout>
 
-                        android:text="View"
-                        android:textAlignment="center"
-                        app:backgroundTint="#891ABC"
-                        app:cornerRadius="20dp"
-                        tools:ignore="SpeakableTextPresentCheck">
 
-                    </Button>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+
+
+                        android:layout_height="91dp"
+                        android:gravity="right"
+                        android:orientation="vertical">
+
+                        <Button
+
+                            android:layout_width="100dp"
+                            android:layout_height="48dp"
+
+                            android:text="View"
+                            android:textAlignment="center"
+                            app:backgroundTint="#01D60A"
+                            app:cornerRadius="20dp"
+                            tools:ignore="SpeakableTextPresentCheck">
+
+                        </Button>
+
+                        <Button
+
+                            android:layout_width="100dp"
+                            android:layout_height="48dp"
+
+                            android:text="Delete"
+                            android:textAlignment="center"
+                            app:backgroundTint="#D0342C"
+                            app:cornerRadius="20dp"
+                            tools:ignore="SpeakableTextPresentCheck">
+
+                        </Button>
+
+                    </LinearLayout>
+
 
                 </LinearLayout>
 
+            </androidx.cardview.widget.CardView>
 
-            </LinearLayout>
 
-        </androidx.cardview.widget.CardView>
+
 
         </GridLayout>
 
