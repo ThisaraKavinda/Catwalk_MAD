@@ -10,6 +10,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication" >
         <activity
+            android:name=".ClientRegister"
+            android:exported="false" />
+        <activity
+            android:name=".AdminProfile"
+            android:exported="false" />
+        <activity
+            android:name=".ArticleList"
+            android:exported="false" />
+        <activity
+            android:name=".AddArticle"
+            android:exported="false" />
+        <activity
+            android:name=".ClientSingleRegisterRequest"
+            android:exported="false" />
+        <activity
+            android:name=".ModelSingleRegisterRequest"
+            android:exported="false" />
+        <activity
+            android:name=".ClientSingleProfileView"
+            android:exported="false" />
+        <activity
+            android:name=".ModelSingleProfileView"
+            android:exported="false" />
+        <activity
             android:name=".ClientsList"
             android:exported="false" />
         <activity

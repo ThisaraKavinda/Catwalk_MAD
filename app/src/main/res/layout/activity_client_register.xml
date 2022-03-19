@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    tools:context=".ModelRegister">
+    tools:context=".ClientRegister">
 
     <EditText
-        android:id="@+id/mname"
+        android:id="@+id/cname"
         android:layout_width="332dp"
         android:layout_height="54dp"
         android:layout_marginStart="39dp"
@@ -25,7 +24,7 @@
         app:layout_constraintVertical_bias="0.161" />
 
     <EditText
-        android:id="@+id/mpassword"
+        android:id="@+id/cpassword"
         android:layout_width="332dp"
         android:layout_height="54dp"
         android:layout_marginStart="40dp"
@@ -41,7 +40,7 @@
         app:layout_constraintVertical_bias="0.259" />
 
     <EditText
-        android:id="@+id/memail"
+        android:id="@+id/cemail"
         android:layout_width="332dp"
         android:layout_height="54dp"
         android:layout_marginStart="39dp"
@@ -58,7 +57,7 @@
         app:layout_constraintVertical_bias="0.361" />
 
     <EditText
-        android:id="@+id/mmobile"
+        android:id="@+id/cmobile"
         android:layout_width="332dp"
         android:layout_height="54dp"
         android:layout_marginStart="39dp"
@@ -75,7 +74,7 @@
         app:layout_constraintVertical_bias="0.462" />
 
     <EditText
-        android:id="@+id/mdate"
+        android:id="@+id/ccompanyname"
         android:layout_width="332dp"
         android:layout_height="54dp"
         android:layout_marginStart="39dp"
@@ -83,8 +82,8 @@
 
         android:backgroundTint="#6e1597"
         android:ems="10"
-        android:hint="Enter Birthday"
-        android:inputType="date"
+        android:hint="Enter Company Name"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -95,19 +94,19 @@
     <ImageView
         android:layout_width="80dp"
         android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/client1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintHorizontal_bias="0.296"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.684"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/client1">
+        app:layout_constraintVertical_bias="0.783">
 
     </ImageView>
 
     <Button
-        android:id="@+id/selectmodelpicbtn1"
+        android:id="@+id/selectmclientpicbtn1"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:text="Select\nImage"
@@ -116,39 +115,15 @@
         app:cornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintHorizontal_bias="0.665"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.686">
+        app:layout_constraintVertical_bias="0.779">
 
     </Button>
 
-    <RadioButton
-        android:id="@+id/mmaleradio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Male  "
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.762"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.649" />
-
-    <RadioButton
-        android:id="@+id/mfemaleradio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Female"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.78"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.716" />
-
     <Button
-        android:id="@+id/mregister"
+        android:id="@+id/cregister"
         android:layout_width="332dp"
         android:layout_height="54dp"
         android:layout_marginStart="39dp"
@@ -161,7 +136,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.804" />
+        app:layout_constraintVertical_bias="0.902" />
 
     <TextView
         android:id="@+id/textView3"
@@ -198,8 +173,27 @@
         android:layout_marginBottom="-550dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.565"
         app:srcCompat="@drawable/bot" />
+
+    <EditText
+        android:id="@+id/clocation"
+        android:layout_width="332dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#6e1597"
+        android:ems="10"
+        android:hint="Enter Location"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
