@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".ModelRegisterRequests"
+            android:exported="false" />
+        <activity
             android:name=".ModelHistoryActivity"
             android:exported="false" />
         <activity
