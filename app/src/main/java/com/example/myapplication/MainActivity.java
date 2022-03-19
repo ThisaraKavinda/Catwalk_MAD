@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         move.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ModelRequestActivity.class);
+                Intent intent = new Intent(MainActivity.this, ModelRegisterRequests.class);
                 startActivity(intent);
             }
         });
