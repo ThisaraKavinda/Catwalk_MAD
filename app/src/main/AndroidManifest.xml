@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication" >
         <activity
+            android:name=".ModelsList"
+            android:exported="false" />
+        <activity
+            android:name=".ClientRegisterRequests"
+            android:exported="false" />
+        <activity
             android:name=".ModelRegisterRequests"
             android:exported="false" />
         <activity
