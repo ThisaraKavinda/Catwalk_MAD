@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication" >
         <activity
-            android:name=".ModelsList"
+            android:name=".ClientsList"
+            android:exported="false" />
+        <activity
+            android:name=".ModelList"
             android:exported="false" />
         <activity
             android:name=".ClientRegisterRequests"
