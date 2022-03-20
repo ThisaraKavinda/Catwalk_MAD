@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".InquiryUpdate"
+            android:exported="false" />
+        <activity
+            android:name=".ModelArticleList"
+            android:exported="false" />
+        <activity
             android:name=".Inquiry"
             android:exported="false" />
         <activity
