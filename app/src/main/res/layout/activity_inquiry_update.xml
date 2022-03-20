@@ -18,7 +18,7 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/Inquirybackbtn1"
+                android:id="@+id/InquiryUpdatebackbtn1"
                 android:layout_width="80dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="20dp"
@@ -101,7 +101,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="Enter a title in short" />
+                                android:hint="Cannot contact Sanjeewani" />
 
                         </LinearLayout>
 
@@ -127,14 +127,15 @@
                                 <RadioButton
                                     android:layout_width="70dp"
                                     android:layout_height="33dp"
-                                    android:text="Yes"
-                                    android:layout_marginHorizontal="25dp"/>
+                                    android:layout_marginHorizontal="25dp"
+                                    android:text="Yes" />
 
                                 <RadioButton
                                     android:layout_width="85dp"
                                     android:layout_height="33dp"
                                     android:text="No"
-                                    android:layout_marginHorizontal="25dp"/>
+                                    android:layout_marginHorizontal="25dp"
+                                    android:checked="true"/>
 
                             </RadioGroup>
 
@@ -180,7 +181,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="Describe your inquiry here"
+                                android:hint="Select your favorite social network and share our icons with your contacts or friends. For more information read the Attachments"
                                 android:height="150dp"/>
 
                         </LinearLayout>
@@ -218,17 +219,36 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="70dp"
-                            android:gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
                             android:orientation="horizontal"
-                            android:paddingHorizontal="20dp">
+                            android:paddingBottom="20dp">
+
 
                             <Button
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginVertical="10dp"
-                                android:background="@drawable/rounded_button_color"
-                                android:text="SUBMIT" />
+                                android:id="@+id/inquiryUpdateupdatebtn1"
+                                android:layout_width="160dp"
+                                android:layout_height="48dp"
+                                android:text="Update"
+                                android:textAlignment="center"
+                                app:backgroundTint="#01D60A"
+                                app:cornerRadius="20dp"
+                                tools:ignore="SpeakableTextPresentCheck"
+                                android:layout_marginHorizontal="10dp">
+                            </Button>
+
+                            <Button
+                                android:id="@+id/inquiryUpdatedeletebtn1"
+                                android:layout_width="160dp"
+                                android:layout_height="48dp"
+                                android:layout_marginHorizontal="10dp"
+                                android:text="Delete"
+                                android:textAlignment="center"
+                                app:backgroundTint="#D0342C"
+                                app:cornerRadius="20dp"
+                                tools:ignore="SpeakableTextPresentCheck">
+
+                            </Button>
 
                         </LinearLayout>
 
