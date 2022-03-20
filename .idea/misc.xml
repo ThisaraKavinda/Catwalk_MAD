@@ -5,9 +5,11 @@
       <map>
         <entry key="..\:/MAD/MyApplication/app/src/main/res/drawable/menuadminback.xml" value="0.2203125" />
         <entry key="..\:/MAD/MyApplication/app/src/main/res/drawable/rating_svgrepo_com_1_.xml" value="0.188" />
+        <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_ad_request_single_admin.xml" value="0.17617753623188406" />
         <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_add_article.xml" value="0.22" />
         <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_admin_home.xml" value="0.22" />
         <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_admin_profile.xml" value="0.18697916666666667" />
+        <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_ads_requests_admin.xml" value="0.20416666666666666" />
         <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_article_list.xml" value="0.22" />
         <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_client_register.xml" value="0.25" />
         <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_client_register_requests.xml" value="0.22" />
