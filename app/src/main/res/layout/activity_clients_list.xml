@@ -105,7 +105,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="0dp"
-                            android:text="Male"
+                            android:text="Company(pvt)"
                             android:textColor="#6f6f6f"
                             android:textSize="18sp" />
 
@@ -113,7 +113,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="0dp"
-                            android:text="24 years old"
+                            android:text="Colombo"
                             android:textColor="#6f6f6f"
                             android:textSize="18sp" />
 
@@ -205,7 +205,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="0dp"
-                            android:text="Male"
+                            android:text="Company(pvt)"
                             android:textColor="#6f6f6f"
                             android:textSize="18sp" />
 
@@ -213,7 +213,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="0dp"
-                            android:text="24 years old"
+                            android:text="Colombo"
                             android:textColor="#6f6f6f"
                             android:textSize="18sp" />
 
@@ -304,7 +304,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="0dp"
-                            android:text="Male"
+                            android:text="Company(pvt)"
                             android:textColor="#6f6f6f"
                             android:textSize="18sp" />
 
@@ -312,7 +312,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="0dp"
-                            android:text="24 years old"
+                            android:text="Colombo"
                             android:textColor="#6f6f6f"
                             android:textSize="18sp" />
 
@@ -403,7 +403,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="0dp"
-                            android:text="Male"
+                            android:text="Company(pvt)"
                             android:textColor="#6f6f6f"
                             android:textSize="18sp" />
 
@@ -411,7 +411,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="0dp"
-                            android:text="24 years old"
+                            android:text="Colombo"
                             android:textColor="#6f6f6f"
                             android:textSize="18sp" />
 

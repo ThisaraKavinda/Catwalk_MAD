@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".AdRequestSingleAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".AdsRequestsAdmin"
+            android:exported="false" />
+        <activity
             android:name=".ClientRegister"
             android:exported="false" />
         <activity
