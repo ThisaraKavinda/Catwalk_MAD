@@ -22,4 +22,11 @@
         <item>Commercial</item>
     </string-array>
 
+    <string-array name="inquiry_types">
+        <item>Models</item>
+        <item>Clients</item>
+        <item>Payments</item>
+        <item>Application</item>
+    </string-array>
+
 </resources>
