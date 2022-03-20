@@ -189,25 +189,25 @@
                                         android:layout_width="30dp"
                                         android:layout_height="30dp"
                                         android:layout_marginVertical="10dp"
-                                        android:src="@drawable/star"
+                                        android:src="@drawable/star2"
                                         android:layout_marginHorizontal="2dp"/>
                                     <ImageView
                                         android:layout_width="30dp"
                                         android:layout_height="30dp"
                                         android:layout_marginVertical="10dp"
-                                        android:src="@drawable/star"
+                                        android:src="@drawable/star2"
                                         android:layout_marginHorizontal="2dp"/>
                                     <ImageView
                                         android:layout_width="30dp"
                                         android:layout_height="30dp"
                                         android:layout_marginVertical="10dp"
-                                        android:src="@drawable/star"
+                                        android:src="@drawable/star2"
                                         android:layout_marginHorizontal="2dp"/>
                                     <ImageView
                                         android:layout_width="30dp"
                                         android:layout_height="30dp"
                                         android:layout_marginVertical="10dp"
-                                        android:src="@drawable/star"
+                                        android:src="@drawable/star2"
                                         android:layout_marginHorizontal="2dp"/>
                                     <ImageView
                                         android:layout_width="30dp"
@@ -224,13 +224,17 @@
                                     android:gravity="center"
                                     android:orientation="vertical">
 
-                                    <ImageButton
-                                        android:id="@+id/clientViewHistorydeletebtn1"
-                                        android:layout_width="30dp"
-                                        android:layout_height="30dp"
-                                        android:layout_gravity="end"
-                                        android:layout_marginRight="10dp"
-                                        android:background="@drawable/trash" />
+                                    <Button
+                                        style="@style/Widget.AppCompat.Button"
+                                        android:layout_width="140dp"
+                                        android:layout_height="38dp"
+                                        android:alpha="0.7"
+                                        android:background="@drawable/rounded_button_color"
+                                        android:capitalize="none"
+                                        android:clickable="true"
+                                        android:text="Add Review"
+                                        android:textAllCaps="false"
+                                        android:textSize="15sp" />
 
                                 </LinearLayout>
 
@@ -396,12 +400,17 @@
                                     android:gravity="center"
                                     android:orientation="vertical">
 
-                                    <ImageButton
-                                        android:layout_width="30dp"
-                                        android:layout_height="30dp"
-                                        android:layout_gravity="end"
-                                        android:layout_marginRight="10dp"
-                                        android:background="@drawable/trash" />
+                                    <Button
+                                        style="@style/Widget.AppCompat.Button"
+                                        android:layout_width="140dp"
+                                        android:layout_height="38dp"
+                                        android:alpha="0.7"
+                                        android:background="@drawable/rounded_button_color"
+                                        android:capitalize="none"
+                                        android:clickable="true"
+                                        android:text="Add Review"
+                                        android:textAllCaps="false"
+                                        android:textSize="15sp" />
 
                                 </LinearLayout>
 
@@ -567,12 +576,17 @@
                                     android:gravity="center"
                                     android:orientation="vertical">
 
-                                    <ImageButton
-                                        android:layout_width="30dp"
-                                        android:layout_height="30dp"
-                                        android:layout_gravity="end"
-                                        android:layout_marginRight="10dp"
-                                        android:background="@drawable/trash" />
+                                    <Button
+                                        style="@style/Widget.AppCompat.Button"
+                                        android:layout_width="140dp"
+                                        android:layout_height="38dp"
+                                        android:alpha="0.7"
+                                        android:background="@drawable/rounded_button_color"
+                                        android:capitalize="none"
+                                        android:clickable="true"
+                                        android:text="Add Review"
+                                        android:textAllCaps="false"
+                                        android:textSize="15sp" />
 
                                 </LinearLayout>
 

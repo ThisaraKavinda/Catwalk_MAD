@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".ClientEditAd"
+            android:exported="false" />
+        <activity
+            android:name=".ClientAdHistory"
+            android:exported="false" />
+        <activity
             android:name=".InquiryUpdate"
             android:exported="false" />
         <activity
