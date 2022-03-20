@@ -123,7 +123,7 @@
     </Button>
 
     <Button
-        android:id="@+id/cregister"
+        android:id="@+id/cregisterbtn"
         android:layout_width="332dp"
         android:layout_height="54dp"
         android:layout_marginStart="39dp"

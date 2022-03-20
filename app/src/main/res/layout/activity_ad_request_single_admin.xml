@@ -212,6 +212,7 @@ As models are needed to promote all."
 
                             <Button
 
+                                android:id="@+id/adrequestsingleacceptbtn1"
                                 android:layout_width="120dp"
                                 android:layout_height="60dp"
                                 android:layout_marginRight="80dp"
@@ -219,24 +220,25 @@ As models are needed to promote all."
                                 android:backgroundTint="#6e1597"
                                 android:capitalize="none"
                                 android:clickable="true"
-                                android:text="Accept"
-                                android:textAllCaps="true"
+                                android:text="@string/adrequestsingleacceptbtn1"
 
+                                android:textAllCaps="true"
                                 android:textSize="15sp"
                                 app:cornerRadius="20dp" />
 
                             <Button
 
+                                android:id="@+id/adrequestsinglerejectbtn1"
                                 android:layout_width="120dp"
-                                android:layout_height="60dp"
 
+                                android:layout_height="60dp"
                                 android:layout_marginBottom="10dp"
                                 android:capitalize="none"
                                 android:clickable="true"
                                 android:text="Reject"
                                 android:textAllCaps="true"
-                                android:textSize="15sp"
 
+                                android:textSize="15sp"
                                 app:backgroundTint="#D0342C"
                                 app:cornerRadius="20dp" />
 

@@ -13,7 +13,7 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/modelrqstbackbtn1"
+            android:id="@+id/modelsregisterrqstbackbtn1"
             android:layout_width="80dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
@@ -142,7 +142,7 @@
                         </Button>
 
                         <Button
-                            android:id="@+id/clientrequestviewbtn2"
+                            android:id="@+id/clientprofileviewbtn2"
                             android:layout_width="100dp"
                             android:layout_height="48dp"
                             android:contentDescription="@string/modelrequestviewbtn1"
