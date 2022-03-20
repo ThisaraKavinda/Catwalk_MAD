@@ -131,26 +131,28 @@
 
                                     <Button
 
+                                        android:id="@+id/adrequestviewadminbtn1"
                                         android:layout_width="100dp"
                                         android:layout_height="48dp"
+
                                         android:layout_marginTop="5dp"
 
                                         android:layout_marginRight="40dp"
-
                                         android:clickable="true"
                                         android:text="View"
                                         android:textAllCaps="true"
-                                        android:textSize="10sp"
 
+                                        android:textSize="10sp"
                                         app:backgroundTint="#01D60A"
                                         app:cornerRadius="20dp" />
 
                                     <Button
 
+                                        android:id="@+id/adrequestrejectadminbtn1"
                                         android:layout_width="100dp"
                                         android:layout_height="48dp"
-                                        android:layout_marginTop="5dp"
 
+                                        android:layout_marginTop="5dp"
                                         android:capitalize="none"
                                         android:clickable="true"
                                         android:text="Reject"
