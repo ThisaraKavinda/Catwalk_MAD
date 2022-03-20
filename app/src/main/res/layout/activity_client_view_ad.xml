@@ -220,6 +220,7 @@ As models are needed to promote all."
                                         android:textSize="17sp" />
 
                                     <EditText
+                                        android:id="@+id/clientViewAdDiscountInput"
                                         android:layout_width="170dp"
                                         android:layout_height="wrap_content"
                                         android:ems="10"
@@ -236,32 +237,34 @@ As models are needed to promote all."
                                 android:layout_height="match_parent">
 
                                 <Button
+                                    android:id="@+id/clientViewAdRequestbtn"
                                     style="@style/Widget.AppCompat.Button"
                                     android:layout_width="90dp"
                                     android:layout_height="40dp"
+                                    android:layout_marginRight="80dp"
+                                    android:layout_marginBottom="10dp"
                                     android:alpha="0.7"
+                                    android:background="@drawable/rounded_button_color"
                                     android:capitalize="none"
                                     android:clickable="true"
                                     android:text="Request"
                                     android:textAllCaps="false"
-                                    android:textSize="15sp"
-                                    android:layout_marginRight="80dp"
-                                    android:background="@drawable/rounded_button_color"
-                                    android:layout_marginBottom="10dp"/>
+                                    android:textSize="15sp" />
 
                                 <Button
+                                    android:id="@+id/clientViewAdCanceltbtn"
                                     style="@style/Widget.AppCompat.Button"
                                     android:layout_width="90dp"
                                     android:layout_height="40dp"
+                                    android:layout_marginBottom="10dp"
                                     android:alpha="0.7"
+                                    android:background="@drawable/rounded_button_white"
                                     android:capitalize="none"
                                     android:clickable="true"
                                     android:text="Cancel"
                                     android:textAllCaps="false"
                                     android:textSize="15sp"
-                                    app:backgroundTint="@null"
-                                    android:background="@drawable/rounded_button_white"
-                                    android:layout_marginBottom="10dp"/>
+                                    app:backgroundTint="@null" />
 
                             </LinearLayout>
 

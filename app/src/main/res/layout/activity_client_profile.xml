@@ -6,9 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ClientProfile">
 
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/menu_admin_back"
@@ -102,7 +100,7 @@
                             </ImageView>
 
                             <Button
-                                android:id="@+id/modelpicbrowsebtn1"
+                                android:id="@+id/modelProfilepicbrowsebtn1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:backgroundTint="#6e1597"
@@ -137,9 +135,9 @@
                                     android:textSize="18sp" />
 
                                 <EditText
+                                    android:id="@+id/modelProfileNameInput"
                                     android:layout_width="300dp"
                                     android:layout_height="wrap_content"
-                                    android:id="@+id/updatemodelname"
                                     android:layout_marginTop="0dp"
                                     android:text="Nishadi Sanjeewani"
                                     android:textColor="#6f6f6f"
@@ -156,7 +154,7 @@
                                 <EditText
                                     android:layout_width="300dp"
                                     android:layout_height="wrap_content"
-                                    android:id="@+id/updatemodelpassword"
+                                    android:id="@+id/modelProfilePasswordInput"
                                     android:layout_marginTop="0dp"
                                     android:text="***********"
                                     android:textColor="#6f6f6f"
@@ -171,11 +169,11 @@
                                     android:textSize="18sp" />
 
                                 <EditText
+                                    android:id="@+id/modelProfileMobileInput"
                                     android:layout_width="300dp"
                                     android:layout_height="wrap_content"
-                                    android:id="@+id/updatemodelmobile"
                                     android:layout_marginTop="0dp"
-                                    android:text="07777334445"
+                                    android:text="0777334445"
                                     android:textColor="#6f6f6f"
                                     android:textSize="25sp" />
 
@@ -190,7 +188,7 @@
                                 <EditText
                                     android:layout_width="300dp"
                                     android:layout_height="wrap_content"
-                                    android:id="@+id/updatemodelemail"
+                                    android:id="@+id/modelProfileEmailInput"
                                     android:layout_marginTop="0dp"
                                     android:text="nishadi@gmail.com"
                                     android:textColor="#6f6f6f"
@@ -205,11 +203,11 @@
                                     android:textSize="18sp" />
 
                                 <EditText
+                                    android:id="@+id/modelProfileDobInput"
                                     android:layout_width="300dp"
                                     android:layout_height="wrap_content"
-                                    android:id="@+id/updatemodeldob"
                                     android:layout_marginTop="0dp"
-                                    android:text="45.02.1997"
+                                    android:text="25.02.1997"
                                     android:textColor="#6f6f6f"
                                     android:textSize="25sp" />
 
@@ -224,7 +222,7 @@
                                 <EditText
                                     android:layout_width="300dp"
                                     android:layout_height="wrap_content"
-                                    android:id="@+id/updatemodelheight"
+                                    android:id="@+id/modelProfileHeightInput"
                                     android:layout_marginTop="0dp"
                                     android:text="5 feet 6 inches"
                                     android:textColor="#6f6f6f"

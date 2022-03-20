@@ -127,30 +127,32 @@
                                 android:layout_height="match_parent">
 
                                 <Button
+                                    android:id="@+id/modelrequestViewbtn1"
                                     style="@style/Widget.AppCompat.Button"
                                     android:layout_width="80dp"
                                     android:layout_height="35dp"
+                                    android:layout_marginRight="40dp"
                                     android:alpha="0.7"
+                                    android:background="@drawable/rounded_button_color"
                                     android:capitalize="none"
                                     android:clickable="true"
                                     android:text="View"
                                     android:textAllCaps="false"
-                                    android:textSize="15sp"
-                                    android:layout_marginRight="40dp"
-                                    android:background="@drawable/rounded_button_color"/>
+                                    android:textSize="15sp" />
 
                                 <Button
+                                    android:id="@+id/modelrequestCancelbtn1"
                                     style="@style/Widget.AppCompat.Button"
                                     android:layout_width="80dp"
                                     android:layout_height="35dp"
                                     android:alpha="0.7"
+                                    android:background="@drawable/rounded_button_white"
                                     android:capitalize="none"
                                     android:clickable="true"
                                     android:text="Cancel"
                                     android:textAllCaps="false"
                                     android:textSize="15sp"
-                                    app:backgroundTint="@null"
-                                    android:background="@drawable/rounded_button_white"/>
+                                    app:backgroundTint="@null" />
 
                             </LinearLayout>
 
@@ -225,30 +227,32 @@
                                 android:layout_height="match_parent">
 
                                 <Button
+                                    android:id="@+id/modelrequestViewbtn2"
                                     style="@style/Widget.AppCompat.Button"
                                     android:layout_width="80dp"
                                     android:layout_height="35dp"
+                                    android:layout_marginRight="40dp"
                                     android:alpha="0.7"
+                                    android:background="@drawable/rounded_button_color"
                                     android:capitalize="none"
                                     android:clickable="true"
                                     android:text="View"
                                     android:textAllCaps="false"
-                                    android:textSize="15sp"
-                                    android:layout_marginRight="40dp"
-                                    android:background="@drawable/rounded_button_color"/>
+                                    android:textSize="15sp" />
 
                                 <Button
+                                    android:id="@+id/modelrequestCancelbtn2"
                                     style="@style/Widget.AppCompat.Button"
                                     android:layout_width="80dp"
                                     android:layout_height="35dp"
                                     android:alpha="0.7"
+                                    android:background="@drawable/rounded_button_white"
                                     android:capitalize="none"
                                     android:clickable="true"
                                     android:text="Cancel"
                                     android:textAllCaps="false"
                                     android:textSize="15sp"
-                                    app:backgroundTint="@null"
-                                    android:background="@drawable/rounded_button_white"/>
+                                    app:backgroundTint="@null" />
 
                             </LinearLayout>
 
@@ -323,30 +327,32 @@
                                 android:layout_height="match_parent">
 
                                 <Button
+                                    android:id="@+id/modelrequestViewbtn3"
                                     style="@style/Widget.AppCompat.Button"
                                     android:layout_width="80dp"
                                     android:layout_height="35dp"
+                                    android:layout_marginRight="40dp"
                                     android:alpha="0.7"
+                                    android:background="@drawable/rounded_button_color"
                                     android:capitalize="none"
                                     android:clickable="true"
                                     android:text="View"
                                     android:textAllCaps="false"
-                                    android:textSize="15sp"
-                                    android:layout_marginRight="40dp"
-                                    android:background="@drawable/rounded_button_color"/>
+                                    android:textSize="15sp" />
 
                                 <Button
+                                    android:id="@+id/modelrequestCancelbtn3"
                                     style="@style/Widget.AppCompat.Button"
                                     android:layout_width="80dp"
                                     android:layout_height="35dp"
                                     android:alpha="0.7"
+                                    android:background="@drawable/rounded_button_white"
                                     android:capitalize="none"
                                     android:clickable="true"
                                     android:text="Cancel"
                                     android:textAllCaps="false"
                                     android:textSize="15sp"
-                                    app:backgroundTint="@null"
-                                    android:background="@drawable/rounded_button_white"/>
+                                    app:backgroundTint="@null" />
 
                             </LinearLayout>
 

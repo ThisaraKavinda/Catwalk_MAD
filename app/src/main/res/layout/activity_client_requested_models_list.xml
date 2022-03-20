@@ -168,6 +168,7 @@
                                     android:orientation="horizontal">
 
                                     <Button
+                                        android:id="@+id/clientRequestedModelListConfirmbtn1"
                                         style="@style/Widget.AppCompat.Button"
                                         android:layout_width="80dp"
                                         android:layout_height="35dp"
@@ -182,6 +183,7 @@
                                         android:textSize="13sp" />
 
                                     <Button
+                                        android:id="@+id/clientRequestedModelListCancelbtn1"
                                         style="@style/Widget.AppCompat.Button"
                                         android:layout_width="80dp"
                                         android:layout_height="35dp"
@@ -302,6 +304,7 @@
                                     android:orientation="horizontal">
 
                                     <Button
+                                        android:id="@+id/clientRequestedModelListConfirmbtn2"
                                         style="@style/Widget.AppCompat.Button"
                                         android:layout_width="80dp"
                                         android:layout_height="35dp"
@@ -316,6 +319,7 @@
                                         android:textSize="13sp" />
 
                                     <Button
+                                        android:id="@+id/clientRequestedModelListCancelbtn2"
                                         style="@style/Widget.AppCompat.Button"
                                         android:layout_width="80dp"
                                         android:layout_height="35dp"
@@ -436,6 +440,7 @@
                                     android:orientation="horizontal">
 
                                     <Button
+                                        android:id="@+id/clientRequestedModelListConfirmbtn3"
                                         style="@style/Widget.AppCompat.Button"
                                         android:layout_width="80dp"
                                         android:layout_height="35dp"
@@ -450,6 +455,7 @@
                                         android:textSize="13sp" />
 
                                     <Button
+                                        android:id="@+id/clientRequestedModelListCancelbtn3"
                                         style="@style/Widget.AppCompat.Button"
                                         android:layout_width="80dp"
                                         android:layout_height="35dp"

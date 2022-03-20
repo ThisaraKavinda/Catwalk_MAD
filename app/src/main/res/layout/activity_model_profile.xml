@@ -139,7 +139,7 @@
                                 <EditText
                                     android:layout_width="300dp"
                                     android:layout_height="wrap_content"
-                                    android:id="@+id/updatemodelname"
+                                    android:id="@+id/modelProfileNameInput"
                                     android:layout_marginTop="0dp"
                                     android:text="Kamal Sanjeewa"
                                     android:textColor="#6f6f6f"
@@ -156,7 +156,7 @@
                                 <EditText
                                     android:layout_width="300dp"
                                     android:layout_height="wrap_content"
-                                    android:id="@+id/updatemodelpassword"
+                                    android:id="@+id/modelProfilePasswordInput"
                                     android:layout_marginTop="0dp"
                                     android:text="***********"
                                     android:textColor="#6f6f6f"
@@ -172,7 +172,7 @@
                                 <EditText
                                     android:layout_width="300dp"
                                     android:layout_height="wrap_content"
-                                    android:id="@+id/updatemodelmobile"
+                                    android:id="@+id/modelProfileMobileInput"
                                     android:layout_marginTop="0dp"
                                     android:text="07777334445"
                                     android:textColor="#6f6f6f"
@@ -188,7 +188,7 @@
                                 <EditText
                                     android:layout_width="300dp"
                                     android:layout_height="wrap_content"
-                                    android:id="@+id/updatemodelemail"
+                                    android:id="@+id/modelProfileEmailInput"
                                     android:layout_marginTop="0dp"
                                     android:text="nishadi@gmail.com"
                                     android:textColor="#6f6f6f"
@@ -204,7 +204,7 @@
                                 <EditText
                                     android:layout_width="300dp"
                                     android:layout_height="wrap_content"
-                                    android:id="@+id/updatemodeldob"
+                                    android:id="@+id/modelProfileDobInput"
                                     android:layout_marginTop="0dp"
                                     android:text="Deflix pvt ltd"
                                     android:textColor="#6f6f6f"
@@ -221,7 +221,7 @@
                                 <EditText
                                     android:layout_width="300dp"
                                     android:layout_height="wrap_content"
-                                    android:id="@+id/updatemodelheight"
+                                    android:id="@+id/modelProfileHeightInput"
                                     android:layout_marginTop="0dp"
                                     android:text="Colombo 03"
                                     android:textColor="#6f6f6f"
