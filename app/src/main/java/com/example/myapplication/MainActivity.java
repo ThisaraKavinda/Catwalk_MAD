@@ -13,11 +13,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        move = (Button) findViewById(R.id.iammodelbtn);
+        move = (Button) findViewById(R.id.move);
         move.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, UpdateArticle.class);
+                Intent intent = new Intent(MainActivity.this, ClientHome.class);
                 startActivity(intent);
             }
         });

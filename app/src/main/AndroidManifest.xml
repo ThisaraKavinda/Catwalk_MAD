@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".ClientHome"
+            android:exported="false" />
+        <activity
             android:name=".UpdateArticle"
             android:exported="false" />
         <activity
