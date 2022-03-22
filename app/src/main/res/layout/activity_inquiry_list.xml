@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/menu_admin_back"
-    tools:context=".ModelList">
+    tools:context=".InquiryList">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,7 +13,7 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/modelsregisterrqstbackbtn1"
+            android:id="@+id/inquirylistbackbtn1"
             android:layout_width="80dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
@@ -42,9 +42,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Models List"
+                android:text="Inquiry List"
                 android:textColor="#FFFFFF"
-                android:textSize="26sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <ImageView
@@ -81,11 +81,7 @@
 
 
 
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_marginTop="5dp"
-                        android:src="@drawable/model2" />
+
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -97,25 +93,28 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="-5dp"
-                            android:text="Pamodya Perera"
+                            android:text="Inquiry Subject "
+                            android:textColor="#6f6f6f"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="Type - Model "
                             android:textColor="#6f6f6f"
                             android:textSize="18sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="0dp"
-                            android:text="Female"
+                            android:layout_marginTop="5dp"
+                            android:text="Lorem ipsum dolor sit amet, consectetur\nLorem ipsum dolor sit amet, consectetur\n "
                             android:textColor="#6f6f6f"
-                            android:textSize="18sp" />
+                            android:textSize="11sp" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="0dp"
-                            android:text="24 years old"
-                            android:textColor="#6f6f6f"
-                            android:textSize="18sp" />
+
 
                     </LinearLayout>
 
@@ -123,13 +122,112 @@
                     <LinearLayout
                         android:layout_width="match_parent"
 
-
-                        android:layout_height="91dp"
+                        android:paddingTop="17dp"
+                        android:layout_height="wrap_content"
                         android:gravity="right"
                         android:orientation="vertical">
 
                         <Button
-                            android:id="@+id/modelrequestviewbtn2"
+                            android:id="@+id/inquiryviewbtn1"
+                            android:layout_width="100dp"
+                            android:layout_height="48dp"
+                            android:contentDescription="@string/modelrequestacceptbtn1"
+                            android:text="View"
+                            android:textAlignment="center"
+                            app:backgroundTint="#01D60A"
+                            app:cornerRadius="20dp"
+                            tools:ignore="SpeakableTextPresentCheck">
+
+                        </Button>
+
+                        <Button
+                            android:id="@+id/inquirydeletebtn1"
+                            android:layout_width="100dp"
+                            android:layout_height="48dp"
+                            android:contentDescription="@string/modelrequestviewbtn1"
+                            android:text="Delete"
+                            android:textAlignment="center"
+                            app:backgroundTint="#D0342C"
+                            app:cornerRadius="20dp"
+                            tools:ignore="SpeakableTextPresentCheck">
+
+                        </Button>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:paddingEnd="10dp">
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-5dp"
+                            android:text="Inquiry Subject "
+                            android:textColor="#6f6f6f"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="Type - Client "
+                            android:textColor="#6f6f6f"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Lorem ipsum dolor sit amet, consectetur\nLorem ipsum dolor sit amet, consectetur\n "
+                            android:textColor="#6f6f6f"
+                            android:textSize="11sp" />
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+
+                        android:paddingTop="17dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="vertical">
+
+                        <Button
+
                             android:layout_width="100dp"
                             android:layout_height="48dp"
 
@@ -142,7 +240,7 @@
                         </Button>
 
                         <Button
-                            android:id="@+id/modelrequestdeletebtn1"
+
                             android:layout_width="100dp"
                             android:layout_height="48dp"
 
@@ -180,11 +278,7 @@
 
 
 
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_marginTop="5dp"
-                        android:src="@drawable/model2" />
+
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -196,25 +290,28 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="-5dp"
-                            android:text="Pamodya Perera"
+                            android:text="Inquiry Subject "
+                            android:textColor="#6f6f6f"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="Type - Model "
                             android:textColor="#6f6f6f"
                             android:textSize="18sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="0dp"
-                            android:text="Female"
+                            android:layout_marginTop="5dp"
+                            android:text="Lorem ipsum dolor sit amet, consectetur\nLorem ipsum dolor sit amet, consectetur\n "
                             android:textColor="#6f6f6f"
-                            android:textSize="18sp" />
+                            android:textSize="11sp" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="0dp"
-                            android:text="24 years old"
-                            android:textColor="#6f6f6f"
-                            android:textSize="18sp" />
+
 
                     </LinearLayout>
 
@@ -222,8 +319,8 @@
                     <LinearLayout
                         android:layout_width="match_parent"
 
-
-                        android:layout_height="91dp"
+                        android:paddingTop="17dp"
+                        android:layout_height="wrap_content"
                         android:gravity="right"
                         android:orientation="vertical">
 
@@ -279,11 +376,7 @@
 
 
 
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_marginTop="5dp"
-                        android:src="@drawable/model2" />
+
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -295,25 +388,28 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="-5dp"
-                            android:text="Pamodya Perera"
+                            android:text="Inquiry Subject "
+                            android:textColor="#6f6f6f"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="Type - Model "
                             android:textColor="#6f6f6f"
                             android:textSize="18sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="0dp"
-                            android:text="Female"
+                            android:layout_marginTop="5dp"
+                            android:text="Lorem ipsum dolor sit amet, consectetur\nLorem ipsum dolor sit amet, consectetur\n "
                             android:textColor="#6f6f6f"
-                            android:textSize="18sp" />
+                            android:textSize="11sp" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="0dp"
-                            android:text="24 years old"
-                            android:textColor="#6f6f6f"
-                            android:textSize="18sp" />
+
 
                     </LinearLayout>
 
@@ -321,208 +417,8 @@
                     <LinearLayout
                         android:layout_width="match_parent"
 
-
-                        android:layout_height="91dp"
-                        android:gravity="right"
-                        android:orientation="vertical">
-
-                        <Button
-
-                            android:layout_width="100dp"
-                            android:layout_height="48dp"
-
-                            android:text="View"
-                            android:textAlignment="center"
-                            app:backgroundTint="#01D60A"
-                            app:cornerRadius="20dp"
-                            tools:ignore="SpeakableTextPresentCheck">
-
-                        </Button>
-
-                        <Button
-
-                            android:layout_width="100dp"
-                            android:layout_height="48dp"
-
-                            android:text="Delete"
-                            android:textAlignment="center"
-                            app:backgroundTint="#D0342C"
-                            app:cornerRadius="20dp"
-                            tools:ignore="SpeakableTextPresentCheck">
-
-                        </Button>
-
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="12dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="6dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="left"
-                    android:orientation="horizontal"
-                    android:padding="16dp"
-                    android:paddingEnd="10dp">
-
-
-
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_marginTop="5dp"
-                        android:src="@drawable/model2" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:paddingTop="17dp"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="10dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="-5dp"
-                            android:text="Pamodya Perera"
-                            android:textColor="#6f6f6f"
-                            android:textSize="18sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="0dp"
-                            android:text="Female"
-                            android:textColor="#6f6f6f"
-                            android:textSize="18sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="0dp"
-                            android:text="24 years old"
-                            android:textColor="#6f6f6f"
-                            android:textSize="18sp" />
-
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-
-
-                        android:layout_height="91dp"
-                        android:gravity="right"
-                        android:orientation="vertical">
-
-                        <Button
-
-                            android:layout_width="100dp"
-                            android:layout_height="48dp"
-
-                            android:text="View"
-                            android:textAlignment="center"
-                            app:backgroundTint="#01D60A"
-                            app:cornerRadius="20dp"
-                            tools:ignore="SpeakableTextPresentCheck">
-
-                        </Button>
-
-                        <Button
-
-                            android:layout_width="100dp"
-                            android:layout_height="48dp"
-
-                            android:text="Delete"
-                            android:textAlignment="center"
-                            app:backgroundTint="#D0342C"
-                            app:cornerRadius="20dp"
-                            tools:ignore="SpeakableTextPresentCheck">
-
-                        </Button>
-
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="12dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="6dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="left"
-                    android:orientation="horizontal"
-                    android:padding="16dp"
-                    android:paddingEnd="10dp">
-
-
-
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_marginTop="5dp"
-                        android:src="@drawable/model2" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="10dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="-5dp"
-                            android:text="Pamodya Perera"
-                            android:textColor="#6f6f6f"
-                            android:textSize="18sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="0dp"
-                            android:text="Female"
-                            android:textColor="#6f6f6f"
-                            android:textSize="18sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="0dp"
-                            android:text="24 years old"
-                            android:textColor="#6f6f6f"
-                            android:textSize="18sp" />
-
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-
-
-                        android:layout_height="91dp"
                         android:gravity="right"
                         android:orientation="vertical">
 

@@ -130,10 +130,11 @@
                                 android:textSize="18sp" />
 
                             <EditText
+                                android:id="@+id/updateadminname"
                                 android:layout_width="300dp"
                                 android:layout_height="wrap_content"
-                                android:id="@+id/updateadminname"
                                 android:layout_marginTop="0dp"
+                                android:hint="Enter Name"
                                 android:text="Shanu Gunasekara"
                                 android:textColor="#6f6f6f"
                                 android:textSize="25sp" />
@@ -147,10 +148,11 @@
                                 android:textSize="18sp" />
 
                             <EditText
+                                android:id="@+id/updateadminpassword"
                                 android:layout_width="300dp"
                                 android:layout_height="wrap_content"
-                                android:id="@+id/updateadminpassword"
                                 android:layout_marginTop="0dp"
+                                android:hint="Enter Password"
                                 android:text="***********"
                                 android:textColor="#6f6f6f"
                                 android:textSize="25sp" />
@@ -164,10 +166,11 @@
                                 android:textSize="18sp" />
 
                             <EditText
+                                android:id="@+id/updateadminmobile"
                                 android:layout_width="300dp"
                                 android:layout_height="wrap_content"
-                                android:id="@+id/updateadminmobile"
                                 android:layout_marginTop="0dp"
+                                android:hint="Enter Mobile Number"
                                 android:text="07777334445"
                                 android:textColor="#6f6f6f"
                                 android:textSize="25sp" />
@@ -181,10 +184,11 @@
                                 android:textSize="18sp" />
 
                             <EditText
+                                android:id="@+id/updateadminemail"
                                 android:layout_width="300dp"
                                 android:layout_height="wrap_content"
-                                android:id="@+id/updateadminemail"
                                 android:layout_marginTop="0dp"
+                                android:hint="Enter Email"
                                 android:text="shanu@gmail.com"
                                 android:textColor="#6f6f6f"
                                 android:textSize="25sp" />
