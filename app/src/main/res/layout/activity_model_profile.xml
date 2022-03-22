@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModelProfile">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/menu_admin_back"
+        tools:context=".AdminProfile">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/clientprofilebackbtn1"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-50dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="BACK"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:cornerRadius="15dp"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck">
+            </Button>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginRight="20dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Client Profile"
+                    android:textColor="#FFFFFF"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/profilepic" />
+            </RelativeLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alignmentMode="alignMargins"
+                android:columnCount="1"
+                android:columnOrderPreserved="false"
+                android:rowCount="4">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:paddingEnd="10dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:layout_width="120dp"
+                                android:layout_height="180dp"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/model4"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginRight="30dp">
+
+
+                            </ImageView>
+
+                            <Button
+                                android:id="@+id/clientpicbrowsebtn1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#6e1597"
+                                android:text="Select Image"
+                                app:cornerRadius="15dp"
+                                android:layout_marginTop="50dp">
+
+
+                            </Button>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:paddingBottom="20dp">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="-5dp"
+                                    android:text="Name"
+                                    android:textColor="#6f6f6f"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:layout_width="300dp"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/modelProfileNameInput"
+                                    android:layout_marginTop="0dp"
+                                    android:text="Kamal Sanjeewa"
+                                    android:textColor="#6f6f6f"
+                                    android:textSize="25sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="Password"
+                                    android:textColor="#6f6f6f"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:layout_width="300dp"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/modelProfilePasswordInput"
+                                    android:layout_marginTop="0dp"
+                                    android:text="***********"
+                                    android:textColor="#6f6f6f"
+                                    android:textSize="25sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Mobile"
+                                    android:textColor="#6f6f6f"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:layout_width="300dp"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/modelProfileMobileInput"
+                                    android:layout_marginTop="0dp"
+                                    android:text="07777334445"
+                                    android:textColor="#6f6f6f"
+                                    android:textSize="25sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Email"
+                                    android:textColor="#6f6f6f"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:layout_width="300dp"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/modelProfileEmailInput"
+                                    android:layout_marginTop="0dp"
+                                    android:text="nishadi@gmail.com"
+                                    android:textColor="#6f6f6f"
+                                    android:textSize="25sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Company"
+                                    android:textColor="#6f6f6f"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:layout_width="300dp"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/modelProfileDobInput"
+                                    android:layout_marginTop="0dp"
+                                    android:text="Deflix pvt ltd"
+                                    android:textColor="#6f6f6f"
+                                    android:textSize="25sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="Location"
+                                    android:textColor="#6f6f6f"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:layout_width="300dp"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/modelProfileHeightInput"
+                                    android:layout_marginTop="0dp"
+                                    android:text="Colombo 03"
+                                    android:textColor="#6f6f6f"
+                                    android:textSize="25sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+
+
+                            android:layout_height="91dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingBottom="50dp">
+
+
+                            <Button
+                                android:id="@+id/clientupdatebtn1"
+                                android:layout_width="160dp"
+                                android:layout_height="48dp"
+
+
+                                android:text="Update"
+                                android:textAlignment="center"
+                                app:backgroundTint="#01D60A"
+                                app:cornerRadius="20dp"
+                                tools:ignore="SpeakableTextPresentCheck">
+
+                            </Button>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="      "
+                                tools:ignore="SpeakableTextPresentCheck">
+
+                            </TextView>
+                            <Button
+                                android:id="@+id/clientdeletebtn1"
+                                android:layout_width="160dp"
+                                android:layout_height="48dp"
+
+
+                                android:text="Delete"
+                                android:textAlignment="center"
+                                app:backgroundTint="#D0342C"
+                                app:cornerRadius="20dp"
+                                tools:ignore="SpeakableTextPresentCheck">
+
+                            </Button>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

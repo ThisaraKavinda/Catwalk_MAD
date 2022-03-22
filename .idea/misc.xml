@@ -3,35 +3,38 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/drawable/rounded_button.xml" value="0.2595" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/drawable/rounded_button_color.xml" value="0.124" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/drawable/rounded_button_white.xml" value="0.124" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_admin_home.xml" value="0.22826086956521738" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_client_ad_history.xml" value="0.25416666666666665" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_client_add_model_request.xml" value="0.25416666666666665" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_client_edit_ad.xml" value="0.25416666666666665" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_client_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_client_requested_models_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_client_view_ad.xml" value="0.25416666666666665" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_client_view_history.xml" value="0.25416666666666665" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_clients_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_inquiry.xml" value="0.25416666666666665" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_inquiry_update.xml" value="0.25416666666666665" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_model_article_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_model_history.xml" value="0.264" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_model_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_model_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_model_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_model_register.xml" value="0.25416666666666665" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_model_register_requests.xml" value="0.25416666666666665" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_model_request.xml" value="0.264" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_models_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/content_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/fragment_first.xml" value="0.11302083333333333" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/fragment_second.xml" value="0.11302083333333333" />
         <entry key="..\:/MAD/MyApplication/app/src/main/res/drawable/menuadminback.xml" value="0.2203125" />
-        <entry key="..\:/MAD/MyApplication/app/src/main/res/drawable/rating_svgrepo_com_1_.xml" value="0.188" />
-        <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_ad_request_single_admin.xml" value="0.25" />
-        <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_add_article.xml" value="0.22" />
         <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_admin_home.xml" value="0.22" />
-        <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_admin_profile.xml" value="0.18697916666666667" />
-        <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_ads_requests_admin.xml" value="0.20416666666666666" />
-        <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_article_list.xml" value="0.22" />
-        <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_client_home.xml" value="0.20416666666666666" />
-        <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_client_register.xml" value="0.25" />
-        <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_client_register_requests.xml" value="0.22" />
-        <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_client_single_profile_view.xml" value="0.18854166666666666" />
-        <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_client_single_register_request.xml" value="0.18854166666666666" />
-        <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_clients_list.xml" value="0.21" />
-        <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_inquiry_list.xml" value="0.22" />
-        <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_model_history.xml" value="0.1816123188405797" />
-        <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_model_list.xml" value="0.1743659420289855" />
-        <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_model_login.xml" value="0.1" />
+        <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.17" />
+        <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_model_login.xml" value="0.22" />
         <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_model_register.xml" value="0.22" />
-        <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_model_register_requests.xml" value="0.22" />
-        <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_model_request.xml" value="0.1816123188405797" />
-        <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_model_single_profile_view.xml" value="0.2" />
-        <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_model_single_register_request.xml" value="0.18854166666666666" />
-        <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_models_list.xml" value="0.25" />
-        <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_update_article.xml" value="0.20416666666666666" />
-        <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/content_main.xml" value="0.1816123188405797" />
-        <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/fragment_first.xml" value="0.1816123188405797" />
-        <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/fragment_second.xml" value="0.1816123188405797" />
       </map>
     </option>
   </component>
