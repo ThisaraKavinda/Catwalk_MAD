@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ModelHistoryActivity">
+    tools:context=".ClientViewHistory">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ModelHistoryActivity">
+        tools:context=".ClientViewHistory">
 
         <ScrollView
             android:id="@+id/scrollView3"
@@ -23,7 +23,7 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/modelHistoryBackbtn1"
+                    android:id="@+id/clientViewHistorybackbtn1"
                     android:layout_width="80dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="20dp"
@@ -48,7 +48,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
-                        android:text="Requested Ad History"
+                        android:text="Earlier Hired Models"
                         android:textColor="#FFFFFF"
                         android:textSize="22sp"
                         android:textStyle="bold" />
@@ -86,18 +86,18 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="170dp"
+                                android:layout_height="177dp"
                                 android:layout_marginBottom="0dp"
                                 android:gravity="left"
                                 android:orientation="horizontal"
                                 android:paddingLeft="16dp"
-                                android:paddingTop="16dp"
+                                android:paddingTop="10dp"
                                 android:paddingRight="16dp"
                                 android:paddingBottom="8dp">
 
                                 <ImageView
-                                    android:layout_width="80dp"
-                                    android:layout_height="120dp"
+                                    android:layout_width="100dp"
+                                    android:layout_height="150dp"
                                     android:layout_marginVertical="10dp"
                                     android:src="@drawable/model6" />
 
@@ -115,7 +115,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginBottom="4sp"
-                                        android:text="Need a talented Young lady"
+                                        android:text="Nishadi Sanjeewani"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                         android:textColor="#000"
                                         android:textSize="18sp" />
@@ -123,38 +123,47 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="0dp"
-                                        android:text="Want modelling jobs near you? And also ads to your modelling career? Then what are you all waiting for is here to help you out."
-                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                                        android:textColor="#6f6f6f"
-                                        android:textSize="12sp"
-                                        android:lineHeight="18sp"/>
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="0dp"
+                                        android:layout_marginTop="3dp"
                                         android:text="Gender : Female"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                         android:textColor="#6f6f6f"
-                                        android:textSize="12sp" />
+                                        android:textSize="13sp" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="0dp"
-                                        android:text="Expected height: more than 5 feet"
+                                        android:layout_marginTop="3dp"
+                                        android:text="Age : 25 years"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                         android:textColor="#6f6f6f"
-                                        android:textSize="12sp" />
+                                        android:textSize="13sp" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Payement : 2500.00LKR per day"
+                                        android:layout_marginTop="3dp"
+                                        android:text="Height: 5 feet 5 inches"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                         android:textColor="#6f6f6f"
-                                        android:textSize="12sp" />
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="3dp"
+                                        android:text="Type : Commercial"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                        android:textColor="#6f6f6f"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Budget : 3000.00LKR"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                        android:textColor="@color/black"
+                                        android:textSize="15sp"
+                                        android:paddingTop="5dp"/>
 
                                 </LinearLayout>
 
@@ -167,18 +176,47 @@
                                 android:gravity="left|center"
                                 android:orientation="horizontal"
                                 android:paddingLeft="16dp"
-                                android:paddingTop="0dp"
                                 android:paddingRight="16dp"
                                 android:paddingBottom="8dp">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
-                                    android:text="Staus : Pending"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                                    android:textColor="#B6B02F"
-                                    android:textSize="16sp" />
+                                <LinearLayout
+                                    android:layout_width="250dp"
+                                    android:layout_height="match_parent"
+                                    android:gravity="left"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginVertical="10dp"
+                                        android:src="@drawable/star2"
+                                        android:layout_marginHorizontal="2dp"/>
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginVertical="10dp"
+                                        android:src="@drawable/star2"
+                                        android:layout_marginHorizontal="2dp"/>
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginVertical="10dp"
+                                        android:src="@drawable/star2"
+                                        android:layout_marginHorizontal="2dp"/>
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginVertical="10dp"
+                                        android:src="@drawable/star2"
+                                        android:layout_marginHorizontal="2dp"/>
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginVertical="10dp"
+                                        android:src="@drawable/star2"
+                                        android:layout_marginHorizontal="2dp"/>
+
+                                </LinearLayout>
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
@@ -186,13 +224,17 @@
                                     android:gravity="center"
                                     android:orientation="vertical">
 
-                                    <ImageButton
-                                        android:layout_width="30dp"
-                                        android:layout_height="30dp"
-                                        android:background="@drawable/trash"
-                                        android:layout_gravity="end"
-                                        android:layout_marginRight="10dp"
-                                    />
+                                    <Button
+                                        style="@style/Widget.AppCompat.Button"
+                                        android:layout_width="140dp"
+                                        android:layout_height="38dp"
+                                        android:alpha="0.7"
+                                        android:background="@drawable/rounded_button_color"
+                                        android:capitalize="none"
+                                        android:clickable="true"
+                                        android:text="Add Review"
+                                        android:textAllCaps="false"
+                                        android:textSize="15sp" />
 
                                 </LinearLayout>
 
@@ -220,18 +262,18 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="170dp"
+                                android:layout_height="177dp"
                                 android:layout_marginBottom="0dp"
                                 android:gravity="left"
                                 android:orientation="horizontal"
                                 android:paddingLeft="16dp"
-                                android:paddingTop="16dp"
+                                android:paddingTop="10dp"
                                 android:paddingRight="16dp"
                                 android:paddingBottom="8dp">
 
                                 <ImageView
-                                    android:layout_width="80dp"
-                                    android:layout_height="120dp"
+                                    android:layout_width="100dp"
+                                    android:layout_height="150dp"
                                     android:layout_marginVertical="10dp"
                                     android:src="@drawable/mnodel3" />
 
@@ -249,7 +291,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginBottom="4sp"
-                                        android:text="Need a talented Young lady"
+                                        android:text="Tiny Nawanjana"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                         android:textColor="#000"
                                         android:textSize="18sp" />
@@ -257,38 +299,47 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="0dp"
-                                        android:text="Want modelling jobs near you? And also ads to your modelling career? Then what are you all waiting for is here to help you out."
-                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                                        android:textColor="#6f6f6f"
-                                        android:textSize="12sp"
-                                        android:lineHeight="18sp"/>
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="0dp"
+                                        android:layout_marginTop="3dp"
                                         android:text="Gender : Female"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                         android:textColor="#6f6f6f"
-                                        android:textSize="12sp" />
+                                        android:textSize="13sp" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="0dp"
-                                        android:text="Expected height: more than 5 feet"
+                                        android:layout_marginTop="3dp"
+                                        android:text="Age : 25 years"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                         android:textColor="#6f6f6f"
-                                        android:textSize="12sp" />
+                                        android:textSize="13sp" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Payement : 2500.00LKR per day"
+                                        android:layout_marginTop="3dp"
+                                        android:text="Height: 5 feet 5 inches"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                         android:textColor="#6f6f6f"
-                                        android:textSize="12sp" />
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="3dp"
+                                        android:text="Type : Commercial"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                        android:textColor="#6f6f6f"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Budget : 3000.00LKR"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                        android:textColor="@color/black"
+                                        android:textSize="15sp"
+                                        android:paddingTop="5dp"/>
 
                                 </LinearLayout>
 
@@ -301,18 +352,47 @@
                                 android:gravity="left|center"
                                 android:orientation="horizontal"
                                 android:paddingLeft="16dp"
-                                android:paddingTop="0dp"
                                 android:paddingRight="16dp"
                                 android:paddingBottom="8dp">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
-                                    android:text="Staus : Approved"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                                    android:textColor="#1F7D18"
-                                    android:textSize="16sp" />
+                                <LinearLayout
+                                    android:layout_width="250dp"
+                                    android:layout_height="match_parent"
+                                    android:gravity="left"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginVertical="10dp"
+                                        android:src="@drawable/star"
+                                        android:layout_marginHorizontal="2dp"/>
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginVertical="10dp"
+                                        android:src="@drawable/star"
+                                        android:layout_marginHorizontal="2dp"/>
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginVertical="10dp"
+                                        android:src="@drawable/star"
+                                        android:layout_marginHorizontal="2dp"/>
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginVertical="10dp"
+                                        android:src="@drawable/star"
+                                        android:layout_marginHorizontal="2dp"/>
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginVertical="10dp"
+                                        android:src="@drawable/star"
+                                        android:layout_marginHorizontal="2dp"/>
+
+                                </LinearLayout>
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
@@ -320,13 +400,17 @@
                                     android:gravity="center"
                                     android:orientation="vertical">
 
-                                    <ImageButton
-                                        android:layout_width="30dp"
-                                        android:layout_height="30dp"
-                                        android:background="@drawable/trash"
-                                        android:layout_gravity="end"
-                                        android:layout_marginRight="10dp"
-                                        />
+                                    <Button
+                                        style="@style/Widget.AppCompat.Button"
+                                        android:layout_width="140dp"
+                                        android:layout_height="38dp"
+                                        android:alpha="0.7"
+                                        android:background="@drawable/rounded_button_color"
+                                        android:capitalize="none"
+                                        android:clickable="true"
+                                        android:text="Add Review"
+                                        android:textAllCaps="false"
+                                        android:textSize="15sp" />
 
                                 </LinearLayout>
 
@@ -354,18 +438,18 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="170dp"
+                                android:layout_height="177dp"
                                 android:layout_marginBottom="0dp"
                                 android:gravity="left"
                                 android:orientation="horizontal"
                                 android:paddingLeft="16dp"
-                                android:paddingTop="16dp"
+                                android:paddingTop="10dp"
                                 android:paddingRight="16dp"
                                 android:paddingBottom="8dp">
 
                                 <ImageView
-                                    android:layout_width="80dp"
-                                    android:layout_height="120dp"
+                                    android:layout_width="100dp"
+                                    android:layout_height="150dp"
                                     android:layout_marginVertical="10dp"
                                     android:src="@drawable/model7" />
 
@@ -383,7 +467,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginBottom="4sp"
-                                        android:text="Need a talented Young lady"
+                                        android:text="Smmani Upeksha"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                         android:textColor="#000"
                                         android:textSize="18sp" />
@@ -391,38 +475,47 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="0dp"
-                                        android:text="Want modelling jobs near you? And also ads to your modelling career? Then what are you all waiting for is here to help you out."
-                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                                        android:textColor="#6f6f6f"
-                                        android:textSize="12sp"
-                                        android:lineHeight="18sp"/>
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="0dp"
+                                        android:layout_marginTop="3dp"
                                         android:text="Gender : Female"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                         android:textColor="#6f6f6f"
-                                        android:textSize="12sp" />
+                                        android:textSize="13sp" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="0dp"
-                                        android:text="Expected height: more than 5 feet"
+                                        android:layout_marginTop="3dp"
+                                        android:text="Age : 25 years"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                         android:textColor="#6f6f6f"
-                                        android:textSize="12sp" />
+                                        android:textSize="13sp" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Payement : 2500.00LKR per day"
+                                        android:layout_marginTop="3dp"
+                                        android:text="Height: 5 feet 5 inches"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                         android:textColor="#6f6f6f"
-                                        android:textSize="12sp" />
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="3dp"
+                                        android:text="Type : Commercial"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                        android:textColor="#6f6f6f"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Budget : 3000.00LKR"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                        android:textColor="@color/black"
+                                        android:textSize="15sp"
+                                        android:paddingTop="5dp"/>
 
                                 </LinearLayout>
 
@@ -435,18 +528,47 @@
                                 android:gravity="left|center"
                                 android:orientation="horizontal"
                                 android:paddingLeft="16dp"
-                                android:paddingTop="0dp"
                                 android:paddingRight="16dp"
                                 android:paddingBottom="8dp">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
-                                    android:text="Staus : Cancelled"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                                    android:textColor="#7D1818"
-                                    android:textSize="16sp" />
+                                <LinearLayout
+                                    android:layout_width="250dp"
+                                    android:layout_height="match_parent"
+                                    android:gravity="left"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginVertical="10dp"
+                                        android:src="@drawable/star"
+                                        android:layout_marginHorizontal="2dp"/>
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginVertical="10dp"
+                                        android:src="@drawable/star2"
+                                        android:layout_marginHorizontal="2dp"/>
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginVertical="10dp"
+                                        android:src="@drawable/star2"
+                                        android:layout_marginHorizontal="2dp"/>
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginVertical="10dp"
+                                        android:src="@drawable/star2"
+                                        android:layout_marginHorizontal="2dp"/>
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginVertical="10dp"
+                                        android:src="@drawable/star2"
+                                        android:layout_marginHorizontal="2dp"/>
+
+                                </LinearLayout>
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
@@ -454,13 +576,17 @@
                                     android:gravity="center"
                                     android:orientation="vertical">
 
-                                    <ImageButton
-                                        android:layout_width="30dp"
-                                        android:layout_height="30dp"
-                                        android:background="@drawable/trash"
-                                        android:layout_gravity="end"
-                                        android:layout_marginRight="10dp"
-                                        />
+                                    <Button
+                                        style="@style/Widget.AppCompat.Button"
+                                        android:layout_width="140dp"
+                                        android:layout_height="38dp"
+                                        android:alpha="0.7"
+                                        android:background="@drawable/rounded_button_color"
+                                        android:capitalize="none"
+                                        android:clickable="true"
+                                        android:text="Add Review"
+                                        android:textAllCaps="false"
+                                        android:textSize="15sp" />
 
                                 </LinearLayout>
 

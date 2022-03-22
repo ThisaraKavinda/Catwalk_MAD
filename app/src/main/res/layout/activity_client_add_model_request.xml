@@ -9,7 +9,7 @@
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ModelRequestActivity">
+        tools:context=".ClientAddModelRequest">
 
         <ScrollView
             android:id="@+id/scrollView3"
@@ -21,6 +21,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/clientAddModelRequestbackbtn1"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="-50dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:text="BACK"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    app:cornerRadius="15dp"
+                    tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck">
+                </Button>
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -87,6 +102,7 @@
                                     android:textSize="18sp" />
 
                                 <EditText
+                                    android:id="@+id/clientAddModelRequestTitleInput"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:ems="10"
@@ -109,21 +125,25 @@
                                     android:textSize="18sp" />
 
                                 <RadioGroup
+                                    android:id="@+id/clientAddModelRequestGenderInput"
                                     android:layout_width="250dp"
                                     android:layout_height="32dp"
                                     android:orientation="horizontal">
 
                                     <RadioButton
+                                        android:id="@+id/clientAddModelRequestGenderInputM"
                                         android:layout_width="70dp"
                                         android:layout_height="33dp"
                                         android:text="Male" />
 
                                     <RadioButton
+                                        android:id="@+id/clientAddModelRequestGenderInputF"
                                         android:layout_width="85dp"
                                         android:layout_height="33dp"
                                         android:text="Female" />
 
                                     <RadioButton
+                                        android:id="@+id/clientAddModelRequestGenderInputA"
                                         android:layout_width="96dp"
                                         android:layout_height="33dp"
                                         android:text="Anyone" />
@@ -146,6 +166,7 @@
                                     android:textSize="18sp" />
 
                                 <EditText
+                                    android:id="@+id/clientAddModelRequestHeightInput"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:ems="10"
@@ -168,7 +189,7 @@
                                     android:textSize="18sp" />
 
                                 <Spinner
-                                    android:id="@+id/spinner"
+                                    android:id="@+id/clientAddModelRequestTypeInput"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:entries="@array/model_types"
@@ -191,6 +212,7 @@
                                     android:textSize="18sp" />
 
                                 <EditText
+                                    android:id="@+id/clientAddModelRequestPaymentInput"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:ems="10"
@@ -213,6 +235,7 @@
                                     android:textSize="18sp" />
 
                                 <EditText
+                                    android:id="@+id/clientAddModelRequestTimeInput"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:ems="10"
@@ -234,6 +257,7 @@
                                     android:textSize="18sp" />
 
                                 <EditText
+                                    android:id="@+id/clientAddModelRequestDesInput"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:ems="10"
@@ -250,6 +274,7 @@
                                 android:paddingHorizontal="20dp">
 
                                 <Button
+                                    android:id="@+id/clientAddModelRequestSubmitbtn"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginVertical="10dp"

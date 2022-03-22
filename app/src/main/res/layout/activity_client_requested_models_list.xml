@@ -22,6 +22,21 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
+                <Button
+                    android:id="@+id/clientRequestedModelListbackbtn1"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="-50dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:text="BACK"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    app:cornerRadius="15dp"
+                    tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck">
+                </Button>
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -66,7 +81,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
 
-                            android:layout_height="200dp"
+                            android:layout_height="215dp"
                             android:layout_marginBottom="0dp"
                             android:gravity="center_vertical"
                             android:orientation="horizontal"
@@ -76,9 +91,10 @@
                             android:paddingBottom="8dp">
 
                             <ImageView
-                                android:layout_width="80dp"
-                                android:layout_height="120dp"
+                                android:layout_width="100dp"
+                                android:layout_height="150dp"
                                 android:layout_marginVertical="10dp"
+                                android:layout_marginRight="8dp"
                                 android:src="@drawable/model6" />
 
                             <LinearLayout
@@ -103,7 +119,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
+                                    android:layout_marginTop="3dp"
                                     android:text="Gender : Female"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#6f6f6f"
@@ -112,7 +128,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
+                                    android:layout_marginTop="3dp"
                                     android:text="Age : 25 years"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#6f6f6f"
@@ -121,7 +137,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
+                                    android:layout_marginTop="3dp"
                                     android:text="Height: 5 feet 5 inches"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#6f6f6f"
@@ -130,7 +146,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
+                                    android:layout_marginTop="3dp"
                                     android:text="Type : Commercial"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#6f6f6f"
@@ -152,6 +168,7 @@
                                     android:orientation="horizontal">
 
                                     <Button
+                                        android:id="@+id/clientRequestedModelListConfirmbtn1"
                                         style="@style/Widget.AppCompat.Button"
                                         android:layout_width="80dp"
                                         android:layout_height="35dp"
@@ -166,6 +183,7 @@
                                         android:textSize="13sp" />
 
                                     <Button
+                                        android:id="@+id/clientRequestedModelListCancelbtn1"
                                         style="@style/Widget.AppCompat.Button"
                                         android:layout_width="80dp"
                                         android:layout_height="35dp"
@@ -199,8 +217,7 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-
-                            android:layout_height="200dp"
+                            android:layout_height="215dp"
                             android:layout_marginBottom="0dp"
                             android:gravity="center_vertical"
                             android:orientation="horizontal"
@@ -210,9 +227,10 @@
                             android:paddingBottom="8dp">
 
                             <ImageView
-                                android:layout_width="80dp"
-                                android:layout_height="120dp"
+                                android:layout_width="100dp"
+                                android:layout_height="150dp"
                                 android:layout_marginVertical="10dp"
+                                android:layout_marginRight="8dp"
                                 android:src="@drawable/mnodel3" />
 
                             <LinearLayout
@@ -237,7 +255,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
+                                    android:layout_marginTop="3dp"
                                     android:text="Gender : Female"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#6f6f6f"
@@ -246,7 +264,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
+                                    android:layout_marginTop="3dp"
                                     android:text="Age : 25 years"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#6f6f6f"
@@ -255,7 +273,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
+                                    android:layout_marginTop="3dp"
                                     android:text="Height: 5 feet 5 inches"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#6f6f6f"
@@ -264,7 +282,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
+                                    android:layout_marginTop="3dp"
                                     android:text="Type : Commercial"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#6f6f6f"
@@ -286,6 +304,7 @@
                                     android:orientation="horizontal">
 
                                     <Button
+                                        android:id="@+id/clientRequestedModelListConfirmbtn2"
                                         style="@style/Widget.AppCompat.Button"
                                         android:layout_width="80dp"
                                         android:layout_height="35dp"
@@ -300,6 +319,7 @@
                                         android:textSize="13sp" />
 
                                     <Button
+                                        android:id="@+id/clientRequestedModelListCancelbtn2"
                                         style="@style/Widget.AppCompat.Button"
                                         android:layout_width="80dp"
                                         android:layout_height="35dp"
@@ -333,8 +353,7 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-
-                            android:layout_height="200dp"
+                            android:layout_height="215dp"
                             android:layout_marginBottom="0dp"
                             android:gravity="center_vertical"
                             android:orientation="horizontal"
@@ -344,9 +363,10 @@
                             android:paddingBottom="8dp">
 
                             <ImageView
-                                android:layout_width="80dp"
-                                android:layout_height="120dp"
+                                android:layout_width="100dp"
+                                android:layout_height="150dp"
                                 android:layout_marginVertical="10dp"
+                                android:layout_marginRight="8dp"
                                 android:src="@drawable/model7" />
 
                             <LinearLayout
@@ -371,7 +391,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
+                                    android:layout_marginTop="3dp"
                                     android:text="Gender : Female"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#6f6f6f"
@@ -380,7 +400,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
+                                    android:layout_marginTop="3dp"
                                     android:text="Age : 25 years"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#6f6f6f"
@@ -389,7 +409,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
+                                    android:layout_marginTop="3dp"
                                     android:text="Height: 5 feet 5 inches"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#6f6f6f"
@@ -398,7 +418,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
+                                    android:layout_marginTop="3dp"
                                     android:text="Type : Commercial"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#6f6f6f"
@@ -420,6 +440,7 @@
                                     android:orientation="horizontal">
 
                                     <Button
+                                        android:id="@+id/clientRequestedModelListConfirmbtn3"
                                         style="@style/Widget.AppCompat.Button"
                                         android:layout_width="80dp"
                                         android:layout_height="35dp"
@@ -434,6 +455,7 @@
                                         android:textSize="13sp" />
 
                                     <Button
+                                        android:id="@+id/clientRequestedModelListCancelbtn3"
                                         style="@style/Widget.AppCompat.Button"
                                         android:layout_width="80dp"
                                         android:layout_height="35dp"
@@ -467,8 +489,7 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-
-                            android:layout_height="200dp"
+                            android:layout_height="215dp"
                             android:layout_marginBottom="0dp"
                             android:gravity="center_vertical"
                             android:orientation="horizontal"
@@ -478,9 +499,10 @@
                             android:paddingBottom="8dp">
 
                             <ImageView
-                                android:layout_width="80dp"
-                                android:layout_height="120dp"
+                                android:layout_width="100dp"
+                                android:layout_height="150dp"
                                 android:layout_marginVertical="10dp"
+                                android:layout_marginRight="8dp"
                                 android:src="@drawable/model6" />
 
                             <LinearLayout
@@ -505,7 +527,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
+                                    android:layout_marginTop="3dp"
                                     android:text="Gender : Female"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#6f6f6f"
@@ -514,7 +536,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
+                                    android:layout_marginTop="3dp"
                                     android:text="Age : 25 years"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#6f6f6f"
@@ -523,7 +545,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
+                                    android:layout_marginTop="3dp"
                                     android:text="Height: 5 feet 5 inches"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#6f6f6f"
@@ -532,7 +554,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="0dp"
+                                    android:layout_marginTop="3dp"
                                     android:text="Type : Commercial"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#6f6f6f"

@@ -10,6 +10,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".ClientEditAd"
+            android:exported="false" />
+        <activity
+            android:name=".ClientAdHistory"
+            android:exported="false" />
+        <activity
+            android:name=".InquiryUpdate"
+            android:exported="false" />
+        <activity
+            android:name=".ModelArticleList"
+            android:exported="false" />
+        <activity
+            android:name=".Inquiry"
+            android:exported="false" />
+        <activity
+            android:name=".ClientProfile"
+            android:exported="false" />
+        <activity
+            android:name=".ModelProfile"
+            android:exported="false" />
+        <activity
+            android:name=".ClientViewHistory"
+            android:exported="false" />
+        <activity
             android:name=".ClientRequestedModelsList"
             android:exported="false" />
         <activity

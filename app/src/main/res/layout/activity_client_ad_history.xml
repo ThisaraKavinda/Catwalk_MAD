@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ModelRequestActivity">
+    tools:context=".ClientAdHistory">
 
     <ScrollView
         android:id="@+id/scrollView3"
@@ -18,7 +18,7 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/modelrequestbackbtn1"
+                android:id="@+id/clientAdHistorybackbtn1"
                 android:layout_width="80dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="20dp"
@@ -43,7 +43,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Model Requests"
+                    android:text="Posted Ads"
                     android:textColor="#FFFFFF"
                     android:textSize="22sp"
                     android:textStyle="bold" />
@@ -122,15 +122,15 @@
 
                             <LinearLayout
                                 android:orientation="horizontal"
-                                android:gravity="center"
+                                android:gravity="center_horizontal"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
 
                                 <Button
                                     style="@style/Widget.AppCompat.Button"
                                     android:layout_width="80dp"
-                                    android:layout_height="35dp"
-                                    android:layout_marginRight="40dp"
+                                    android:layout_height="38dp"
+                                    android:layout_marginRight="15dp"
                                     android:alpha="0.7"
                                     android:background="@drawable/rounded_button_color"
                                     android:capitalize="none"
@@ -142,15 +142,22 @@
                                 <Button
                                     style="@style/Widget.AppCompat.Button"
                                     android:layout_width="80dp"
-                                    android:layout_height="35dp"
+                                    android:layout_height="38dp"
                                     android:alpha="0.7"
-                                    android:background="@drawable/rounded_button_white"
+                                    android:background="@drawable/rounded_button_color"
                                     android:capitalize="none"
                                     android:clickable="true"
-                                    android:text="Cancel"
+                                    android:text="Update"
                                     android:textAllCaps="false"
                                     android:textSize="15sp"
                                     app:backgroundTint="@null" />
+
+                                <ImageButton
+                                    android:layout_width="30dp"
+                                    android:layout_height="35dp"
+                                    android:layout_gravity="end"
+                                    android:layout_marginLeft="20dp"
+                                    android:background="@drawable/trash" />
 
                             </LinearLayout>
 
@@ -220,15 +227,15 @@
 
                             <LinearLayout
                                 android:orientation="horizontal"
-                                android:gravity="center"
+                                android:gravity="center_horizontal"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
 
                                 <Button
                                     style="@style/Widget.AppCompat.Button"
                                     android:layout_width="80dp"
-                                    android:layout_height="35dp"
-                                    android:layout_marginRight="40dp"
+                                    android:layout_height="38dp"
+                                    android:layout_marginRight="15dp"
                                     android:alpha="0.7"
                                     android:background="@drawable/rounded_button_color"
                                     android:capitalize="none"
@@ -240,15 +247,23 @@
                                 <Button
                                     style="@style/Widget.AppCompat.Button"
                                     android:layout_width="80dp"
-                                    android:layout_height="35dp"
+                                    android:layout_height="38dp"
                                     android:alpha="0.7"
-                                    android:background="@drawable/rounded_button_white"
+                                    android:background="@drawable/rounded_button_color"
                                     android:capitalize="none"
                                     android:clickable="true"
-                                    android:text="Cancel"
+                                    android:text="Update"
                                     android:textAllCaps="false"
                                     android:textSize="15sp"
                                     app:backgroundTint="@null" />
+
+                                <ImageButton
+                                    android:layout_width="30dp"
+                                    android:layout_height="35dp"
+                                    android:layout_gravity="end"
+                                    android:layout_marginLeft="20dp"
+                                    android:background="@drawable/trash" />
+
 
                             </LinearLayout>
 
@@ -318,15 +333,15 @@
 
                             <LinearLayout
                                 android:orientation="horizontal"
-                                android:gravity="center"
+                                android:gravity="center_horizontal"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
 
                                 <Button
                                     style="@style/Widget.AppCompat.Button"
                                     android:layout_width="80dp"
-                                    android:layout_height="35dp"
-                                    android:layout_marginRight="40dp"
+                                    android:layout_height="38dp"
+                                    android:layout_marginRight="15dp"
                                     android:alpha="0.7"
                                     android:background="@drawable/rounded_button_color"
                                     android:capitalize="none"
@@ -336,18 +351,25 @@
                                     android:textSize="15sp" />
 
                                 <Button
-                                    android:id="@+id/modelrequestCancelbtn2"
                                     style="@style/Widget.AppCompat.Button"
                                     android:layout_width="80dp"
-                                    android:layout_height="35dp"
+                                    android:layout_height="38dp"
                                     android:alpha="0.7"
-                                    android:background="@drawable/rounded_button_white"
+                                    android:background="@drawable/rounded_button_color"
                                     android:capitalize="none"
                                     android:clickable="true"
-                                    android:text="Cancel"
+                                    android:text="Update"
                                     android:textAllCaps="false"
                                     android:textSize="15sp"
                                     app:backgroundTint="@null" />
+
+                                <ImageButton
+                                    android:layout_width="30dp"
+                                    android:layout_height="35dp"
+                                    android:layout_gravity="end"
+                                    android:layout_marginLeft="20dp"
+                                    android:background="@drawable/trash" />
+
 
                             </LinearLayout>
 
@@ -558,4 +580,4 @@
         </LinearLayout>
     </ScrollView>
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
