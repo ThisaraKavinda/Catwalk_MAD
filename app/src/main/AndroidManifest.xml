@@ -78,9 +78,7 @@
         <activity
             android:name=".ModelRegisterRequests"
             android:exported="false" />
-        <activity
-            android:name=".ModelHistoryActivity"
-            android:exported="false" />
+
         <activity
             android:name=".ModelRequestActivity"
             android:exported="false" />
@@ -92,6 +90,10 @@
             android:exported="false" />
         <activity
             android:name=".ModelLogin"
+            android:exported="false" />
+
+        <activity
+            android:name=".ClientHome"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

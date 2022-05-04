@@ -33,7 +33,7 @@
         app:layout_constraintVertical_bias="0.233" />
 
     <EditText
-        android:id="@+id/enterpassord"
+        android:id="@+id/enterpassword"
         android:layout_width="332dp"
         android:layout_height="54dp"
         android:ems="10"
@@ -100,7 +100,7 @@
         app:layout_constraintVertical_bias="0.459" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Register"
