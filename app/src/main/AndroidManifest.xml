@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".ModelListA"
+            android:exported="false" />
+        <activity
             android:name=".ClientEditAd"
             android:exported="false" />
         <activity
@@ -78,7 +81,6 @@
         <activity
             android:name=".ModelRegisterRequests"
             android:exported="false" />
-
         <activity
             android:name=".ModelRequestActivity"
             android:exported="false" />
@@ -91,7 +93,6 @@
         <activity
             android:name=".ModelLogin"
             android:exported="false" />
-
         <activity
             android:name=".ClientHome"
             android:exported="false" />
