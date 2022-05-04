@@ -12,6 +12,7 @@ import android.widget.TextClock;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.common.internal.service.Common;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -58,8 +59,9 @@ public class ModelLogin extends AppCompatActivity {
                             Models model = snapshot.child(email.getText().toString()).getValue(Models.class);
                             if (model.getPassword().equals(password.getText().toString())) {
                                 Toast.makeText(ModelLogin.this, "Login Success", Toast.LENGTH_SHORT).show();
-                                System.out.println("Succuess");
-                                Intent home = new Intent(ModelLogin.this, ClientHome.class);
+
+                                Intent home = new Intent(ModelLogin.this, ModelListA.class);
+
                                 startActivity(home);
 
                             } else {
