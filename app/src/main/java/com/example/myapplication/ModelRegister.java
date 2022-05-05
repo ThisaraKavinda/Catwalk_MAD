@@ -78,7 +78,7 @@ public class ModelRegister extends AppCompatActivity {
                     Models model  = new Models(str_name,str_password,str_email,str_mobile,str_birthday);
                     modelDbref.child(str_email).setValue(model);
                     Toast.makeText(ModelRegister.this, "Sign up Successfully!", Toast.LENGTH_SHORT).show();
-                   finish();
+                    finish();
                 }
             }
 

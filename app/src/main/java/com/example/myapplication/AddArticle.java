@@ -86,7 +86,7 @@ public class AddArticle extends AppCompatActivity {
                     Articles article  = new Articles(str_topic,str_description);
                     modelDbref.child(str_topic).setValue(article);
                     Toast.makeText(AddArticle.this, "Article Added Successfully", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(AddArticle.this, AddArticle.class);
+                    Intent intent = new Intent(AddArticle.this, ArticleList.class);
                     startActivity(intent);
                 }
             }

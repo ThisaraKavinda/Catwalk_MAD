@@ -60,9 +60,10 @@ public class ModelLogin extends AppCompatActivity {
                             if (model.getPassword().equals(password.getText().toString())) {
                                 Toast.makeText(ModelLogin.this, "Login Success", Toast.LENGTH_SHORT).show();
 
-                                Intent home = new Intent(ModelLogin.this, ModelListA.class);
+                                Intent mhome = new Intent(ModelLogin.this, ArticleList.class);
 
-                                startActivity(home);
+                                startActivity(mhome);
+                                finish();
 
                             } else {
                                 System.out.println("Failed");

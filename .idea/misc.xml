@@ -33,12 +33,25 @@
         <entry key="..\:/MAD/Catwalk_MAD/app/src/main/res/layout/activity_ad_request_single_admin.xml" value="0.17572463768115942" />
         <entry key="..\:/MAD/Catwalk_MAD/app/src/main/res/layout/activity_add_article.xml" value="0.20416666666666666" />
         <entry key="..\:/MAD/Catwalk_MAD/app/src/main/res/layout/activity_admin_home.xml" value="0.20416666666666666" />
-        <entry key="..\:/MAD/Catwalk_MAD/app/src/main/res/layout/activity_ads_requests_admin.xml" value="0.20416666666666666" />
+        <entry key="..\:/MAD/Catwalk_MAD/app/src/main/res/layout/activity_ads_requests_admin.xml" value="0.25" />
+        <entry key="..\:/MAD/Catwalk_MAD/app/src/main/res/layout/activity_article_list.xml" value="0.17572463768115942" />
+        <entry key="..\:/MAD/Catwalk_MAD/app/src/main/res/layout/activity_article_view_holder.xml" value="0.17572463768115942" />
         <entry key="..\:/MAD/Catwalk_MAD/app/src/main/res/layout/activity_client_ad_history.xml" value="0.20416666666666666" />
+        <entry key="..\:/MAD/Catwalk_MAD/app/src/main/res/layout/activity_client_add_model_request.xml" value="0.22" />
+        <entry key="..\:/MAD/Catwalk_MAD/app/src/main/res/layout/activity_client_edit_ad.xml" value="0.16893115942028986" />
         <entry key="..\:/MAD/Catwalk_MAD/app/src/main/res/layout/activity_client_home.xml" value="0.17572463768115942" />
         <entry key="..\:/MAD/Catwalk_MAD/app/src/main/res/layout/activity_client_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/MAD/Catwalk_MAD/app/src/main/res/layout/activity_client_requested_models_list.xml" value="0.16" />
+        <entry key="..\:/MAD/Catwalk_MAD/app/src/main/res/layout/activity_client_single_profile_view.xml" value="0.16893115942028986" />
+        <entry key="..\:/MAD/Catwalk_MAD/app/src/main/res/layout/activity_client_single_register_request.xml" value="0.16893115942028986" />
+        <entry key="..\:/MAD/Catwalk_MAD/app/src/main/res/layout/activity_client_view_ad.xml" value="0.16893115942028986" />
+        <entry key="..\:/MAD/Catwalk_MAD/app/src/main/res/layout/activity_client_view_history.xml" value="0.16893115942028986" />
+        <entry key="..\:/MAD/Catwalk_MAD/app/src/main/res/layout/activity_clients_list.xml" value="0.16893115942028986" />
         <entry key="..\:/MAD/Catwalk_MAD/app/src/main/res/layout/activity_inquiry.xml" value="0.20416666666666666" />
+        <entry key="..\:/MAD/Catwalk_MAD/app/src/main/res/layout/activity_inquiry_list.xml" value="0.16893115942028986" />
         <entry key="..\:/MAD/Catwalk_MAD/app/src/main/res/layout/activity_main.xml" value="0.17572463768115942" />
+        <entry key="..\:/MAD/Catwalk_MAD/app/src/main/res/layout/activity_model_article_list.xml" value="0.12" />
+        <entry key="..\:/MAD/Catwalk_MAD/app/src/main/res/layout/activity_model_history.xml" value="0.25" />
         <entry key="..\:/MAD/Catwalk_MAD/app/src/main/res/layout/activity_model_item.xml" value="0.1" />
         <entry key="..\:/MAD/Catwalk_MAD/app/src/main/res/layout/activity_model_list.xml" value="0.17572463768115942" />
         <entry key="..\:/MAD/Catwalk_MAD/app/src/main/res/layout/activity_model_login.xml" value="0.17572463768115942" />
@@ -47,6 +60,7 @@
         <entry key="..\:/MAD/Catwalk_MAD/app/src/main/res/layout/activity_model_register_requests.xml" value="0.17572463768115942" />
         <entry key="..\:/MAD/Catwalk_MAD/app/src/main/res/layout/activity_model_request.xml" value="0.17572463768115942" />
         <entry key="..\:/MAD/Catwalk_MAD/app/src/main/res/layout/activity_test.xml" value="0.20416666666666666" />
+        <entry key="..\:/MAD/Catwalk_MAD/app/src/main/res/layout/activity_update_article.xml" value="0.22" />
         <entry key="..\:/MAD/Catwalk_MAD/app/src/main/res/layout/model_list_a.xml" value="0.17572463768115942" />
         <entry key="..\:/MAD/MyApplication/app/src/main/res/drawable/menuadminback.xml" value="0.2203125" />
         <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_admin_home.xml" value="0.22" />
