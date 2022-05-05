@@ -55,7 +55,7 @@
             android:name=".ArticleList"
             android:exported="false" />
         <activity
-            android:name=".AddArticle"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".ClientSingleRegisterRequest"
@@ -97,7 +97,7 @@
             android:name=".ClientHome"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".AddArticle"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
