@@ -8,6 +8,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -27,6 +29,7 @@ public class ArticleList extends AppCompatActivity {
 
     RecyclerView recyclerView;
     ArrayList<Articles> list;
+    Button back;
 
     private final FirebaseFirestore db = FirebaseFirestore.getInstance();
     DatabaseReference databaseReference;
@@ -45,12 +48,23 @@ public class ArticleList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_article_list);
 
+
+
         recyclerView = findViewById(R.id.recycler_article);
         databaseReference = FirebaseDatabase.getInstance().getReference("Articles");
         list = new ArrayList<>();
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapter = new ArticleAdapter(this, list);
         recyclerView.setAdapter(adapter);
+        back = findViewById(R.id.articlelistbackbtn1);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ArticleList.this, AdminHome.class));
+                finish();
+            }
+        });
 
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -74,24 +88,6 @@ public class ArticleList extends AppCompatActivity {
 
 
 
-    private void deleteOrder(String AId){
 
-        db.collection("Articles").document(AId)
-                .delete()
-                .addOnSuccessListener(new OnSuccessListener<Void>() {
-                    @Override
-                    public void onSuccess(Void aVoid) {
-                        Toast.makeText(ArticleList.this, "Deleted Successfully", Toast.LENGTH_SHORT).show();
-                        adapter.notifyDataSetChanged();
-                    }
-                })
-                .addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-
-                        Toast.makeText(ArticleList.this, "Deleted Error", Toast.LENGTH_SHORT).show();
-                    }
-                });
-    }
 
 }

@@ -56,6 +56,7 @@
                >
 
                <LinearLayout
+                   android:id="@+id/model_request_list_tab"
                    android:orientation="vertical"
                    android:padding="16dp"
                    android:gravity="center"
@@ -226,6 +227,7 @@
                 >
 
                 <LinearLayout
+                    android:id="@+id/add_article_tab"
                     android:orientation="vertical"
                     android:padding="16dp"
                     android:gravity="center"
@@ -260,6 +262,7 @@
                 >
 
                 <LinearLayout
+                    android:id="@+id/list_article_tab"
                     android:orientation="vertical"
                     android:padding="16dp"
                     android:gravity="center"

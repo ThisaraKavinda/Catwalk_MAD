@@ -1,6 +1,8 @@
 package com.example.myapplication;
 
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,15 +12,18 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
 
-public class ArticleAdapter extends RecyclerView.Adapter<ArticleViewHolder>{
+public class ArticleAdapter extends RecyclerView.Adapter<ArticleViewHolder> {
 
     private final FirebaseFirestore db = FirebaseFirestore.getInstance();
 
@@ -39,10 +44,42 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleViewHolder>{
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ArticleViewHolder holder,int position){
+    public void onBindViewHolder (@NonNull ArticleViewHolder holder,int position){
         Articles article=list.get(position);
         holder.topic.setText(article.getTopic());
         holder.description.setText(article.getDescription());
+
+        holder.delete.setOnClickListener((view -> {
+            AlertDialog.Builder builder=new AlertDialog.Builder(holder.topic.getContext());
+            builder.setTitle("Delete Panel");
+            builder.setMessage("Delete....?");
+
+            builder.setPositiveButton("yes",new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+
+                    FirebaseDatabase.getInstance().getReference().child("Articles")
+                            .child(article.getTopic()).removeValue();
+
+                    Intent intent=new Intent(context, ArticleList.class);
+                    context.startActivity(intent);
+
+                }
+
+
+
+            });
+
+            builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+
+                }
+            });
+            builder.show();
+        }));
+
+
 
 
 

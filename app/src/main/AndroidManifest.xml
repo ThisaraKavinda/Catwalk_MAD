@@ -9,9 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-<!--        <activity-->
-<!--            android:name="ModelLis"-->
-<!--            android:exported="false" />-->
+        <activity
+            android:name=".ModelRequestHolder"
+            android:exported="false" />
+        <!-- <activity -->
+        <!-- android:name="ModelLis" -->
+        <!-- android:exported="false" /> -->
         <activity
             android:name=".ArticleList"
             android:exported="false" />
@@ -88,10 +91,10 @@
             android:name=".ModelRequestActivity"
             android:exported="false" />
         <activity
-            android:name=".AdminHome"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".ModelRegister"
+            android:name=".AdminHome"
             android:exported="false" />
         <activity
             android:name=".ModelLogin"
@@ -100,7 +103,7 @@
             android:name=".ClientHome"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ModelRegister"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

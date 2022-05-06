@@ -93,6 +93,7 @@
         app:layout_constraintVertical_bias="0.567" />
 
     <ImageView
+        android:id="@+id/imagemodelup"
         android:layout_width="80dp"
         android:layout_height="80dp"
         app:layout_constraintBottom_toBottomOf="parent"
