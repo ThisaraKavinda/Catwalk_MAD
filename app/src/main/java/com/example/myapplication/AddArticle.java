@@ -11,16 +11,21 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class AddArticle extends AppCompatActivity {
     EditText aTopic;
     EditText aDescription;
-    Button addArticle,clearBtn;
+    Button addArticle,clearBtn,back;
 
     DatabaseReference modelDbref;
 
@@ -33,6 +38,14 @@ public class AddArticle extends AppCompatActivity {
         aDescription = findViewById(R.id.articledescription);
         addArticle = findViewById(R.id.addarticlebtn1);
         clearBtn = findViewById(R.id.cleararticlebtn1);
+        back = findViewById(R.id.addarticlebackbtn1);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(AddArticle.this, AdminHome.class));
+
+            }
+        });
 
 
         modelDbref = FirebaseDatabase.getInstance().getReference().child("Articles");
@@ -40,6 +53,7 @@ public class AddArticle extends AppCompatActivity {
         addArticle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 sendArticle();
 
             }
@@ -64,38 +78,33 @@ public class AddArticle extends AppCompatActivity {
 
     private void sendArticle(){
 
-        final ProgressDialog mDialog = new ProgressDialog(AddArticle.this);
-        mDialog.setMessage("Please wait....");
-        mDialog.show();
+        String str_topic=aTopic.getText().toString();
+        String str_Description=aDescription.getText().toString();
 
-       String  str_topic=aTopic.getText().toString();
-       String  str_description = aDescription.getText().toString() ;
+        Articles articles  = new Articles(str_topic,str_Description);
 
 
-        modelDbref.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                //check if already available
-                if(snapshot.child(str_topic).exists()){
-                    mDialog.dismiss();
-                    Toast.makeText(AddArticle.this, "Topic Already Available...", Toast.LENGTH_SHORT).show();
 
-                }
-                else{
-                    mDialog.dismiss();
-                    Articles article  = new Articles(str_topic,str_description);
-                    modelDbref.child(str_topic).setValue(article);
-                    Toast.makeText(AddArticle.this, "Article Added Successfully", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(AddArticle.this, ArticleList.class);
-                    startActivity(intent);
-                }
-            }
+       FirebaseDatabase.getInstance().getReference().child("Articles").child(str_topic).setValue(articles)
+               .addOnSuccessListener(new OnSuccessListener<Void>() {
+                   @Override
+                   public void onSuccess(Void unused) {
+                       aTopic.setText("");
+                       aDescription.setText("");
+                       Toast.makeText(AddArticle.this, "Added Success", Toast.LENGTH_SHORT).show();
+                   }
+               })
+               .addOnFailureListener(new OnFailureListener() {
+                   @Override
+                   public void onFailure(@NonNull Exception e) {
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
+                       Toast.makeText(AddArticle.this, "Added Failed", Toast.LENGTH_SHORT).show();
 
-            }
-        });
+
+                   }
+               });
+
+
 
     }
 }
