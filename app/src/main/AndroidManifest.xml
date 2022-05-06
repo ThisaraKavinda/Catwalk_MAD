@@ -10,11 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".ModelRequestHolder"
+            android:name=".ClientHome"
             android:exported="false" />
-        <!-- <activity -->
+        <activity
+            android:name=".ClientLogin"
+            android:exported="false" />
+        <activity
+            android:name=".ModelRequestHolder"
+            android:exported="false" /> <!-- <activity -->
         <!-- android:name="ModelLis" -->
         <!-- android:exported="false" /> -->
+
+        <activity
+            android:name=".ModelHistory"
+            android:exported="false" />
         <activity
             android:name=".ArticleList"
             android:exported="false" />
@@ -91,7 +100,7 @@
             android:name=".ModelRequestActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ModelRegister"
             android:exported="false" />
         <activity
             android:name=".AdminHome"
@@ -100,10 +109,10 @@
             android:name=".ModelLogin"
             android:exported="false" />
         <activity
-            android:name=".ClientHome"
+            android:name=".ModelHome"
             android:exported="false" />
         <activity
-            android:name=".ModelRegister"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

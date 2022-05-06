@@ -13,18 +13,20 @@ public class Models {
     String mobile;
     String birthday;
     String status;
+    String gender;
     String imageurl;
 
     public Models(){
 
     }
-    public Models(String name, String password, String email, String mobile, String birthday,String status,String imageurl) {
+    public Models(String name, String password, String email, String mobile, String birthday,String status,String gender,String imageurl) {
         this.name = name;
         this.password = password;
         this.email = email;
         this.mobile = mobile;
         this.birthday = birthday;
         this.status = status;
+        this.gender = gender;
         this.imageurl = imageurl;
     }
 
@@ -54,5 +56,9 @@ public class Models {
 
     public String getImageurl() {
         return imageurl;
+    }
+
+    public String getGender() {
+        return gender;
     }
 }
