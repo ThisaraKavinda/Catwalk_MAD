@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context=".ModelLogin" >
+    tools:context=".ClientLogin" >
 
     <ImageView
         android:id="@+id/imageView"
@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/untitled_1" />
 
     <EditText
-        android:id="@+id/enteremail"
+        android:id="@+id/centeremail"
         android:layout_width="332dp"
         android:layout_height="54dp"
         android:ems="10"
@@ -33,7 +33,7 @@
         app:layout_constraintVertical_bias="0.233" />
 
     <EditText
-        android:id="@+id/enterpassword"
+        android:id="@+id/centerpassword"
         android:layout_width="332dp"
         android:layout_height="54dp"
         android:ems="10"
@@ -48,7 +48,7 @@
         app:layout_constraintVertical_bias="0.345" />
 
     <Button
-        android:id="@+id/loginbtn"
+        android:id="@+id/cloginbtn"
         android:layout_width="332dp"
         android:layout_height="54dp"
         android:text="LOGIN"
@@ -100,7 +100,7 @@
         app:layout_constraintVertical_bias="0.459" />
 
     <TextView
-        android:id="@+id/register"
+        android:id="@+id/cregister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Register"

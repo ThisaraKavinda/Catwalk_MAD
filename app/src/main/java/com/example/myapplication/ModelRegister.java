@@ -14,6 +14,9 @@ import android.webkit.MimeTypeMap;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -39,12 +42,15 @@ public class ModelRegister extends AppCompatActivity {
     DatabaseReference modelDbref;
     String str_status="Pending";
     ImageView image;
+    RadioGroup gender;
+    RadioButton genderb;
+    TextView modellogin;
     //vars
     private DatabaseReference root = FirebaseDatabase.getInstance().getReference("Models");
     private StorageReference reference = FirebaseStorage.getInstance().getReference();
     private Uri imageUri;
 
-    String str_name,str_password,str_email,str_mobile,str_birthday;
+    String str_name,str_password,str_email,str_mobile,str_birthday,str_gender;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,8 +65,18 @@ public class ModelRegister extends AppCompatActivity {
         reg_btn = findViewById(R.id.mregister);
         upload_btn=findViewById(R.id.selectmodelpicbtn1);
         image = findViewById(R.id.imagemodelup);
+        gender= findViewById(R.id.genderradiogroup);
+        modellogin= findViewById(R.id.modelloginbtn2);
 
          modelDbref = FirebaseDatabase.getInstance().getReference().child("Models");
+
+         modellogin.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+                 Intent intent = new Intent(ModelRegister.this, ModelLogin.class);
+                 startActivity(intent);
+             }
+         });
 
         reg_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -107,6 +123,12 @@ public class ModelRegister extends AppCompatActivity {
         str_email = email.getText().toString();
         str_mobile = mobile.getText().toString();
         str_birthday = birthday.getText().toString();
+
+        int gid= gender.getCheckedRadioButtonId();
+        genderb = findViewById(gid);
+
+        str_gender=genderb.getText().toString();
+
 //
 //
 //
@@ -151,12 +173,14 @@ public class ModelRegister extends AppCompatActivity {
                     @Override
                     public void onSuccess(Uri uri) {
 
-                        Models model = new Models(str_name,str_password,str_email,str_mobile,str_birthday,str_status,uri.toString());
+                        Models model = new Models(str_name,str_password,str_email,str_mobile,str_birthday,str_status,str_gender,uri.toString());
 //                        String modelId = root.push().getKey();
-                        root.child(str_email).setValue(model);
+                        root.child(str_mobile).setValue(model);
 
                         Toast.makeText(ModelRegister.this, "Uploaded Successfully", Toast.LENGTH_SHORT).show();
-//                        imageView.setImageResource(R.drawable.ic_baseline_add_photo_alternate_24);
+                          image.setImageResource(R.drawable.icons8_female_profile_55);
+                        Intent intent = new Intent(ModelRegister.this,ModelLogin.class);
+                        startActivity(intent);
                     }
                 });
             }
