@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_rowWeight="1"
+    android:layout_columnWeight="1"
+    android:layout_margin="15dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:paddingEnd="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/inquiryViewListTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:text="Inquiry Subject "
+                android:textColor="#6f6f6f"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/inquiryViewListDes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor jhsf jhjhs hnjshfdw uqweuwh jiw jadjah jhasj sit amet, consectetur\n "
+                android:textColor="#6f6f6f"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Type - "
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/inquiryViewListType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Client "
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/inquiryViewListViewbtn"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="View"
+                    android:textAlignment="center"
+                    app:backgroundTint="#01D60A"
+                    app:cornerRadius="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="30dp"/>
+
+                <Button
+                    android:id="@+id/inquiryViewListDeletebtn"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="Delete"
+                    android:textAlignment="center"
+                    app:backgroundTint="#D0342C"
+                    app:cornerRadius="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="30dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

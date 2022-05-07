@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_admin_back"
+    tools:context=".InquiryList">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/inquirylistbackbtn1"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="-50dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="BACK"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:cornerRadius="15dp"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck">
+
+
+        </Button>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Inquiry List"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/profilepic" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/inquiryListGridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="1"
+            android:columnOrderPreserved="false"
+            android:rowCount="4">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/inquiryViewList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_margin="12dp"-->
+<!--                app:cardCornerRadius="12dp"-->
+<!--                app:cardElevation="6dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:gravity="left"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:padding="16dp"-->
+<!--                    android:paddingEnd="10dp">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical"-->
+<!--                        android:padding="10dp">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="-5dp"-->
+<!--                            android:text="Inquiry Subject "-->
+<!--                            android:textColor="#6f6f6f"-->
+<!--                            android:textSize="22sp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+
+<!--                            android:text="Type - Model "-->
+<!--                            android:textColor="#6f6f6f"-->
+<!--                            android:textSize="18sp" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:text="Lorem ipsum dolor sit amet, consectetur\nLorem ipsum dolor sit amet, consectetur\n "-->
+<!--                            android:textColor="#6f6f6f"-->
+<!--                            android:textSize="11sp" />-->
+
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+
+<!--                        android:paddingTop="17dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:gravity="right"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <Button-->
+<!--                            android:id="@+id/inquiryviewbtn1"-->
+<!--                            android:layout_width="100dp"-->
+<!--                            android:layout_height="48dp"-->
+<!--                            android:contentDescription="@string/modelrequestacceptbtn1"-->
+<!--                            android:text="View"-->
+<!--                            android:textAlignment="center"-->
+<!--                            app:backgroundTint="#01D60A"-->
+<!--                            app:cornerRadius="20dp"-->
+<!--                            tools:ignore="SpeakableTextPresentCheck">-->
+<!--                        </Button>-->
+
+<!--                        <Button-->
+<!--                            android:id="@+id/inquirydeletebtn1"-->
+<!--                            android:layout_width="100dp"-->
+<!--                            android:layout_height="48dp"-->
+<!--                            android:contentDescription="@string/modelrequestviewbtn1"-->
+<!--                            android:text="Delete"-->
+<!--                            android:textAlignment="center"-->
+<!--                            app:backgroundTint="#D0342C"-->
+<!--                            app:cornerRadius="20dp"-->
+<!--                            tools:ignore="SpeakableTextPresentCheck">-->
+<!--                        </Button>-->
+
+<!--                    </LinearLayout>-->
+
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

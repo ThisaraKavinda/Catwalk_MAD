@@ -3,19 +3,29 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/drawable/btn_image_select.xml" value="0.1755" />
         <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/drawable/rounded_button.xml" value="0.2595" />
         <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/drawable/rounded_button_color.xml" value="0.124" />
         <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/drawable/rounded_button_white.xml" value="0.124" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_ad_request_single_admin.xml" value="0.25416666666666665" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_add_article.xml" value="0.25416666666666665" />
         <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_admin_home.xml" value="0.22826086956521738" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_admin_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_ads_requests_admin.xml" value="0.25416666666666665" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_article_list.xml" value="0.25416666666666665" />
         <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_client_ad_history.xml" value="0.25416666666666665" />
         <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_client_add_model_request.xml" value="0.25416666666666665" />
         <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_client_edit_ad.xml" value="0.25416666666666665" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_client_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_client_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_client_register.xml" value="0.25416666666666665" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_client_register_requests.xml" value="0.25416666666666665" />
         <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_client_requested_models_list.xml" value="0.25416666666666665" />
         <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_client_view_ad.xml" value="0.25416666666666665" />
         <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_client_view_history.xml" value="0.25416666666666665" />
         <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_clients_list.xml" value="0.25416666666666665" />
         <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_inquiry.xml" value="0.25416666666666665" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_inquiry_list.xml" value="0.22" />
         <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_inquiry_update.xml" value="0.25416666666666665" />
         <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/activity_model_article_list.xml" value="0.25416666666666665" />
@@ -30,6 +40,7 @@
         <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/content_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/fragment_first.xml" value="0.11302083333333333" />
         <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/fragment_second.xml" value="0.11302083333333333" />
+        <entry key="..\:/Education/Mine/Android Development/MAD/GitHub/app/src/main/res/layout/inquiry_item.xml" value="0.25416666666666665" />
         <entry key="..\:/MAD/MyApplication/app/src/main/res/drawable/menuadminback.xml" value="0.2203125" />
         <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_admin_home.xml" value="0.22" />
         <entry key="..\:/MAD/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.17" />

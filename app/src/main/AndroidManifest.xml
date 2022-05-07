@@ -16,14 +16,27 @@
             android:name=".ClientAdHistory"
             android:exported="false" />
         <activity
-            android:name=".InquiryUpdate"
-            android:exported="false" />
-        <activity
             android:name=".ModelArticleList"
             android:exported="false" />
         <activity
-            android:name=".Inquiry"
+            android:name=".addInquiry"
+            android:exported="true" >
+
+        </activity>
+
+        <activity android:name=".InquiryList"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".InquiryUpdate"
             android:exported="false" />
+
         <activity
             android:name=".ClientProfile"
             android:exported="false" />
@@ -41,6 +54,31 @@
             android:exported="false" />
         <activity
             android:name=".ClientAddModelRequest"
+            android:exported="false" />
+        <activity
+            android:name=".ClientRegister"
+            android:exported="false" />
+        <activity
+            android:name=".AdminProfile"
+            android:exported="false" />
+        <activity
+            android:name=".ArticleList"
+            android:exported="false" />
+        <activity
+            android:name=".AddArticle"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name=".ClientSingleRegisterRequest"
+            android:exported="false" />
+        <activity
+            android:name=".ModelSingleRegisterRequest"
+            android:exported="false" />
+        <activity
+            android:name=".ClientSingleProfileView"
+            android:exported="false" />
+        <activity
+            android:name=".ModelSingleProfileView"
             android:exported="false" />
         <activity
             android:name=".ClientsList"
@@ -72,11 +110,11 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
     </application>
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Inquiry">
+    tools:context=".addInquiry">
 
     <ScrollView
         android:id="@+id/scrollView3"
@@ -123,7 +123,8 @@
                             <RadioGroup
                                 android:layout_width="250dp"
                                 android:layout_height="32dp"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:id="@+id/InquiryAddRadioGroup">
 
                                 <RadioButton
                                     android:id="@+id/InquiryYesInput"
@@ -183,7 +184,7 @@
                                 android:id="@+id/InquiryDesInput"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:height="150dp"
+                                android:height="120dp"
                                 android:ems="10"
                                 android:hint="Describe your inquiry here" />
 
@@ -203,20 +204,45 @@
                                 android:textColor="@color/black"
                                 android:textSize="18sp" />
 
-                            <TextView
-                                android:layout_width="140dp"
-                                android:layout_height="32dp"
-                                android:text="new_image.jpg"
-                                android:textColor="@color/black"
-                                android:textSize="18sp"
-                                android:alpha="0.6"
-                                android:layout_marginLeft="15dp"/>
+<!--                            <TextView-->
+<!--                                android:layout_width="140dp"-->
+<!--                                android:layout_height="32dp"-->
+<!--                                android:text="new_image.jpg"-->
+<!--                                android:textColor="@color/black"-->
+<!--                                android:textSize="18sp"-->
+<!--                                android:alpha="0.6"-->
+<!--                                android:layout_marginLeft="15dp"/>-->
 
-                            <ImageButton
-                                android:layout_width="25dp"
-                                android:layout_height="25dp"
-                                android:background="@drawable/attached"
-                                android:layout_marginLeft="5dp"/>
+                            <Button
+                                android:id="@+id/InquiryImageInput"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:text="Upload Image"
+                                app:backgroundTint="@color/ash"
+                                android:layout_marginLeft="15dp"
+                                android:background="@drawable/btn_image_select"
+                                />
+
+<!--                            <ImageButton-->
+<!--                                android:layout_width="25dp"-->
+<!--                                android:layout_height="25dp"-->
+<!--                                android:background="@drawable/attached"-->
+<!--                                android:layout_marginLeft="5dp"/>-->
+
+                        </LinearLayout>
+
+                        //newly added selected image show
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="20dp">
+
+                            <ImageView
+                                android:id="@+id/selectedImgView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
 
                         </LinearLayout>
 
