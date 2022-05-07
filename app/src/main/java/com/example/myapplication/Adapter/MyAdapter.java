@@ -1,8 +1,10 @@
 package com.example.myapplication.Adapter;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -57,23 +59,66 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         holder.deletebtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 //                Inquiry theRemovedItem = inquiryList.get(position);
+                AlertDialog.Builder builder = new AlertDialog.Builder(context);  ;
+                builder.setMessage("Do you want to delete this inquiry ?")
+                        .setCancelable(true)
+                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                inquiryList.clear();
+                                DatabaseReference ref = FirebaseDatabase.getInstance().getReference();
+                                Query inquiryQuery = ref.child(Inquiry.class.getSimpleName()).orderByChild("id").equalTo(inquiry.getId());
+                                inquiryQuery.addListenerForSingleValueEvent(new ValueEventListener() {
+                                    @Override
+                                    public void onDataChange(DataSnapshot dataSnapshot) {
+                                        for (DataSnapshot appleSnapshot: dataSnapshot.getChildren()) {
+                                            appleSnapshot.getRef().removeValue();
+                                        }
+                                    }
 
-                inquiryList.clear();
-                DatabaseReference ref = FirebaseDatabase.getInstance().getReference();
-                Query inquiryQuery = ref.child(Inquiry.class.getSimpleName()).orderByChild("id").equalTo(inquiry.getId());
-                inquiryQuery.addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
-                        for (DataSnapshot appleSnapshot: dataSnapshot.getChildren()) {
-                            appleSnapshot.getRef().removeValue();
-                        }
-                    }
+                                    @Override
+                                    public void onCancelled(DatabaseError databaseError) {
+                                        Log.e("TAG", "onCancelled", databaseError.toException());
+                                    }
+                                });
 
-                    @Override
-                    public void onCancelled(DatabaseError databaseError) {
-                        Log.e("TAG", "onCancelled", databaseError.toException());
-                    }
-                });
+                                Toast.makeText(context.getApplicationContext(),"Inquiry deleted successfully",
+                                        Toast.LENGTH_LONG).show();
+                            }
+                        })
+                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                //  Action for 'NO' Button
+                                dialog.cancel();
+                                Toast.makeText(context.getApplicationContext(),"Please press Yes to delete",
+                                        Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                //Creating dialog box
+                AlertDialog alert = builder.create();
+                //Setting the title manually
+                alert.setTitle("AlertDialogExample");
+                alert.show();
+
+
+
+
+
+//                inquiryList.clear();
+//                DatabaseReference ref = FirebaseDatabase.getInstance().getReference();
+//                Query inquiryQuery = ref.child(Inquiry.class.getSimpleName()).orderByChild("id").equalTo(inquiry.getId());
+//                inquiryQuery.addListenerForSingleValueEvent(new ValueEventListener() {
+//                    @Override
+//                    public void onDataChange(DataSnapshot dataSnapshot) {
+//                        for (DataSnapshot appleSnapshot: dataSnapshot.getChildren()) {
+//                            appleSnapshot.getRef().removeValue();
+//                        }
+//                    }
+//
+//                    @Override
+//                    public void onCancelled(DatabaseError databaseError) {
+//                        Log.e("TAG", "onCancelled", databaseError.toException());
+//                    }
+//                });
             }
         });
     }

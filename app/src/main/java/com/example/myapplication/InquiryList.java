@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.ProgressDialog;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.ViewGroup;
 
@@ -25,14 +27,15 @@ public class  InquiryList extends AppCompatActivity {
     MyAdapter myAdapter;
     ArrayList<Inquiry> inquiryList;
     DatabaseReference database;
+    Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inquiry_list);
+        context = getApplicationContext();
 
         recyclerView = findViewById(R.id.inquiryViewList);
-//        DAOInquiry dao = new DAOInquiry();
         database = FirebaseDatabase.getInstance().getReference(Inquiry.class.getSimpleName());
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -42,20 +45,27 @@ public class  InquiryList extends AppCompatActivity {
         recyclerView.setAdapter(myAdapter);
 
         database.addValueEventListener(new ValueEventListener() {
+//            ProgressDialog progressDialog = new ProgressDialog(context);
+//            progressDialog.setTitle("Loading...");
+//            progressDialog.show();
+
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+
                 for (DataSnapshot dataSnapshot: snapshot.getChildren()) {
                     Inquiry inquiry = dataSnapshot.getValue(Inquiry.class);
                     inquiryList.add(inquiry);
                 }
-
                 myAdapter.notifyDataSetChanged();
             }
+//            progressDialog.dismiss();
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 
             }
         });
+
+
     }
 }
