@@ -39,7 +39,7 @@ public class ArticleList extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        startActivity(new Intent(ArticleList.this, ModelLogin.class));
+        startActivity(new Intent(ArticleList.this, AdminHome.class));
         finish();
     }
 

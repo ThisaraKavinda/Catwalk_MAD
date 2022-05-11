@@ -56,9 +56,13 @@ public class ClientLogin extends AppCompatActivity {
                             //get user information
                             Clients client = snapshot.child(mobile.getText().toString()).getValue(Clients.class);
                             if (client.getPassword().equals(password.getText().toString())) {
+
                                 Toast.makeText(ClientLogin.this, "Login Success", Toast.LENGTH_SHORT).show();
 
                                 Intent mhome = new Intent(ClientLogin.this, ClientHome.class);
+                                mhome.putExtra("cname",client.getName());
+                                mhome.putExtra("cmobile",client.getMobile());
+                                mhome.putExtra("cimage",client.getImageurl());
 
                                 startActivity(mhome);
                                 finish();

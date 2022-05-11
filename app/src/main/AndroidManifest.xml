@@ -40,20 +40,24 @@
             android:name=".ModelArticleList"
             android:exported="false" />
         <activity
-            android:name=".Inquiry"
-            android:exported="false" />
-        <activity
-            android:name=".ClientProfile"
+            android:name=".AdsRequestsAdmin"
             android:exported="false" />
         <activity
             android:name=".ModelProfile"
             android:exported="false" />
         <activity
+            android:name=".ClientProfile"
+            android:exported="false" />
+        <activity
             android:name=".ClientViewHistory"
+            android:exported="false" />
+        <activity
+            android:name=".Inquiry"
             android:exported="false" />
         <activity
             android:name=".ClientRequestedModelsList"
             android:exported="false" />
+
         <activity
             android:name=".ClientViewAd"
             android:exported="false" />
@@ -65,6 +69,9 @@
             android:exported="false" />
         <activity
             android:name=".AdminProfile"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateArticle"
             android:exported="false" />
         <activity
             android:name=".AddArticle"

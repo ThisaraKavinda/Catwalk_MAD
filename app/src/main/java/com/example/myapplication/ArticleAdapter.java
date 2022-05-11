@@ -49,6 +49,16 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleViewHolder> {
         holder.topic.setText(article.getTopic());
         holder.description.setText(article.getDescription());
 
+        holder.update.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+            Intent intent = new Intent(context, UpdateArticle.class);
+            intent.putExtra("aname",article.getTopic());
+            intent.putExtra("adesription",article.getDescription());
+            context.startActivity(intent);
+            }
+        });
+
         holder.delete.setOnClickListener((view -> {
             AlertDialog.Builder builder=new AlertDialog.Builder(holder.topic.getContext());
             builder.setTitle("Delete Panel");

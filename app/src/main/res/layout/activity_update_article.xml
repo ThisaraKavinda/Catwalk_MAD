@@ -89,14 +89,18 @@
                     </TextView>
 
 
-                    <EditText
+                    <TextView
                         android:id="@+id/articletopicupdate"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:ems="10"
                         android:inputType="textPersonName"
-                        android:hint="Enter Article Topic"
-                        android:text="Enter Article Topic"
+                        android:hint="Article Topic"
+                        android:text=" Article Topic"
+                        android:editable="false"
+                        android:textSize="20dp"
+                        android:paddingTop="10dp"
+
 
                         />
                     <TextView

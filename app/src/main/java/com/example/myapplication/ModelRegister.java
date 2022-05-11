@@ -2,13 +2,16 @@ package com.example.myapplication;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.webkit.MimeTypeMap;
 import android.widget.Button;
@@ -32,7 +35,7 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
 
-
+import java.util.Calendar;
 import java.util.HashMap;
 
 public class ModelRegister extends AppCompatActivity {
@@ -41,6 +44,7 @@ public class ModelRegister extends AppCompatActivity {
     Button reg_btn,upload_btn;
     DatabaseReference modelDbref;
     String str_status="Pending";
+    String age;
     ImageView image;
     RadioGroup gender;
     RadioButton genderb;
@@ -81,6 +85,7 @@ public class ModelRegister extends AppCompatActivity {
         reg_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
 
                 sendDataToDb(imageUri);
             }
@@ -212,4 +217,18 @@ public class ModelRegister extends AppCompatActivity {
         return mime.getExtensionFromMimeType(cr.getType(mUri));
 
     }
+
+    private int getAge(String age){
+        Calendar calendar = Calendar.getInstance();
+        int year = calendar.get(Calendar.YEAR);
+        int birthyear = Integer.parseInt(age);
+        int mage = 0;
+
+        mage = year-birthyear;
+        System.out.println(mage);
+        return  mage;
+
+    }
+
+
 }
