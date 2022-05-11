@@ -2,12 +2,15 @@ package com.example.myapplication;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentResolver;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.webkit.MimeTypeMap;
 import android.widget.Button;
@@ -75,6 +78,7 @@ public class ClientRegister extends AppCompatActivity {
         reg_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
 
                 sendDataToDb(imageUri);
             }

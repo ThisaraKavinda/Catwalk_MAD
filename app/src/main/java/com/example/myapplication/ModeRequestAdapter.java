@@ -26,12 +26,7 @@ public class ModeRequestAdapter extends RecyclerView.Adapter<ModelRequestHolder>
     public ModeRequestAdapter(Context context, ArrayList<Models> list) {
         this.context = context;
         this.list = list;
-
-
     }
-
-
-
     @NonNull
     @Override
     public ModelRequestHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType){

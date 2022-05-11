@@ -104,7 +104,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="4sp"
-                                    android:text="Need a talented Young lady"
+                                    android:text="How to be model"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#000"
                                     android:textSize="18sp" />
@@ -186,7 +186,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="4sp"
-                                    android:text="Need a talented Young lady"
+                                    android:text="How to select good outfit"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#000"
                                     android:textSize="18sp" />
@@ -268,7 +268,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="4sp"
-                                    android:text="Need a talented Young lady"
+                                    android:text="Top 10 hair Care Solutions"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#000"
                                     android:textSize="18sp" />

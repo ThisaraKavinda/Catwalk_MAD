@@ -89,6 +89,7 @@
                 >
 
                 <LinearLayout
+                    android:id="@+id/read_article_tab"
                     android:orientation="vertical"
                     android:padding="16dp"
                     android:gravity="center"

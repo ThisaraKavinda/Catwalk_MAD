@@ -31,11 +31,14 @@
                 android:textStyle="bold" />
 
             <ImageView
-                android:layout_alignParentRight="true"
-                android:src="@drawable/profilepic"
+                android:id="@+id/clientpropic"
                 android:layout_width="72dp"
-                android:layout_height="72dp"/>
-        </RelativeLayout>
+                android:layout_height="72dp"
+                android:layout_alignParentRight="true"
+
+                android:src="@drawable/profilepic" />
+
+            </RelativeLayout>
 
         <GridLayout
             android:columnCount="2"
@@ -257,7 +260,6 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
-
 
 
 

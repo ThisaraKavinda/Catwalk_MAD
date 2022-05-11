@@ -3,12 +3,23 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+
+import com.squareup.picasso.Picasso;
+
+import java.io.IOException;
+import java.io.InputStream;
 
 public class ClientHome extends AppCompatActivity {
     LinearLayout newrequest,adresponse,hiredmodels,adslist;
+    ImageView propic;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +29,16 @@ public class ClientHome extends AppCompatActivity {
         adresponse = findViewById(R.id.ads_response_tab);
         hiredmodels = findViewById(R.id.hired_models_tab);
         adslist =findViewById(R.id.ads_list_tab);
+        propic = findViewById(R.id.clientpropic);
+        Intent clienthomeIntent = getIntent();
+
+        String cname = clienthomeIntent.getStringExtra("cname");
+        String cmobile = clienthomeIntent.getStringExtra("cmobile");
+        String cimage =  clienthomeIntent.getStringExtra("cimage");
+//        Uri img = Uri.parse(cimage);
+
+        Picasso.get().load(cimage).into(propic);
+
 
 
         newrequest.setOnClickListener(new View.OnClickListener() {
