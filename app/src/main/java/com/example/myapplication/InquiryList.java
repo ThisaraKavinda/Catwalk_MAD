@@ -9,6 +9,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.myapplication.Adapter.MyAdapter;
 import com.example.myapplication.DAO.DAOInquiry;
@@ -28,6 +29,13 @@ public class  InquiryList extends AppCompatActivity {
     ArrayList<Inquiry> inquiryList;
     DatabaseReference database;
     Context context;
+    TextView total;
+
+    int modelInquiries = 0;
+    int clietInquiries = 0;
+    int paymentInquiries = 0;
+    int applicationInquires = 0;
+    int totalInquires = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +47,8 @@ public class  InquiryList extends AppCompatActivity {
         database = FirebaseDatabase.getInstance().getReference(Inquiry.class.getSimpleName());
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+//        total = findViewById(R.id.inquiryListTotal);
 
         inquiryList = new ArrayList<>();
         myAdapter = new MyAdapter(this, inquiryList);
@@ -55,17 +65,28 @@ public class  InquiryList extends AppCompatActivity {
                 for (DataSnapshot dataSnapshot: snapshot.getChildren()) {
                     Inquiry inquiry = dataSnapshot.getValue(Inquiry.class);
                     inquiryList.add(inquiry);
+                    total.setText(totalInquires);
                 }
                 myAdapter.notifyDataSetChanged();
             }
 //            progressDialog.dismiss();
-
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 
             }
         });
+    }
 
-
+    private void calculateInquiries (Inquiry inquiry) {
+        if(inquiry.getAbout().equals("Models")) {
+            modelInquiries += 1;
+        } else if(inquiry.getAbout().equals("Clients")) {
+            clietInquiries += 1;
+        } else if(inquiry.getAbout().equals("Payements")) {
+            paymentInquiries += 1;
+        } else if(inquiry.getAbout().equals("Application")) {
+            applicationInquires += 1;
+        }
+        totalInquires++;
     }
 }

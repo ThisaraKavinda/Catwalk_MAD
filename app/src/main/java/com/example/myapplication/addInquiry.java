@@ -3,10 +3,14 @@ package com.example.myapplication;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -39,6 +43,8 @@ public class addInquiry extends AppCompatActivity {
     final int PICK_IMAGE_REQUEST = 22;
     ImageView selectedImageView;
 
+    AlertDialog.Builder builder;
+
     private String getFileExtension(Uri uri) {
         ContentResolver cr = getContentResolver();
         MimeTypeMap mine = MimeTypeMap.getSingleton();
@@ -69,7 +75,43 @@ public class addInquiry extends AppCompatActivity {
         final Button btnSubmit = findViewById(R.id.InquirySubmitbtn);
         DAOInquiry dao = new DAOInquiry();
 
+        builder = new AlertDialog.Builder(this);
+
         btnSubmit.setOnClickListener(v -> {
+
+            ConnectivityManager cm = (ConnectivityManager)getApplicationContext().getSystemService(this.CONNECTIVITY_SERVICE);
+            NetworkInfo nInfo = cm.getActiveNetworkInfo();
+            boolean connected = nInfo != null && nInfo.isAvailable() && nInfo.isConnected();
+            if(!connected) {
+
+                builder.setMessage("Make sure you have a active internet connection") .setTitle("Check your internet connection");
+
+                //Setting message manually and performing action on button click
+                builder.setMessage("Please make sure you have a active internet connection")
+                        .setCancelable(true)
+                        .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+
+                            }
+                        });
+                //Creating dialog box
+                AlertDialog alert = builder.create();
+                //Setting the title manually
+                alert.setTitle("Check your internet connection");
+                alert.show();
+                return;
+            }
+
+            if (titleEditText.length() == 0) {
+                titleEditText.setError("This field is empty");
+                return;
+            } else if (desEditText.length() == 0) {
+                desEditText.setError("This field is empty");
+                return;
+            } else if(radioGroup.getCheckedRadioButtonId() == -1){
+                return;
+            }
+
             String title = titleEditText.getText().toString();
             String des = desEditText.getText().toString();
             String value =((RadioButton)findViewById(radioGroup.getCheckedRadioButtonId())).getText().toString();

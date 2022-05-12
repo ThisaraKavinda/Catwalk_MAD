@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class ModelProfile extends AppCompatActivity {
+public class AdminViewModelProfile extends AppCompatActivity {
 
     EditText name, password, mobile, email, company, location;
     Button selectImagebtn, updatebtn, deletebtn;
@@ -16,7 +16,7 @@ public class ModelProfile extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_model_profile);
+        setContentView(R.layout.activity_admin_view_model_profile);
 
         name = findViewById(R.id.modelProfileNameInput);
         password = findViewById(R.id.modelProfilePasswordInput);

@@ -85,7 +85,7 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_marginTop="5dp"
-                        android:src="@drawable/model2" />
+                        android:src="@drawable/model4" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -97,7 +97,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="-5dp"
-                            android:text="Pamodya Perera"
+                            android:text="Pasindu Gunasekara"
                             android:textColor="#6f6f6f"
                             android:textSize="18sp" />
 
@@ -105,7 +105,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="0dp"
-                            android:text="Female"
+                            android:text="Male"
                             android:textColor="#6f6f6f"
                             android:textSize="18sp" />
 
@@ -184,7 +184,7 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_marginTop="5dp"
-                        android:src="@drawable/model2" />
+                        android:src="@drawable/model6" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -212,7 +212,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="0dp"
-                            android:text="24 years old"
+                            android:text="22 years old"
                             android:textColor="#6f6f6f"
                             android:textSize="18sp" />
 
@@ -283,7 +283,7 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_marginTop="5dp"
-                        android:src="@drawable/model2" />
+                        android:src="@drawable/model5" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -295,7 +295,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="-5dp"
-                            android:text="Pamodya Perera"
+                            android:text="Ravindu Manohara"
                             android:textColor="#6f6f6f"
                             android:textSize="18sp" />
 
@@ -303,7 +303,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="0dp"
-                            android:text="Female"
+                            android:text="Male"
                             android:textColor="#6f6f6f"
                             android:textSize="18sp" />
 
@@ -311,7 +311,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="0dp"
-                            android:text="24 years old"
+                            android:text="25 years old"
                             android:textColor="#6f6f6f"
                             android:textSize="18sp" />
 
@@ -383,7 +383,7 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_marginTop="5dp"
-                        android:src="@drawable/model2" />
+                        android:src="@drawable/model7" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -395,7 +395,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="-5dp"
-                            android:text="Pamodya Perera"
+                            android:text="Tharushi Sandeepani"
                             android:textColor="#6f6f6f"
                             android:textSize="18sp" />
 

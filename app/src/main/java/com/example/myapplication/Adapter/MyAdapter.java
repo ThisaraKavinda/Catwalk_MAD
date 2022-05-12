@@ -5,6 +5,7 @@ import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,6 +19,7 @@ import androidx.appcompat.view.menu.MenuView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myapplication.DAO.DAOInquiry;
+import com.example.myapplication.InquiryUpdate;
 import com.example.myapplication.Model.Inquiry;
 import com.example.myapplication.R;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -98,27 +100,20 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                 //Setting the title manually
                 alert.setTitle("AlertDialogExample");
                 alert.show();
+            }
+        });
 
-
-
-
-
-//                inquiryList.clear();
-//                DatabaseReference ref = FirebaseDatabase.getInstance().getReference();
-//                Query inquiryQuery = ref.child(Inquiry.class.getSimpleName()).orderByChild("id").equalTo(inquiry.getId());
-//                inquiryQuery.addListenerForSingleValueEvent(new ValueEventListener() {
-//                    @Override
-//                    public void onDataChange(DataSnapshot dataSnapshot) {
-//                        for (DataSnapshot appleSnapshot: dataSnapshot.getChildren()) {
-//                            appleSnapshot.getRef().removeValue();
-//                        }
-//                    }
-//
-//                    @Override
-//                    public void onCancelled(DatabaseError databaseError) {
-//                        Log.e("TAG", "onCancelled", databaseError.toException());
-//                    }
-//                });
+        holder.viewbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context.getApplicationContext(), InquiryUpdate.class);
+                intent.putExtra("title", inquiry.getTitle());
+                intent.putExtra("des", inquiry.getDescription());
+                intent.putExtra("id", inquiry.getId());
+                intent.putExtra("image", inquiry.getImgPath());
+                intent.putExtra("type", inquiry.getAbout());
+                intent.putExtra("isPreviousSubmitted", inquiry.getPreviousSubmitted());
+                context.startActivity(intent);
             }
         });
     }
@@ -131,7 +126,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
         TextView title, des, type;
-        Button deletebtn;
+        Button deletebtn, viewbtn;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -140,6 +135,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             des = itemView.findViewById(R.id.inquiryViewListDes);
             type = itemView.findViewById(R.id.inquiryViewListType);
             deletebtn = itemView.findViewById(R.id.inquiryViewListDeletebtn);
+            viewbtn = itemView.findViewById(R.id.inquiryViewListViewbtn);
         }
     }
 }

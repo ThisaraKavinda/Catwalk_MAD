@@ -53,6 +53,7 @@
                app:cardElevation="6dp"
                app:cardCornerRadius="12dp"
                android:layout_margin="12dp"
+               android:id="@+id/modelHomeModelRequests"
                >
 
                <LinearLayout
@@ -87,6 +88,7 @@
                 app:cardElevation="6dp"
                 app:cardCornerRadius="12dp"
                 android:layout_margin="12dp"
+                android:id="@+id/modelHomeModelList"
                 >
 
                 <LinearLayout
@@ -121,6 +123,7 @@
                 app:cardElevation="6dp"
                 app:cardCornerRadius="12dp"
                 android:layout_margin="12dp"
+                android:id="@+id/modelHomeClientRequests"
                 >
 
                 <LinearLayout
@@ -155,6 +158,7 @@
                 app:cardElevation="6dp"
                 app:cardCornerRadius="12dp"
                 android:layout_margin="12dp"
+                android:id="@+id/modelHomeClientList"
                 >
 
                 <LinearLayout
@@ -189,6 +193,7 @@
                 app:cardElevation="6dp"
                 app:cardCornerRadius="12dp"
                 android:layout_margin="12dp"
+                android:id="@+id/modelHomeAdsRequest"
                 >
 
                 <LinearLayout
@@ -223,6 +228,7 @@
                 app:cardElevation="6dp"
                 app:cardCornerRadius="12dp"
                 android:layout_margin="12dp"
+                android:id="@+id/modelHomeAddArticle"
                 >
 
                 <LinearLayout

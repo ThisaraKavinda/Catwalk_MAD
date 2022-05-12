@@ -97,7 +97,8 @@
                                 android:textColor="@color/black"
                                 android:textSize="18sp" />
 
-                            <EditText
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/updateInquiryTitle"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
@@ -120,17 +121,20 @@
                                 android:textSize="18sp" />
 
                             <RadioGroup
+                                android:id="@+id/updateInquiryRadioGroup"
                                 android:layout_width="250dp"
                                 android:layout_height="32dp"
                                 android:orientation="horizontal">
 
                                 <RadioButton
+                                    android:id="@+id/updateInquiryRadioYes"
                                     android:layout_width="70dp"
                                     android:layout_height="33dp"
                                     android:layout_marginHorizontal="25dp"
                                     android:text="Yes" />
 
                                 <RadioButton
+                                    android:id="@+id/updateInquiryRadioNo"
                                     android:layout_width="85dp"
                                     android:layout_height="33dp"
                                     android:text="No"
@@ -156,7 +160,7 @@
                                 android:textSize="18sp" />
 
                             <Spinner
-                                android:id="@+id/clientAddModelRequestTypeInput"
+                                android:id="@+id/updateInquiryType"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:entries="@array/inquiry_types" />
@@ -177,7 +181,8 @@
                                 android:textColor="@color/black"
                                 android:textSize="18sp" />
 
-                            <EditText
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/updateInquiryDes"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
@@ -190,7 +195,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="60dp"
                             android:gravity="center_vertical"
-                            android:orientation="horizontal"
+                            android:orientation="vertical"
                             android:paddingHorizontal="20dp">
 
                             <TextView
@@ -200,20 +205,25 @@
                                 android:textColor="@color/black"
                                 android:textSize="18sp" />
 
-                            <TextView
-                                android:layout_width="140dp"
-                                android:layout_height="32dp"
-                                android:text="new_image.jpg"
-                                android:textColor="@color/black"
-                                android:textSize="18sp"
-                                android:alpha="0.6"
-                                android:layout_marginLeft="15dp"/>
+<!--                            <TextView-->
+<!--                                android:layout_width="140dp"-->
+<!--                                android:layout_height="32dp"-->
+<!--                                android:text="new_image.jpg"-->
+<!--                                android:textColor="@color/black"-->
+<!--                                android:textSize="18sp"-->
+<!--                                android:alpha="0.6"-->
+<!--                                android:layout_marginLeft="15dp"/>-->
 
-                            <ImageButton
-                                android:layout_width="25dp"
-                                android:layout_height="25dp"
-                                android:background="@drawable/attached"
-                                android:layout_marginLeft="5dp"/>
+<!--                            <ImageButton-->
+<!--                                android:layout_width="25dp"-->
+<!--                                android:layout_height="25dp"-->
+<!--                                android:background="@drawable/attached"-->
+<!--                                android:layout_marginLeft="5dp"/>-->
+
+                            <ImageView
+                                android:id="@+id/updateInquiryImage"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
 
                         </LinearLayout>
 
