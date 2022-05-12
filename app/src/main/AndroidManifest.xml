@@ -10,6 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".ClientHome"
+            android:exported="false" />
+        <activity
+            android:name=".ClientLogin"
+            android:exported="false" />
+        <activity
+            android:name=".ModelRequestHolder"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name="ModelLis" -->
+        <!-- android:exported="false" /> -->
+
+        <activity
+            android:name=".ModelHistory"
+            android:exported="false" />
+        <activity
+            android:name=".ArticleList"
+            android:exported="false" />
+        <activity
             android:name=".ClientEditAd"
             android:exported="false" />
         <activity
@@ -37,17 +55,21 @@
             android:exported="false" />
 
         <activity
-            android:name=".ClientProfile"
+            android:name=".ModelProfile"
             android:exported="false" />
         <activity
-            android:name=".ModelProfile"
+            android:name=".ClientProfile"
             android:exported="false" />
         <activity
             android:name=".ClientViewHistory"
             android:exported="false" />
         <activity
+            android:name=".Inquiry"
+            android:exported="false" />
+        <activity
             android:name=".ClientRequestedModelsList"
             android:exported="false" />
+
         <activity
             android:name=".ClientViewAd"
             android:exported="false" />
@@ -61,7 +83,7 @@
             android:name=".AdminProfile"
             android:exported="false" />
         <activity
-            android:name=".ArticleList"
+            android:name=".UpdateArticle"
             android:exported="false" />
         <activity
             android:name=".AddArticle"
@@ -69,6 +91,9 @@
             android:exported="false" >
         </activity>
 >>>>>>> thisara
+        <activity
+            android:name=".ModelListA"
+            android:exported="false" />
         <activity
             android:name=".ClientSingleRegisterRequest"
             android:exported="false" />
@@ -94,19 +119,19 @@
             android:name=".ModelRegisterRequests"
             android:exported="false" />
         <activity
-            android:name=".ModelHistoryActivity"
-            android:exported="false" />
-        <activity
             android:name=".ModelRequestActivity"
-            android:exported="false" />
-        <activity
-            android:name=".AdminHome"
             android:exported="false" />
         <activity
             android:name=".ModelRegister"
             android:exported="false" />
         <activity
+            android:name=".AdminHome"
+            android:exported="false" />
+        <activity
             android:name=".ModelLogin"
+            android:exported="false" />
+        <activity
+            android:name=".ModelHome"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

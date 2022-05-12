@@ -5,22 +5,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextClock;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.common.internal.service.Common;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class ModelLogin extends AppCompatActivity {
+public class ClientLogin extends AppCompatActivity {
 
     EditText password,mobile;
     Button login;
@@ -29,40 +26,43 @@ public class ModelLogin extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_model_login);
+        setContentView(R.layout.activity_client_login);
 
-        mobile = findViewById(R.id.enteremail);
-        password = findViewById(R.id.enterpassword);
-        login = findViewById(R.id.loginbtn);
-        register = findViewById(R.id.register);
+        mobile = findViewById(R.id.centeremail);
+        password = findViewById(R.id.centerpassword);
+        login = findViewById(R.id.cloginbtn);
+        register = findViewById(R.id.cregister);
 
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent reg = new Intent(ModelLogin.this,ModelRegister.class);
+                Intent reg = new Intent(ClientLogin.this,ClientRegister.class);
                 startActivity(reg);
             }
         });
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference Modeldb = database.getReference("Models");
+        DatabaseReference Clientdb = database.getReference("Clients");
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Modeldb.addValueEventListener(new ValueEventListener() {
+                Clientdb.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         //check if model already available
                         if (snapshot.child(mobile.getText().toString()).exists()) {
 
                             //get user information
-                            Models model = snapshot.child(mobile.getText().toString()).getValue(Models.class);
-                            if (model.getPassword().equals(password.getText().toString())) {
-                                Toast.makeText(ModelLogin.this, "Login Success", Toast.LENGTH_SHORT).show();
+                            Clients client = snapshot.child(mobile.getText().toString()).getValue(Clients.class);
+                            if (client.getPassword().equals(password.getText().toString())) {
 
-                                Intent mhome = new Intent(ModelLogin.this, ModelHome.class);
+                                Toast.makeText(ClientLogin.this, "Login Success", Toast.LENGTH_SHORT).show();
+
+                                Intent mhome = new Intent(ClientLogin.this, ClientHome.class);
+                                mhome.putExtra("cname",client.getName());
+                                mhome.putExtra("cmobile",client.getMobile());
+                                mhome.putExtra("cimage",client.getImageurl());
 
                                 startActivity(mhome);
                                 finish();
@@ -70,12 +70,12 @@ public class ModelLogin extends AppCompatActivity {
                             } else {
                                 System.out.println("Failed");
 
-                                Toast.makeText(ModelLogin.this, "Login failed", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ClientLogin.this, "Login failed", Toast.LENGTH_SHORT).show();
                             }
                         }
                         else {
-                            Toast.makeText(ModelLogin.this, "Please Register", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(ModelLogin.this, ModelRegister.class);
+                            Toast.makeText(ClientLogin.this, "Please Register", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(ClientLogin.this, ClientRegister.class);
                             startActivity(intent);
                         }
                     }

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/menu_admin_back"
-    tools:context=".ArticleList">
+    tools:context=".ModelListA">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,7 +13,7 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/articlelistbackbtn1"
+            android:id="@+id/modellistbackbtn2"
             android:layout_width="80dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
@@ -42,9 +42,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Article List"
+                android:text="Models List"
                 android:textColor="#FFFFFF"
-                android:textSize="20sp"
+                android:textSize="26sp"
                 android:textStyle="bold" />
 
             <ImageView
@@ -60,10 +60,10 @@
             android:alignmentMode="alignMargins"
             android:columnCount="1"
             android:columnOrderPreserved="false"
-            android:rowCount="4">
+            >
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recycler_article"
+                android:id="@+id/recycler_model"
                 android:scrollbars="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -71,6 +71,12 @@
 
 
             </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
 
 
 

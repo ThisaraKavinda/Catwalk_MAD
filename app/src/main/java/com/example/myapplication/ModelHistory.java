@@ -1,14 +1,14 @@
 package com.example.myapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
-public class ClientProfile extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
 
+public class ModelHistory extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_model_profile);
+        setContentView(R.layout.activity_model_history);
+
     }
 }

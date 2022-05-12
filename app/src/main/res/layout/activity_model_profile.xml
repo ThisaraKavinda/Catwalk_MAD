@@ -4,11 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ModelProfile">
+    tools:context=".ClientProfile">
 
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/menu_admin_back"
@@ -20,7 +18,7 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/clientprofilebackbtn1"
+                android:id="@+id/modelprofilebackbtn1"
                 android:layout_width="80dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="20dp"
@@ -47,7 +45,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Client Profile"
+                    android:text="Model Profile"
                     android:textColor="#FFFFFF"
                     android:textSize="26sp"
                     android:textStyle="bold" />
@@ -94,7 +92,7 @@
                                 android:layout_width="120dp"
                                 android:layout_height="180dp"
                                 android:layout_marginTop="5dp"
-                                android:src="@drawable/model4"
+                                android:src="@drawable/mnodel3"
                                 android:layout_marginLeft="30dp"
                                 android:layout_marginRight="30dp">
 
@@ -102,7 +100,7 @@
                             </ImageView>
 
                             <Button
-                                android:id="@+id/clientpicbrowsebtn1"
+                                android:id="@+id/modelProfilepicbrowsebtn1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:backgroundTint="#6e1597"
@@ -137,11 +135,11 @@
                                     android:textSize="18sp" />
 
                                 <EditText
+                                    android:id="@+id/modelProfileNameInput"
                                     android:layout_width="300dp"
                                     android:layout_height="wrap_content"
-                                    android:id="@+id/modelProfileNameInput"
                                     android:layout_marginTop="0dp"
-                                    android:text="Kamal Sanjeewa"
+                                    android:text="Nishadi Sanjeewani"
                                     android:textColor="#6f6f6f"
                                     android:textSize="25sp" />
 
@@ -165,22 +163,24 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+
                                     android:text="Mobile"
                                     android:textColor="#6f6f6f"
                                     android:textSize="18sp" />
 
                                 <EditText
+                                    android:id="@+id/modelProfileMobileInput"
                                     android:layout_width="300dp"
                                     android:layout_height="wrap_content"
-                                    android:id="@+id/modelProfileMobileInput"
                                     android:layout_marginTop="0dp"
-                                    android:text="07777334445"
+                                    android:text="0777334445"
                                     android:textColor="#6f6f6f"
                                     android:textSize="25sp" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+
                                     android:text="Email"
                                     android:textColor="#6f6f6f"
                                     android:textSize="18sp" />
@@ -197,16 +197,17 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Company"
+
+                                    android:text="Date Of Birth"
                                     android:textColor="#6f6f6f"
                                     android:textSize="18sp" />
 
                                 <EditText
+                                    android:id="@+id/modelProfileDobInput"
                                     android:layout_width="300dp"
                                     android:layout_height="wrap_content"
-                                    android:id="@+id/modelProfileDobInput"
                                     android:layout_marginTop="0dp"
-                                    android:text="Deflix pvt ltd"
+                                    android:text="25.02.1997"
                                     android:textColor="#6f6f6f"
                                     android:textSize="25sp" />
 
@@ -214,7 +215,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
 
-                                    android:text="Location"
+                                    android:text="Height"
                                     android:textColor="#6f6f6f"
                                     android:textSize="18sp" />
 
@@ -223,9 +224,24 @@
                                     android:layout_height="wrap_content"
                                     android:id="@+id/modelProfileHeightInput"
                                     android:layout_marginTop="0dp"
-                                    android:text="Colombo 03"
+                                    android:text="5 feet 6 inches"
                                     android:textColor="#6f6f6f"
                                     android:textSize="25sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Type"
+                                    android:textColor="#6f6f6f"
+                                    android:textSize="18sp" />
+
+                                <Spinner
+                                    android:id="@+id/modelprofilespinner"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:entries="@array/model_types"
+                                    android:prompt="@string/predefined_type" />
+
 
                             </LinearLayout>
 
@@ -242,7 +258,7 @@
 
 
                             <Button
-                                android:id="@+id/clientupdatebtn1"
+                                android:id="@+id/adminupdatebtn1"
                                 android:layout_width="160dp"
                                 android:layout_height="48dp"
 
@@ -263,7 +279,7 @@
 
                             </TextView>
                             <Button
-                                android:id="@+id/clientdeletebtn1"
+                                android:id="@+id/admindeletebtn1"
                                 android:layout_width="160dp"
                                 android:layout_height="48dp"
 
@@ -287,5 +303,6 @@
         </LinearLayout>
 
     </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

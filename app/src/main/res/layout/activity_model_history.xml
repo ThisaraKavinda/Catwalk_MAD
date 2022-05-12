@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ModelHistoryActivity">
+    tools:context=".ModelHistory">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
@@ -175,7 +175,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="0dp"
-                                    android:text="Staus : Pending"
+                                    android:text="Status : Pending"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#B6B02F"
                                     android:textSize="16sp" />
@@ -186,13 +186,16 @@
                                     android:gravity="center"
                                     android:orientation="vertical">
 
-                                    <ImageButton
-                                        android:layout_width="30dp"
-                                        android:layout_height="30dp"
-                                        android:background="@drawable/trash"
-                                        android:layout_gravity="end"
-                                        android:layout_marginRight="10dp"
-                                    />
+                                    <Button
+                                        android:layout_width="300px"
+                                        android:layout_height="130px"
+                                        android:backgroundTint="@color/main_button"
+                                        android:text="Responses"
+                                        android:textSize="12dp"
+                                        app:cornerRadius="50px"
+                                        android:visibility="invisible">
+
+                                    </Button>
 
                                 </LinearLayout>
 
@@ -309,7 +312,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="0dp"
-                                    android:text="Staus : Approved"
+                                    android:text="Status : Approved"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#1F7D18"
                                     android:textSize="16sp" />
@@ -320,13 +323,15 @@
                                     android:gravity="center"
                                     android:orientation="vertical">
 
-                                    <ImageButton
-                                        android:layout_width="30dp"
-                                        android:layout_height="30dp"
-                                        android:background="@drawable/trash"
-                                        android:layout_gravity="end"
-                                        android:layout_marginRight="10dp"
-                                        />
+                                    <Button
+                                        android:layout_width="300px"
+                                        android:layout_height="130px"
+                                        android:backgroundTint="@color/main_button"
+                                        android:text="Responses"
+                                        android:textSize="12dp"
+                                        app:cornerRadius="50px">
+
+                                    </Button>
 
                                 </LinearLayout>
 
@@ -443,7 +448,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="0dp"
-                                    android:text="Staus : Cancelled"
+                                    android:text="Status : Cancelled"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                     android:textColor="#7D1818"
                                     android:textSize="16sp" />
@@ -454,13 +459,16 @@
                                     android:gravity="center"
                                     android:orientation="vertical">
 
-                                    <ImageButton
-                                        android:layout_width="30dp"
-                                        android:layout_height="30dp"
-                                        android:background="@drawable/trash"
-                                        android:layout_gravity="end"
-                                        android:layout_marginRight="10dp"
-                                        />
+                                    <Button
+                                        android:layout_width="300px"
+                                        android:layout_height="130px"
+                                        android:backgroundTint="@color/main_button"
+                                        android:text="Responses"
+                                        android:textSize="12dp"
+                                        app:cornerRadius="50px"
+                                        android:visibility="invisible">
+
+                                    </Button>
 
                                 </LinearLayout>
 

@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string name="login"/>
+    <string name="login" />
     <string name="title_activity_model_request">ModelRequestActivity</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -47,7 +47,7 @@
     <string name="clientrequestacceptbtn2">Accept</string>
     <string name="clientrequestviewbtn2">View</string>
     <string name="clientsingleprofilebackbtn1">BACK</string>
-    <string name="clientdeletebtn1">Delete</string>
+
     <string name="clientsinglerqstbackbtn1">BACK</string>
     <string name="clientacceptbtn2">Accept</string>
     <string name="clientrejectbtn1">Reject</string>
