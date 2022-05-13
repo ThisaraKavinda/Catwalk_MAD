@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".addInquiry">
+    tools:context=".InquiryUpdate">
 
     <ScrollView
         android:id="@+id/scrollView3"
@@ -18,7 +18,7 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/Inquirybackbtn1"
+                android:id="@+id/InquiryUpdatebackbtn1"
                 android:layout_width="80dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="20dp"
@@ -43,7 +43,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
-                    android:text="Submit a Inquiry"
+                    android:text="Inquiry Details"
                     android:textColor="#FFFFFF"
                     android:textSize="22sp"
                     android:textStyle="bold" />
@@ -97,12 +97,13 @@
                                 android:textColor="@color/black"
                                 android:textSize="18sp" />
 
-                            <EditText
-                                android:id="@+id/InquiryTitleInput"
+                            <TextView
+                                android:id="@+id/inquiryViewTitle"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="Enter a title in short" />
+                                android:hint="Inquiry Title"
+                                android:textSize="18sp" />
 
                         </LinearLayout>
 
@@ -121,24 +122,25 @@
                                 android:textSize="18sp" />
 
                             <RadioGroup
+                                android:id="@+id/inquiryViewSubBef"
                                 android:layout_width="250dp"
                                 android:layout_height="32dp"
-                                android:orientation="horizontal"
-                                android:id="@+id/InquiryAddRadioGroup">
+                                android:orientation="horizontal">
 
                                 <RadioButton
-                                    android:id="@+id/InquiryYesInput"
+                                    android:id="@+id/inquiryViewSubBefYes"
                                     android:layout_width="70dp"
                                     android:layout_height="33dp"
                                     android:layout_marginHorizontal="25dp"
                                     android:text="Yes" />
 
                                 <RadioButton
-                                    android:id="@+id/InquiryNoInput"
+                                    android:id="@+id/inquiryViewSubBefNo"
                                     android:layout_width="85dp"
                                     android:layout_height="33dp"
+                                    android:text="No"
                                     android:layout_marginHorizontal="25dp"
-                                    android:text="No" />
+                                    android:checked="true"/>
 
                             </RadioGroup>
 
@@ -159,7 +161,7 @@
                                 android:textSize="18sp" />
 
                             <Spinner
-                                android:id="@+id/clientAddModelRequestTypeInput"
+                                android:id="@+id/inquiryViewType"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:entries="@array/inquiry_types" />
@@ -180,13 +182,14 @@
                                 android:textColor="@color/black"
                                 android:textSize="18sp" />
 
-                            <EditText
-                                android:id="@+id/InquiryDesInput"
+                            <TextView
+                                android:id="@+id/inquiryViewDes"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:height="120dp"
                                 android:ems="10"
-                                android:hint="Describe your inquiry here" />
+                                android:hint="Inquiry Description"
+                                android:height="150dp"
+                                android:textSize="18sp"/>
 
                         </LinearLayout>
 
@@ -194,7 +197,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="60dp"
                             android:gravity="center_vertical"
-                            android:orientation="horizontal"
+                            android:orientation="vertical"
                             android:paddingHorizontal="20dp">
 
                             <TextView
@@ -204,43 +207,8 @@
                                 android:textColor="@color/black"
                                 android:textSize="18sp" />
 
-<!--                            <TextView-->
-<!--                                android:layout_width="140dp"-->
-<!--                                android:layout_height="32dp"-->
-<!--                                android:text="new_image.jpg"-->
-<!--                                android:textColor="@color/black"-->
-<!--                                android:textSize="18sp"-->
-<!--                                android:alpha="0.6"-->
-<!--                                android:layout_marginLeft="15dp"/>-->
-
-                            <Button
-                                android:id="@+id/InquiryImageInput"
-                                android:layout_width="wrap_content"
-                                android:layout_height="40dp"
-                                android:text="Upload Image"
-                                app:backgroundTint="@color/ash"
-                                android:layout_marginLeft="15dp"
-                                android:background="@drawable/btn_image_select"
-                                />
-
-<!--                            <ImageButton-->
-<!--                                android:layout_width="25dp"-->
-<!--                                android:layout_height="25dp"-->
-<!--                                android:background="@drawable/attached"-->
-<!--                                android:layout_marginLeft="5dp"/>-->
-
-                        </LinearLayout>
-
-                        //newly added selected image show
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical"
-                            android:orientation="horizontal"
-                            android:paddingHorizontal="20dp">
-
                             <ImageView
-                                android:id="@+id/selectedImgView"
+                                android:id="@+id/inquiryViewImage"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent" />
 
@@ -248,18 +216,36 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="70dp"
-                            android:gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
                             android:orientation="horizontal"
-                            android:paddingHorizontal="20dp">
+                            android:paddingBottom="20dp">
+
 
                             <Button
-                                android:id="@+id/InquirySubmitbtn"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginVertical="10dp"
-                                android:background="@drawable/rounded_button_color"
-                                android:text="SUBMIT" />
+                                android:id="@+id/inquiryViewUpdatebtn"
+                                android:layout_width="160dp"
+                                android:layout_height="48dp"
+                                android:text="Update"
+                                android:textAlignment="center"
+                                app:backgroundTint="#01D60A"
+                                app:cornerRadius="20dp"
+                                tools:ignore="SpeakableTextPresentCheck"
+                                android:layout_marginHorizontal="10dp">
+                            </Button>
+
+                            <Button
+                                android:id="@+id/inquiryViewDeletebtn"
+                                android:layout_width="160dp"
+                                android:layout_height="48dp"
+                                android:layout_marginHorizontal="10dp"
+                                android:text="Delete"
+                                android:textAlignment="center"
+                                app:backgroundTint="#D0342C"
+                                app:cornerRadius="20dp"
+                                tools:ignore="SpeakableTextPresentCheck">
+
+                            </Button>
 
                         </LinearLayout>
 

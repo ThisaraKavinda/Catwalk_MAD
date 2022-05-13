@@ -10,8 +10,8 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
-<!--    <string name="modelrequestacceptbtn1" />-->
-<!--    <string name="modelrequestviewbtn1" />-->
+    <!--    <string name="modelrequestacceptbtn1" />-->
+    <!--    <string name="modelrequestviewbtn1" />-->
 
     <string name="adrequestsingleadminbackbtn1">BACK</string>
     <string name="adrequestsingleacceptbtn1">Accept</string>
@@ -87,8 +87,8 @@
     <string name="articledescriptionupdate">Enter Article Description</string>
     <string name="updatearticlebtn1">Update</string>
     <string name="deletearticlebtn2">Delete</string>
->>>>>>> Stashed changes
->>>>>>> thisara
+    >>>>>>> Stashed changes
+    >>>>>>> thisara
 
     <string name="clientAddModelRequestbackbtn1">Back</string>
 

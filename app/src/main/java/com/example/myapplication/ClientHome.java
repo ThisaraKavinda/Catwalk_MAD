@@ -7,10 +7,12 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.example.myapplication.Session.SessionManager;
 import com.squareup.picasso.Picasso;
 
 import java.io.IOException;
@@ -20,10 +22,18 @@ public class ClientHome extends AppCompatActivity {
     LinearLayout newrequest,adresponse,hiredmodels,adslist, addInquiry, inquiryList;
     ImageView propic;
 
+    SessionManager session;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_client_home);
+
+        session = new SessionManager(getApplicationContext());
+        session.checkLogin();
+        String name = session.getUserDetails().get("name");
+        String type  = session.getUserDetails().get("email");
+        Log.i("info", name + " " + type);
 
         newrequest = findViewById(R.id.new_request_tab);
         adresponse = findViewById(R.id.ads_response_tab);

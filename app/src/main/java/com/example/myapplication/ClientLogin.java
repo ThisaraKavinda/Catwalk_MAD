@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.myapplication.Session.SessionManager;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -22,6 +23,8 @@ public class ClientLogin extends AppCompatActivity {
     EditText password,mobile;
     Button login;
     TextView register;
+
+    SessionManager session;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +61,9 @@ public class ClientLogin extends AppCompatActivity {
                             if (client.getPassword().equals(password.getText().toString())) {
 
                                 Toast.makeText(ClientLogin.this, "Login Success", Toast.LENGTH_SHORT).show();
+
+                                session = new SessionManager(getApplicationContext());
+                                session.createLoginSession(client.getName(), "client");
 
                                 Intent mhome = new Intent(ClientLogin.this, ClientHome.class);
                                 mhome.putExtra("cname",client.getName());
