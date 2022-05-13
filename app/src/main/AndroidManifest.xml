@@ -59,16 +59,12 @@
             android:exported="false" />
         <activity
             android:name=".ModelProfile"
-            android:exported="false" />
-        <activity
-            android:name=".ModelProfile"
             android:exported="true">
 
         </activity>
-		<activity>
+		<activity
             android:name=".ClientProfile"
             android:exported="false" />
-		</activity>
         <activity
             android:name=".ClientViewHistory"
             android:exported="false" />
