@@ -43,10 +43,7 @@
 
         <activity android:name=".InquiryList"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
 
         </activity>
 
@@ -62,9 +59,6 @@
             android:exported="false" />
         <activity
             android:name=".ClientViewHistory"
-            android:exported="false" />
-        <activity
-            android:name=".Inquiry"
             android:exported="false" />
         <activity
             android:name=".ClientRequestedModelsList"
@@ -90,7 +84,6 @@
 
             android:exported="false" >
         </activity>
->>>>>>> thisara
         <activity
             android:name=".ModelListA"
             android:exported="false" />
@@ -136,6 +129,10 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 <!--            <intent-filter>-->
 <!--                <action android:name="android.intent.action.MAIN" />-->
 

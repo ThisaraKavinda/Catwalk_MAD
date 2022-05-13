@@ -204,6 +204,7 @@
                 >
 
                 <LinearLayout
+                    android:id="@+id/client_add_inquiry_tab"
                     android:orientation="vertical"
                     android:padding="16dp"
                     android:gravity="center"
@@ -238,6 +239,7 @@
                 >
 
                 <LinearLayout
+                    android:id="@+id/client_inquiry_list_tab"
                     android:orientation="vertical"
                     android:padding="16dp"
                     android:gravity="center"

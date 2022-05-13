@@ -17,7 +17,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 public class ClientHome extends AppCompatActivity {
-    LinearLayout newrequest,adresponse,hiredmodels,adslist;
+    LinearLayout newrequest,adresponse,hiredmodels,adslist, addInquiry, inquiryList;
     ImageView propic;
 
     @Override
@@ -30,6 +30,9 @@ public class ClientHome extends AppCompatActivity {
         hiredmodels = findViewById(R.id.hired_models_tab);
         adslist =findViewById(R.id.ads_list_tab);
         propic = findViewById(R.id.clientpropic);
+        addInquiry = findViewById(R.id.client_add_inquiry_tab);
+        inquiryList = findViewById(R.id.client_inquiry_list_tab);
+
         Intent clienthomeIntent = getIntent();
 
         String cname = clienthomeIntent.getStringExtra("cname");
@@ -69,6 +72,22 @@ public class ClientHome extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent alist = new Intent(ClientHome.this,ClientAdHistory.class);
+                startActivity(alist);
+            }
+        });
+
+        addInquiry.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent alist = new Intent(ClientHome.this,addInquiry.class);
+                startActivity(alist);
+            }
+        });
+
+        inquiryList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent alist = new Intent(ClientHome.this,InquiryList.class);
                 startActivity(alist);
             }
         });
