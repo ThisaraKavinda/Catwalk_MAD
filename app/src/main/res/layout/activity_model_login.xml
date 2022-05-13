@@ -18,12 +18,12 @@
         app:srcCompat="@drawable/untitled_1" />
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/enteremail"
         android:layout_width="332dp"
         android:layout_height="54dp"
         android:ems="10"
-        android:hint="Enter Email"
-        android:inputType="textPersonName"
+        android:hint="Enter Mobile Number"
+        android:inputType="number"
         android:backgroundTint="#6e1597"
         android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,7 +33,7 @@
         app:layout_constraintVertical_bias="0.233" />
 
     <EditText
-        android:id="@+id/rpassword"
+        android:id="@+id/enterpassword"
         android:layout_width="332dp"
         android:layout_height="54dp"
         android:ems="10"
@@ -100,7 +100,7 @@
         app:layout_constraintVertical_bias="0.459" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Register"
@@ -115,7 +115,7 @@
         app:layout_constraintVertical_bias="0.46" />
 
     <ImageButton
-        android:id="@+id/imageButton6"
+        android:id="@+id/facebookbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#00FFFFFF"

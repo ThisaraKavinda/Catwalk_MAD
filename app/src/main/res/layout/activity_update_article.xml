@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_admin_back"
+    tools:context=".UpdateArticle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/updatearticlebackbtn1"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="-50dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="BACK"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:cornerRadius="15dp"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck">
+
+
+        </Button>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Article"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/profilepic" />
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="1"
+            android:columnOrderPreserved="false"
+            android:rowCount="4">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:paddingEnd="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Topic"
+                        android:textSize="20sp"
+                        android:paddingBottom="10dp">
+
+                    </TextView>
+
+
+                    <TextView
+                        android:id="@+id/articletopicupdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:hint="Article Topic"
+                        android:text=" Article Topic"
+                        android:editable="false"
+                        android:textSize="20dp"
+                        android:paddingTop="10dp"
+
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Description"
+                        android:textSize="20sp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp">
+
+                    </TextView>
+
+
+                    <EditText
+                        android:id="@+id/articledescriptionupdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:hint="Enter Article Description"
+                        android:text="Article Description"
+
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+
+
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        android:paddingTop="20dp">
+
+
+                        <Button
+                            android:id="@+id/updatearticlebtn1"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+
+                            android:text="Update"
+                            android:textAlignment="center"
+                            app:backgroundTint="#01D60A"
+                            app:cornerRadius="20dp"
+                            tools:ignore="SpeakableTextPresentCheck">
+
+                        </Button>
+                        <Button
+                            android:id="@+id/deletearticlebtn2"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+
+                            android:text="Delete"
+                            android:textAlignment="center"
+                            app:backgroundTint="#D0342C"
+                            app:cornerRadius="20dp"
+                            tools:ignore="SpeakableTextPresentCheck">
+
+                        </Button>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

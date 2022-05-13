@@ -57,6 +57,7 @@
                >
 
                <LinearLayout
+                   android:id="@+id/model_request_list_tab"
                    android:orientation="vertical"
                    android:padding="16dp"
                    android:gravity="center"
@@ -64,7 +65,7 @@
                    android:layout_height="match_parent">
 
                    <ImageView
-                       android:src="@drawable/icons8_request_100"
+                       android:src="@drawable/icons8_people_100"
                        android:layout_width="80dp"
                        android:layout_height="80dp"/>
 
@@ -99,7 +100,7 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:src="@drawable/icons8_request_100"
+                        android:src="@drawable/icons8_member_100"
                         android:layout_width="80dp"
                         android:layout_height="80dp"/>
 
@@ -107,7 +108,7 @@
                         android:layout_marginTop="12dp"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp"
-                        android:text="Model Requests"
+                        android:text="Models List"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 
@@ -134,7 +135,7 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:src="@drawable/icons8_request_100"
+                        android:src="@drawable/icons8_people_100_1_"
                         android:layout_width="80dp"
                         android:layout_height="80dp"/>
 
@@ -142,7 +143,7 @@
                         android:layout_marginTop="12dp"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp"
-                        android:text="Model Requests"
+                        android:text="Client Requests"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 
@@ -169,7 +170,7 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:src="@drawable/icons8_request_100"
+                        android:src="@drawable/icons8_member_100_1_"
                         android:layout_width="80dp"
                         android:layout_height="80dp"/>
 
@@ -177,7 +178,7 @@
                         android:layout_marginTop="12dp"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp"
-                        android:text="Model Requests"
+                        android:text="Clients List"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 
@@ -212,7 +213,7 @@
                         android:layout_marginTop="12dp"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp"
-                        android:text="Model Requests"
+                        android:text="Ads Requests"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 
@@ -232,6 +233,7 @@
                 >
 
                 <LinearLayout
+                    android:id="@+id/add_article_tab"
                     android:orientation="vertical"
                     android:padding="16dp"
                     android:gravity="center"
@@ -239,7 +241,7 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:src="@drawable/icons8_request_100"
+                        android:src="@drawable/icons8_add_property_100"
                         android:layout_width="80dp"
                         android:layout_height="80dp"/>
 
@@ -247,7 +249,7 @@
                         android:layout_marginTop="12dp"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp"
-                        android:text="Model Requests"
+                        android:text="     Add Article   "
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 
@@ -266,6 +268,7 @@
                 >
 
                 <LinearLayout
+                    android:id="@+id/list_article_tab"
                     android:orientation="vertical"
                     android:padding="16dp"
                     android:gravity="center"
@@ -273,7 +276,7 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:src="@drawable/icons8_request_100"
+                        android:src="@drawable/icons8_list_100"
                         android:layout_width="80dp"
                         android:layout_height="80dp"/>
 
@@ -289,39 +292,7 @@
 
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp"
-                >
 
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:src="@drawable/icons8_request_100"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"/>
-
-                    <TextView
-                        android:layout_marginTop="12dp"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp"
-                        android:text="Model Requests"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
 
         </GridLayout>
 

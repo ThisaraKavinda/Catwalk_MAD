@@ -10,12 +10,32 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+
             android:name=".AdminViewModelProfile"
             android:exported="true" >
         </activity>
         <activity
             android:name=".AdminLogin"
-            android:exported="true"></activity>
+            android:exported="true">
+        </activity>
+		<activity
+            android:name=".ClientHome"
+            android:exported="false" />
+        <activity
+            android:name=".ClientLogin"
+            android:exported="false" />
+        <activity
+            android:name=".ModelRequestHolder"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name="ModelLis" -->
+        <!-- android:exported="false" /> -->
+
+        <activity
+            android:name=".ModelHistory"
+            android:exported="false" />
+        <activity
+            android:name=".ArticleList"
+            android:exported="false" />
         <activity
             android:name=".ClientEditAd"
             android:exported="false" />
@@ -29,6 +49,7 @@
             android:name=".addInquiry"
             android:exported="true">
 
+
         </activity>
         <activity
             android:name=".InquiryList"
@@ -37,19 +58,24 @@
             android:name=".InquiryUpdate"
             android:exported="false" />
         <activity
-            android:name=".ClientProfile"
+            android:name=".ModelProfile"
             android:exported="false" />
         <activity
             android:name=".ModelProfile"
             android:exported="true">
 
         </activity>
+		<activity>
+            android:name=".ClientProfile"
+            android:exported="false" />
+		</activity>
         <activity
             android:name=".ClientViewHistory"
             android:exported="false" />
         <activity
             android:name=".ClientRequestedModelsList"
             android:exported="false" />
+
         <activity
             android:name=".ClientViewAd"
             android:exported="false" />
@@ -69,16 +95,17 @@
             android:name=".AdminProfile"
             android:exported="false" />
         <activity
-            android:name=".ArticleList"
+            android:name=".UpdateArticle"
             android:exported="false" />
         <activity
             android:name=".AddArticle"
-<<<<<<< Updated upstream
+
             android:exported="false" >
         </activity>
-=======
-            android:exported="true" />
->>>>>>> Stashed changes
+
+        <activity
+            android:name=".ModelListA"
+            android:exported="false" />
         <activity
             android:name=".ClientSingleRegisterRequest"
             android:exported="false" />
@@ -104,10 +131,10 @@
             android:name=".ModelRegisterRequests"
             android:exported="false" />
         <activity
-            android:name=".ModelHistoryActivity"
+            android:name=".ModelRequestActivity"
             android:exported="false" />
         <activity
-            android:name=".ModelRequestActivity"
+            android:name=".ModelRegister"
             android:exported="false" />
         <activity
             android:name=".AdminHome"
@@ -115,21 +142,14 @@
 
         </activity>
         <activity
-            android:name=".ModelRegister"
+            android:name=".ModelLogin"
             android:exported="false" />
         <activity
-            android:name=".ModelLogin"
+            android:name=".ModelHome"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
         </activity>
     </application>
 

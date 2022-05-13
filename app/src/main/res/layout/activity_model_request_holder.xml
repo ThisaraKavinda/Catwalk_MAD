@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ModelRequestHolder"
+    android:layout_rowWeight="1"
+    android:layout_columnWeight="1"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:paddingEnd="10dp">
+
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/client1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/model_request_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:text="Inuri Gamage"
+                android:textColor="#6f6f6f"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/model_request_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="Female"
+                android:textColor="#6f6f6f"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/model_request_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="24 years old"
+                android:textColor="#6f6f6f"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+
+            android:layout_height="91dp"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/modelrequestacceptbtn1"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/modelrequestacceptbtn1"
+                android:text="Accept"
+                android:textAlignment="center"
+                app:backgroundTint="#01D60A"
+                app:cornerRadius="20dp"
+                tools:ignore="SpeakableTextPresentCheck">
+
+            </Button>
+
+            <Button
+                android:id="@+id/modelrequestviewbtn1"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/modelrequestviewbtn1"
+                android:text="View"
+                android:textAlignment="center"
+                app:backgroundTint="#891ABC"
+                app:cornerRadius="20dp"
+                tools:ignore="SpeakableTextPresentCheck">
+
+            </Button>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
