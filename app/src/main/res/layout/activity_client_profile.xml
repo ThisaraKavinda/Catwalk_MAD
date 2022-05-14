@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ModelProfile">
+    tools:context=".ClientProfile">
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -53,6 +53,7 @@
                     android:textStyle="bold" />
 
                 <ImageView
+                    android:id="@+id/clientpropic2"
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_alignParentRight="true"
@@ -91,6 +92,7 @@
 
 
                             <ImageView
+                                android:id="@+id/clientpropic"
                                 android:layout_width="120dp"
                                 android:layout_height="180dp"
                                 android:layout_marginTop="5dp"
@@ -139,7 +141,7 @@
                                 <EditText
                                     android:layout_width="300dp"
                                     android:layout_height="wrap_content"
-                                    android:id="@+id/modelProfileNameInput"
+                                    android:id="@+id/clientProfileNameInput"
                                     android:layout_marginTop="0dp"
                                     android:text="Kamal Sanjeewa"
                                     android:textColor="#6f6f6f"
@@ -156,7 +158,7 @@
                                 <EditText
                                     android:layout_width="300dp"
                                     android:layout_height="wrap_content"
-                                    android:id="@+id/modelProfilePasswordInput"
+                                    android:id="@+id/clientProfilePasswordInput"
                                     android:layout_marginTop="0dp"
                                     android:text="***********"
                                     android:textColor="#6f6f6f"
@@ -165,18 +167,21 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Mobile"
+                                    android:text="Mobile(Read Only)"
                                     android:textColor="#6f6f6f"
                                     android:textSize="18sp" />
 
-                                <EditText
+                                <TextView
                                     android:layout_width="300dp"
                                     android:layout_height="wrap_content"
-                                    android:id="@+id/modelProfileMobileInput"
+                                    android:id="@+id/clientProfileMobileInput"
                                     android:layout_marginTop="0dp"
                                     android:text="07777334445"
                                     android:textColor="#6f6f6f"
-                                    android:textSize="25sp" />
+                                    android:textSize="25sp"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"
+                                   />
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -188,7 +193,7 @@
                                 <EditText
                                     android:layout_width="300dp"
                                     android:layout_height="wrap_content"
-                                    android:id="@+id/modelProfileEmailInput"
+                                    android:id="@+id/clientProfileEmailInput"
                                     android:layout_marginTop="0dp"
                                     android:text="nishadi@gmail.com"
                                     android:textColor="#6f6f6f"
@@ -204,7 +209,7 @@
                                 <EditText
                                     android:layout_width="300dp"
                                     android:layout_height="wrap_content"
-                                    android:id="@+id/modelProfileDobInput"
+                                    android:id="@+id/clientProfileComInput"
                                     android:layout_marginTop="0dp"
                                     android:text="Deflix pvt ltd"
                                     android:textColor="#6f6f6f"
@@ -221,7 +226,7 @@
                                 <EditText
                                     android:layout_width="300dp"
                                     android:layout_height="wrap_content"
-                                    android:id="@+id/modelProfileHeightInput"
+                                    android:id="@+id/clientProfileLocInput"
                                     android:layout_marginTop="0dp"
                                     android:text="Colombo 03"
                                     android:textColor="#6f6f6f"

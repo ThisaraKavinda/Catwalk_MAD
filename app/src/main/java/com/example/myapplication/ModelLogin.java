@@ -13,6 +13,7 @@ import android.widget.TextClock;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.myapplication.Session.SessionManager;
 import com.google.android.gms.common.internal.service.Common;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -25,6 +26,8 @@ public class ModelLogin extends AppCompatActivity {
     EditText password,mobile;
     Button login;
     TextView register;
+
+    SessionManager session;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +64,10 @@ public class ModelLogin extends AppCompatActivity {
                             Models model = snapshot.child(mobile.getText().toString()).getValue(Models.class);
                             if (model.getPassword().equals(password.getText().toString())) {
                                 Toast.makeText(ModelLogin.this, "Login Success", Toast.LENGTH_SHORT).show();
+
+                                session = new SessionManager(getApplicationContext());
+                                session.createLoginSessionModel(model.getName(),model.getEmail(),model.getMobile(),model.getGender(),model.getBirthday(),model.getPassword(),model.getImageurl(),"model");
+
 
                                 Intent mhome = new Intent(ModelLogin.this, ModelHome.class);
 

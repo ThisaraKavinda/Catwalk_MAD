@@ -24,8 +24,23 @@ public class SessionManager {
     private static final String IS_LOGIN = "IsLoggedIn";
     // User name (make variable public to access from outside)
     public static final String KEY_NAME = "name";
-    // Email address (make variable public to access from outside)
     public static final String KEY_EMAIL = "email";
+    public static final String KEY_MOBILE = "mobile";
+    public static final String KEY_LOCATION = "location";
+    public static final String KEY_COMPANY = "company";
+    public static final String KEY_PASSWORD = "password";
+    public static final String KEY_IMAGE = "image";
+    public static final String KEY_TYPE = "type";
+
+    public static final String KEY_MNAME = "mname";
+    public static final String KEY_MEMAIL = "memail";
+    public static final String KEY_MMOBILE = "mmobile";
+    public static final String KEY_MBIRTH = "mbirth";
+    public static final String KEY_MGENDER = "mgender";
+    public static final String KEY_MPASSWORD = "mpassword";
+    public static final String KEY_MIMAGE = "mimage";
+    public static final String KEY_MTYPE = "mtype";
+
 
     // Constructor
     @SuppressLint("CommitPrefEdits")
@@ -38,13 +53,20 @@ public class SessionManager {
     /**
      * Create login session
      */
-    public void createLoginSession(String name, String email) {
+    public void createLoginSession(String name, String email ,String mobile,String location,String company,String password,String image,String type) {
         // Storing login value as TRUE
         editor.putBoolean(IS_LOGIN, true);
         // Storing name in pref
         editor.putString(KEY_NAME, name);
         // Storing email in pref
         editor.putString(KEY_EMAIL, email);
+        editor.putString(KEY_MOBILE, mobile);
+        editor.putString(KEY_LOCATION, location);
+        editor.putString(KEY_COMPANY, company);
+        editor.putString(KEY_PASSWORD, password);
+        editor.putString(KEY_IMAGE, image);
+        editor.putString(KEY_TYPE, type);
+
         // commit changes
         editor.commit();
     }
@@ -80,6 +102,12 @@ public class SessionManager {
 
         // user email id
         user.put(KEY_EMAIL, pref.getString(KEY_EMAIL, null));
+        user.put(KEY_MOBILE, pref.getString(KEY_MOBILE, null));
+        user.put(KEY_LOCATION, pref.getString(KEY_LOCATION, null));
+        user.put(KEY_COMPANY, pref.getString(KEY_COMPANY, null));
+        user.put(KEY_PASSWORD, pref.getString(KEY_PASSWORD, null));
+        user.put(KEY_IMAGE, pref.getString(KEY_IMAGE, null));
+        user.put(KEY_TYPE, pref.getString(KEY_IMAGE, null));
 
         // return user
         return user;
@@ -104,4 +132,43 @@ public class SessionManager {
     public boolean isLoggedIn() {
         return pref.getBoolean(IS_LOGIN, false);
     }
+
+    public void createLoginSessionModel(String name, String email ,String mobile,String gender,String birthday,String password,String image,String type) {
+        // Storing login value as TRUE
+        editor.putBoolean(IS_LOGIN, true);
+        // Storing name in pref
+        editor.putString(KEY_MNAME, name);
+        // Storing email in pref
+        editor.putString(KEY_MEMAIL, email);
+        editor.putString(KEY_MMOBILE, mobile);
+        editor.putString(KEY_MGENDER, gender);
+        editor.putString(KEY_MBIRTH, birthday);
+        editor.putString(KEY_MPASSWORD, password);
+        editor.putString(KEY_MIMAGE, image);
+        editor.putString(KEY_MTYPE, type);
+
+        // commit changes
+        editor.commit();
+    }
+
+    public HashMap<String, String> getModelDetails() {
+        HashMap<String, String> user = new HashMap<String, String>();
+        // user name
+        user.put(KEY_MNAME, pref.getString(KEY_MNAME, null));
+
+        // user email id
+        user.put(KEY_MEMAIL, pref.getString(KEY_MEMAIL, null));
+        user.put(KEY_MMOBILE, pref.getString(KEY_MMOBILE, null));
+        user.put(KEY_MGENDER, pref.getString(KEY_MGENDER, null));
+        user.put(KEY_MBIRTH, pref.getString(KEY_MBIRTH, null));
+        user.put(KEY_MPASSWORD, pref.getString(KEY_MPASSWORD, null));
+        user.put(KEY_MIMAGE, pref.getString(KEY_MIMAGE, null));
+        user.put(KEY_MTYPE, pref.getString(KEY_MIMAGE, null));
+
+        // return user
+        return user;
+    }
+
 }
+
+
