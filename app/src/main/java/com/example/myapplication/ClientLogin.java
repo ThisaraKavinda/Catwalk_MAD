@@ -63,12 +63,10 @@ public class ClientLogin extends AppCompatActivity {
                                 Toast.makeText(ClientLogin.this, "Login Success", Toast.LENGTH_SHORT).show();
 
                                 session = new SessionManager(getApplicationContext());
-                                session.createLoginSession(client.getName(), "client");
+                                session.createLoginSession(client.getName(),client.getEmail(),client.getMobile(),client.getLocation(),client.getCompany(),client.getPassword(),client.getImageurl(),"client");
 
                                 Intent mhome = new Intent(ClientLogin.this, ClientHome.class);
-                                mhome.putExtra("cname",client.getName());
-                                mhome.putExtra("cmobile",client.getMobile());
-                                mhome.putExtra("cimage",client.getImageurl());
+
 
                                 startActivity(mhome);
                                 finish();
