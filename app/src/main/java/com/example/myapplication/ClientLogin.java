@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -50,6 +51,15 @@ public class ClientLogin extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(TextUtils.isEmpty(mobile.getText().toString())){
+                    mobile.setError("Mobile Number is compulsory");
+                    return;
+                }
+                if(TextUtils.isEmpty(password.getText().toString())){
+                    password.setError("Password is compulsory");
+                    return;
+                }
+
                 Clientdb.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {

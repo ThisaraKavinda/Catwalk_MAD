@@ -52,7 +52,14 @@ public class AddArticle extends AppCompatActivity {
         addArticle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                if(TextUtils.isEmpty(aTopic.getText().toString())){
+                    aTopic.setError("Topic is compulsory");
+                    return;
+                }
+                if(TextUtils.isEmpty(aDescription.getText().toString())){
+                    aDescription.setError("Description is compulsory");
+                    return;
+                }
 
                 sendArticle();
 
