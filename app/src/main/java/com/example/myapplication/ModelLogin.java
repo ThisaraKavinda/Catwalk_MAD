@@ -53,7 +53,14 @@ public class ModelLogin extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                if(TextUtils.isEmpty(mobile.getText().toString())){
+                    mobile.setError("Mobile Number is compulsory");
+                    return;
+                }
+                if(TextUtils.isEmpty(password.getText().toString())){
+                    password.setError("Password is compulsory");
+                    return;
+                }
                 Modeldb.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
