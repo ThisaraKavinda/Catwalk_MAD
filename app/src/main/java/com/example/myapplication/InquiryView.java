@@ -110,8 +110,6 @@ public class InquiryView extends AppCompatActivity {
                             public void onClick(DialogInterface dialog, int id) {
                                 //  Action for 'NO' Button
                                 dialog.cancel();
-                                Toast.makeText(getApplicationContext().getApplicationContext(),"Please press Yes to delete",
-                                        Toast.LENGTH_SHORT).show();
                             }
                         });
                 //Creating dialog box

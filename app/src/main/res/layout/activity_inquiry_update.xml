@@ -98,6 +98,7 @@
                                 android:textSize="18sp" />
 
                             <EditText
+                                android:id="@+id/InquiryEditTitle"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
@@ -120,17 +121,20 @@
                                 android:textSize="18sp" />
 
                             <RadioGroup
+                                android:id="@+id/InquiryEditRadGroup"
                                 android:layout_width="250dp"
                                 android:layout_height="32dp"
                                 android:orientation="horizontal">
 
                                 <RadioButton
+                                    android:id="@+id/InquiryEditRadGroupYes"
                                     android:layout_width="70dp"
                                     android:layout_height="33dp"
                                     android:layout_marginHorizontal="25dp"
                                     android:text="Yes" />
 
                                 <RadioButton
+                                    android:id="@+id/InquiryEditRadGroupNo"
                                     android:layout_width="85dp"
                                     android:layout_height="33dp"
                                     android:text="No"
@@ -156,7 +160,7 @@
                                 android:textSize="18sp" />
 
                             <Spinner
-                                android:id="@+id/clientAddModelRequestTypeInput"
+                                android:id="@+id/InquiryEditAbout"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:entries="@array/inquiry_types" />
@@ -165,10 +169,11 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="150dp"
+                            android:layout_height="wrap_content"
                             android:gravity="center_vertical"
                             android:orientation="vertical"
-                            android:paddingHorizontal="20dp">
+                            android:paddingHorizontal="20dp"
+                            android:layout_marginBottom="10dp">
 
                             <TextView
                                 android:layout_width="93dp"
@@ -178,17 +183,17 @@
                                 android:textSize="18sp" />
 
                             <EditText
+                                android:id="@+id/InquiryEditDes"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
-                                android:hint="Inquiry Description"
-                                android:height="150dp"/>
+                                android:hint="Inquiry Description"/>
 
                         </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_height="wrap_content"
                             android:gravity="center_vertical"
                             android:orientation="vertical"
                             android:paddingHorizontal="20dp">
@@ -200,23 +205,8 @@
                                 android:textColor="@color/black"
                                 android:textSize="18sp" />
 
-<!--                            <TextView-->
-<!--                                android:layout_width="140dp"-->
-<!--                                android:layout_height="32dp"-->
-<!--                                android:text="new_image.jpg"-->
-<!--                                android:textColor="@color/black"-->
-<!--                                android:textSize="18sp"-->
-<!--                                android:alpha="0.6"-->
-<!--                                android:layout_marginLeft="15dp"/>-->
-
-<!--                            <ImageButton-->
-<!--                                android:layout_width="25dp"-->
-<!--                                android:layout_height="25dp"-->
-<!--                                android:background="@drawable/attached"-->
-<!--                                android:layout_marginLeft="5dp"/>-->
-
                             <ImageView
-                                android:id="@+id/inquiryUpdateselectedImgView"
+                                android:id="@+id/InquiryEditImageView"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent" />
 
@@ -231,10 +221,10 @@
 
 
                             <Button
-                                android:id="@+id/inquiryUpdateupdatebtn1"
+                                android:id="@+id/InquiryEditCancelbtn"
                                 android:layout_width="160dp"
                                 android:layout_height="48dp"
-                                android:text="Update"
+                                android:text="Cancel"
                                 android:textAlignment="center"
                                 app:backgroundTint="#01D60A"
                                 app:cornerRadius="20dp"
@@ -243,11 +233,11 @@
                             </Button>
 
                             <Button
-                                android:id="@+id/inquiryUpdatedeletebtn1"
+                                android:id="@+id/InquiryEditUpdatebtn"
                                 android:layout_width="160dp"
                                 android:layout_height="48dp"
                                 android:layout_marginHorizontal="10dp"
-                                android:text="Delete"
+                                android:text="Update"
                                 android:textAlignment="center"
                                 app:backgroundTint="#D0342C"
                                 app:cornerRadius="20dp"
