@@ -195,7 +195,7 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="60dp"
+                            android:layout_height="wrap_content"
                             android:gravity="center_vertical"
                             android:orientation="vertical"
                             android:paddingHorizontal="20dp">
@@ -221,12 +221,11 @@
                             android:orientation="horizontal"
                             android:paddingBottom="20dp">
 
-
                             <Button
                                 android:id="@+id/inquiryViewUpdatebtn"
                                 android:layout_width="160dp"
                                 android:layout_height="48dp"
-                                android:text="Update"
+                                android:text="Edit"
                                 android:textAlignment="center"
                                 app:backgroundTint="#01D60A"
                                 app:cornerRadius="20dp"
@@ -244,7 +243,6 @@
                                 app:backgroundTint="#D0342C"
                                 app:cornerRadius="20dp"
                                 tools:ignore="SpeakableTextPresentCheck">
-
                             </Button>
 
                         </LinearLayout>

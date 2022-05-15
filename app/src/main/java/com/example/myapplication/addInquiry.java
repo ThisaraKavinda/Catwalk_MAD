@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -37,7 +38,18 @@ public class addInquiry extends AppCompatActivity {
     StorageReference storageReference;
     Uri filePath;
     final int PICK_IMAGE_REQUEST = 22;
+
+    EditText titleEditText, desEditText;
     ImageView selectedImageView;
+    RadioGroup radioGroup;
+    Spinner spinner;
+    Button btnSelect;
+
+    String title, des, value, about;
+    Boolean isPreviousSubmitted = false;
+    String imgUrl;
+
+    Context context = this;
 
     private String getFileExtension(Uri uri) {
         ContentResolver cr = getContentResolver();
@@ -50,13 +62,13 @@ public class addInquiry extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inquiry);
 
-        final EditText titleEditText = (EditText) findViewById(R.id.InquiryTitleInput);
-        final EditText desEditText = (EditText) findViewById(R.id.InquiryDesInput);
-        final RadioGroup radioGroup = (RadioGroup) findViewById(R.id.InquiryAddRadioGroup);
-        final Spinner spinner = (Spinner) findViewById(R.id.clientAddModelRequestTypeInput);
+        titleEditText = (EditText) findViewById(R.id.InquiryTitleInput);
+        desEditText = (EditText) findViewById(R.id.InquiryDesInput);
+        radioGroup = (RadioGroup) findViewById(R.id.InquiryAddRadioGroup);
+        spinner = (Spinner) findViewById(R.id.clientAddModelRequestTypeInput);
 
         selectedImageView = (ImageView) findViewById(R.id.selectedImgView);
-        final Button btnSelect = (Button) findViewById(R.id.InquiryImageInput);
+        btnSelect = (Button) findViewById(R.id.InquiryImageInput);
         storage = FirebaseStorage.getInstance();
         storageReference = storage.getReference();
         btnSelect.setOnClickListener(v -> {
@@ -70,14 +82,13 @@ public class addInquiry extends AppCompatActivity {
         DAOInquiry dao = new DAOInquiry();
 
         btnSubmit.setOnClickListener(v -> {
-            String title = titleEditText.getText().toString();
-            String des = desEditText.getText().toString();
-            String value =((RadioButton)findViewById(radioGroup.getCheckedRadioButtonId())).getText().toString();
-            Boolean isPreviousSubmitted = false;
+            title = titleEditText.getText().toString();
+            des = desEditText.getText().toString();
+            value =((RadioButton)findViewById(radioGroup.getCheckedRadioButtonId())).getText().toString();
             if (value.equals("Yes")) {
                 isPreviousSubmitted = true;
             }
-            String about = spinner.getSelectedItem().toString();
+            about = spinner.getSelectedItem().toString();
 
             String imgPath = null;
 
@@ -102,8 +113,24 @@ public class addInquiry extends AppCompatActivity {
                                     {
                                         // Image uploaded successfully
                                         // Dismiss dialog
-                                        progressDialog.dismiss();
-                                        Toast.makeText(getApplicationContext(),"Image Uploaded!!",Toast.LENGTH_SHORT).show();
+                                        ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                                            @Override
+                                            public void onSuccess(Uri uri) {
+                                                imgUrl = uri.toString();
+                                                Toast.makeText(getApplicationContext(),"Image Uploaded!!",Toast.LENGTH_SHORT).show();
+                                                progressDialog.dismiss();
+                                                Inquiry inquiry = new Inquiry(title, isPreviousSubmitted, about, des, imgUrl);
+                                                dao.add(inquiry).addOnSuccessListener(suc -> {
+                                                    Toast.makeText(context, "Added successfully", Toast.LENGTH_LONG).show();
+                                                }).addOnFailureListener(er -> {
+                                                    Toast.makeText(context, "" + er.getMessage(), Toast.LENGTH_LONG).show();
+                                                });
+                                                Intent intent = new Intent(getApplicationContext(), ClientHome.class);
+                                                startActivity(intent);
+                                            }
+                                        });
+
+
                                     }
                                 })
 
@@ -128,12 +155,6 @@ public class addInquiry extends AppCompatActivity {
                                     }
                                 });
             }
-            Inquiry inquiry = new Inquiry(title, isPreviousSubmitted, about, des, imgPath);
-            dao.add(inquiry).addOnSuccessListener(suc -> {
-                Toast.makeText(this, "Added successfully", Toast.LENGTH_LONG).show();
-            }).addOnFailureListener(er -> {
-                Toast.makeText(this, "" + er.getMessage(), Toast.LENGTH_LONG).show();
-            });
         });
     }
 
