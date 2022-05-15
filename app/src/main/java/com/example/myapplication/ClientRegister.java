@@ -23,8 +23,11 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
@@ -113,6 +116,35 @@ public class ClientRegister extends AppCompatActivity {
 //        mDialog.setMessage("Please wait....");
 //        mDialog.show();
 //
+        if(TextUtils.isEmpty(name.getText().toString())){
+            name.setError("Name is compulsory");
+            return;
+        }
+        if(TextUtils.isEmpty(password.getText().toString())){
+            password.setError("Password is compulsory");
+            return;
+        }
+        if(TextUtils.isEmpty(email.getText().toString())){
+            email.setError("Email is compulsory");
+            return;
+        }
+        if(TextUtils.isEmpty(mobile.getText().toString())){
+            mobile.setError("Mobile Number is compulsory");
+            return;
+        }
+        if(TextUtils.isEmpty(company.getText().toString())){
+            company.setError("Company Name  is compulsory");
+            return;
+        }
+        if(TextUtils.isEmpty(location.getText().toString())){
+            location.setError("Location is compulsory");
+            return;
+        }
+        if(uri == null){
+            Toast.makeText(this, "Please Select Image", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
 //
 //
         str_name = name.getText().toString();
@@ -159,39 +191,67 @@ public class ClientRegister extends AppCompatActivity {
 //        Toast.makeText(ModelRegister.this, "Model Registered", Toast.LENGTH_SHORT).show();
 
         ////////////////////////////////////////////////////////////////////////////////////////////////////
+    modelDbref.addValueEventListener(new ValueEventListener() {
+        @Override
+        public void onDataChange(@NonNull DataSnapshot snapshot) {
 
-        final StorageReference fileRef = reference.child(System.currentTimeMillis() + "." + getFileExtension(uri));
-        fileRef.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-            @Override
-            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                fileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+            if (snapshot.child(mobile.getText().toString()).exists()) {
+
+                Toast.makeText(ClientRegister.this, "This Mobile Number Already Registered", Toast.LENGTH_SHORT).show();
+
+            }else{
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                final StorageReference fileRef = reference.child(System.currentTimeMillis() + "." + getFileExtension(uri));
+                fileRef.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
-                    public void onSuccess(Uri uri) {
+                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                        fileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                            @Override
+                            public void onSuccess(Uri uri) {
 
-                        Clients client = new Clients(str_name,str_password,str_email,str_mobile,str_company,str_location,uri.toString(),str_status);
+
+
+                                Clients client = new Clients(str_name,str_password,str_email,str_mobile,str_company,str_location,uri.toString(),str_status);
 //                        String modelId = root.push().getKey();
-                        root.child(str_mobile).setValue(client);
+                                root.child(str_mobile).setValue(client);
 
-                        Toast.makeText(ClientRegister.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
-                        image.setImageResource(R.drawable.icons8_female_profile_55);
-                        Intent intent = new Intent(ClientRegister.this,ClientLogin.class);
-                        startActivity(intent);
+                                Toast.makeText(ClientRegister.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
+                                image.setImageResource(R.drawable.icons8_female_profile_55);
+                                Intent intent = new Intent(ClientRegister.this,ClientLogin.class);
+                                startActivity(intent);
+
+                            }
+                        });
+                    }
+                }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
+                    @Override
+                    public void onProgress(@NonNull UploadTask.TaskSnapshot snapshot) {
 
                     }
+                }).addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+
+                        Toast.makeText(ClientRegister.this, "Register Failed !!", Toast.LENGTH_SHORT).show();
+                    }
                 });
-            }
-        }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
-            @Override
-            public void onProgress(@NonNull UploadTask.TaskSnapshot snapshot) {
+
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
             }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
 
-                Toast.makeText(ClientRegister.this, "Register Failed !!", Toast.LENGTH_SHORT).show();
-            }
-        });
+
+        }
+
+        @Override
+        public void onCancelled(@NonNull DatabaseError error) {
+
+        }
+    });
+
 
 
 

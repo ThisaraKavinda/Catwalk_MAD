@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -50,6 +51,15 @@ public class ClientLogin extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(TextUtils.isEmpty(mobile.getText().toString())){
+                    mobile.setError("Mobile Number is compulsory");
+                    return;
+                }
+                if(TextUtils.isEmpty(password.getText().toString())){
+                    password.setError("Password is compulsory");
+                    return;
+                }
+
                 Clientdb.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -63,12 +73,10 @@ public class ClientLogin extends AppCompatActivity {
                                 Toast.makeText(ClientLogin.this, "Login Success", Toast.LENGTH_SHORT).show();
 
                                 session = new SessionManager(getApplicationContext());
-                                session.createLoginSession(client.getName(), "client");
+                                session.createLoginSession(client.getName(),client.getEmail(),client.getMobile(),client.getLocation(),client.getCompany(),client.getPassword(),client.getImageurl(),"client");
 
                                 Intent mhome = new Intent(ClientLogin.this, ClientHome.class);
-                                mhome.putExtra("cname",client.getName());
-                                mhome.putExtra("cmobile",client.getMobile());
-                                mhome.putExtra("cimage",client.getImageurl());
+
 
                                 startActivity(mhome);
                                 finish();

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ClientProfile">
+    tools:context=".ModelProfile">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -51,6 +51,7 @@
                     android:textStyle="bold" />
 
                 <ImageView
+                    android:id="@+id/modelpropic1"
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:layout_alignParentRight="true"
@@ -89,6 +90,7 @@
 
 
                             <ImageView
+                                android:id="@+id/modelpropicup"
                                 android:layout_width="120dp"
                                 android:layout_height="180dp"
                                 android:layout_marginTop="5dp"
@@ -164,18 +166,20 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
 
-                                    android:text="Mobile"
+                                    android:text="Mobile(Read Only)"
                                     android:textColor="#6f6f6f"
                                     android:textSize="18sp" />
 
-                                <EditText
+                                <TextView
                                     android:id="@+id/modelProfileMobileInput"
                                     android:layout_width="300dp"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="0dp"
                                     android:text="0777334445"
                                     android:textColor="#6f6f6f"
-                                    android:textSize="25sp" />
+                                    android:textSize="25sp"
+                                    android:paddingBottom="5dp"
+                                    android:paddingTop="5dp"/>
 
                                 <TextView
                                     android:layout_width="wrap_content"
@@ -198,7 +202,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
 
-                                    android:text="Date Of Birth"
+                                    android:text="Birth Year"
                                     android:textColor="#6f6f6f"
                                     android:textSize="18sp" />
 
@@ -207,7 +211,7 @@
                                     android:layout_width="300dp"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="0dp"
-                                    android:text="25.02.1997"
+                                    android:text="1997"
                                     android:textColor="#6f6f6f"
                                     android:textSize="25sp" />
 
@@ -215,33 +219,18 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
 
-                                    android:text="Height"
+                                    android:text="Gender"
                                     android:textColor="#6f6f6f"
                                     android:textSize="18sp" />
 
                                 <EditText
                                     android:layout_width="300dp"
                                     android:layout_height="wrap_content"
-                                    android:id="@+id/modelProfileHeightInput"
+                                    android:id="@+id/modelProfileGenderInput"
                                     android:layout_marginTop="0dp"
-                                    android:text="5 feet 6 inches"
+                                    android:text="Male"
                                     android:textColor="#6f6f6f"
                                     android:textSize="25sp" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Type"
-                                    android:textColor="#6f6f6f"
-                                    android:textSize="18sp" />
-
-                                <Spinner
-                                    android:id="@+id/modelprofilespinner"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:entries="@array/model_types"
-                                    android:prompt="@string/predefined_type" />
-
 
                             </LinearLayout>
 
@@ -258,7 +247,7 @@
 
 
                             <Button
-                                android:id="@+id/adminupdatebtn1"
+                                android:id="@+id/modelupdatebtn1"
                                 android:layout_width="160dp"
                                 android:layout_height="48dp"
 

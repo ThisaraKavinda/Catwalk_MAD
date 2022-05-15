@@ -32,8 +32,8 @@ public class ClientHome extends AppCompatActivity {
         session = new SessionManager(getApplicationContext());
         session.checkLogin();
         String name = session.getUserDetails().get("name");
-        String type  = session.getUserDetails().get("email");
-        Log.i("info", name + " " + type);
+        String image  = session.getUserDetails().get("image");
+
 
         newrequest = findViewById(R.id.new_request_tab);
         adresponse = findViewById(R.id.ads_response_tab);
@@ -43,14 +43,14 @@ public class ClientHome extends AppCompatActivity {
         addInquiry = findViewById(R.id.client_add_inquiry_tab);
         inquiryList = findViewById(R.id.client_inquiry_list_tab);
 
-        Intent clienthomeIntent = getIntent();
-
-        String cname = clienthomeIntent.getStringExtra("cname");
-        String cmobile = clienthomeIntent.getStringExtra("cmobile");
-        String cimage =  clienthomeIntent.getStringExtra("cimage");
+//        Intent clienthomeIntent = getIntent();
+//
+//        String cname = clienthomeIntent.getStringExtra("cname");
+//        String cmobile = clienthomeIntent.getStringExtra("cmobile");
+//        String cimage =  clienthomeIntent.getStringExtra("cimage");
 //        Uri img = Uri.parse(cimage);
 
-        Picasso.get().load(cimage).into(propic);
+        Picasso.get().load(image).into(propic);
 
 
 
@@ -99,6 +99,15 @@ public class ClientHome extends AppCompatActivity {
             public void onClick(View view) {
                 Intent alist = new Intent(ClientHome.this,InquiryList.class);
                 startActivity(alist);
+            }
+        });
+
+        propic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ClientHome.this,ClientProfile.class);
+                startActivity(intent);
+                finish();
             }
         });
     }

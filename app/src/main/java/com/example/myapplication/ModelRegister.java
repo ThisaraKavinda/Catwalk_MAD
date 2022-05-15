@@ -120,7 +120,35 @@ public class ModelRegister extends AppCompatActivity {
 //        final ProgressDialog mDialog = new ProgressDialog(ModelRegister.this);
 //        mDialog.setMessage("Please wait....");
 //        mDialog.show();
+
+
 //
+
+        if(TextUtils.isEmpty(name.getText().toString())){
+            name.setError("Name is compulsory");
+            return;
+        }
+        if(TextUtils.isEmpty(password.getText().toString())){
+            password.setError("Password is compulsory");
+            return;
+        }
+        if(TextUtils.isEmpty(email.getText().toString())){
+            email.setError("Email is compulsory");
+            return;
+        }
+        if(TextUtils.isEmpty(mobile.getText().toString())){
+            mobile.setError("Mobile Number is compulsory");
+            return;
+        }
+        if(TextUtils.isEmpty(birthday.getText().toString())){
+            birthday.setError("Company Name  is compulsory");
+            return;
+        }
+
+        if(uri == null){
+            Toast.makeText(this, "Please Select Image", Toast.LENGTH_SHORT).show();
+            return;
+        }
 //
 //
         str_name = name.getText().toString();
@@ -128,6 +156,7 @@ public class ModelRegister extends AppCompatActivity {
         str_email = email.getText().toString();
         str_mobile = mobile.getText().toString();
         str_birthday = birthday.getText().toString();
+
 
         int gid= gender.getCheckedRadioButtonId();
         genderb = findViewById(gid);
@@ -137,30 +166,66 @@ public class ModelRegister extends AppCompatActivity {
 //
 //
 //
-//        modelDbref.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot snapshot) {
-//                //check if already available
-//                if(snapshot.child(str_email).exists()){
-//                    mDialog.dismiss();
-//                    Toast.makeText(ModelRegister.this, "Already Available...", Toast.LENGTH_SHORT).show();
-//
-//                }
-//                else{
-//                    mDialog.dismiss();
-//                    Models model  = new Models(str_name,str_password,str_email,str_mobile,str_birthday,str_status);
-//                    System.out.println(str_status);
-//                    modelDbref.child(str_email).setValue(model);
-//                    Toast.makeText(ModelRegister.this, "Sign up Successfully!", Toast.LENGTH_SHORT).show();
-//                    finish();
-//                }
-//            }
-//
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError error) {
-//
-//            }
-//        });
+        root.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                //check if already available
+                if(snapshot.child(str_mobile).exists()){
+
+                    Toast.makeText(ModelRegister.this, "Already Available...", Toast.LENGTH_SHORT).show();
+
+                }
+                else{
+
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+                    final StorageReference fileRef = reference.child(System.currentTimeMillis() + "." + getFileExtension(uri));
+                    fileRef.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                        @Override
+                        public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                            fileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                                @Override
+                                public void onSuccess(Uri uri) {
+
+                                    Models model = new Models(str_name,str_password,str_email,str_mobile,str_birthday,str_status,str_gender,uri.toString());
+//                        String modelId = root.push().getKey();
+                                    root.child(str_mobile).setValue(model);
+
+                                    Toast.makeText(ModelRegister.this, "Uploaded Successfully", Toast.LENGTH_SHORT).show();
+                                    image.setImageResource(R.drawable.icons8_female_profile_55);
+                                    Intent intent = new Intent(ModelRegister.this,ModelLogin.class);
+                                    startActivity(intent);
+                                }
+                            });
+                        }
+                    }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
+                        @Override
+                        public void onProgress(@NonNull UploadTask.TaskSnapshot snapshot) {
+
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+
+                            Toast.makeText(ModelRegister.this, "Uploading Failed !!", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+
+
+
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //      Models model  = new Models(str_name,str_password,str_email,str_mobile,str_birthday);
@@ -170,37 +235,37 @@ public class ModelRegister extends AppCompatActivity {
 
         ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        final StorageReference fileRef = reference.child(System.currentTimeMillis() + "." + getFileExtension(uri));
-        fileRef.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-            @Override
-            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                fileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-                    @Override
-                    public void onSuccess(Uri uri) {
-
-                        Models model = new Models(str_name,str_password,str_email,str_mobile,str_birthday,str_status,str_gender,uri.toString());
-//                        String modelId = root.push().getKey();
-                        root.child(str_mobile).setValue(model);
-
-                        Toast.makeText(ModelRegister.this, "Uploaded Successfully", Toast.LENGTH_SHORT).show();
-                          image.setImageResource(R.drawable.icons8_female_profile_55);
-                        Intent intent = new Intent(ModelRegister.this,ModelLogin.class);
-                        startActivity(intent);
-                    }
-                });
-            }
-        }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
-            @Override
-            public void onProgress(@NonNull UploadTask.TaskSnapshot snapshot) {
-
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-
-                Toast.makeText(ModelRegister.this, "Uploading Failed !!", Toast.LENGTH_SHORT).show();
-            }
-        });
+//        final StorageReference fileRef = reference.child(System.currentTimeMillis() + "." + getFileExtension(uri));
+//        fileRef.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+//            @Override
+//            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+//                fileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+//                    @Override
+//                    public void onSuccess(Uri uri) {
+//
+//                        Models model = new Models(str_name,str_password,str_email,str_mobile,str_birthday,str_status,str_gender,uri.toString());
+////                        String modelId = root.push().getKey();
+//                        root.child(str_mobile).setValue(model);
+//
+//                        Toast.makeText(ModelRegister.this, "Uploaded Successfully", Toast.LENGTH_SHORT).show();
+//                          image.setImageResource(R.drawable.icons8_female_profile_55);
+//                        Intent intent = new Intent(ModelRegister.this,ModelLogin.class);
+//                        startActivity(intent);
+//                    }
+//                });
+//            }
+//        }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
+//            @Override
+//            public void onProgress(@NonNull UploadTask.TaskSnapshot snapshot) {
+//
+//            }
+//        }).addOnFailureListener(new OnFailureListener() {
+//            @Override
+//            public void onFailure(@NonNull Exception e) {
+//
+//                Toast.makeText(ModelRegister.this, "Uploading Failed !!", Toast.LENGTH_SHORT).show();
+//            }
+//        });
 
 
 

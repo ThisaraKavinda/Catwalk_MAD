@@ -137,6 +137,7 @@
         tools:ignore="MissingConstraints">
 
         <RadioButton
+            android:checked="true"
             android:id="@+id/mmaleradio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
