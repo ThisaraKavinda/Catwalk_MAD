@@ -3,14 +3,19 @@ package com.example.myapplication;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.webkit.MimeTypeMap;
 import android.widget.Button;
 import android.widget.EditText;
@@ -24,6 +29,12 @@ import com.example.myapplication.DAO.DAOInquiry;
 import com.example.myapplication.Model.Inquiry;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
@@ -82,6 +93,7 @@ public class addInquiry extends AppCompatActivity {
         DAOInquiry dao = new DAOInquiry();
 
         btnSubmit.setOnClickListener(v -> {
+
             title = titleEditText.getText().toString();
             des = desEditText.getText().toString();
             value =((RadioButton)findViewById(radioGroup.getCheckedRadioButtonId())).getText().toString();
@@ -91,6 +103,13 @@ public class addInquiry extends AppCompatActivity {
             about = spinner.getSelectedItem().toString();
 
             String imgPath = null;
+
+            if (!validateData()) {
+                return;
+            }
+            if (!checkConnectivity()) {
+                return;
+            }
 
             if (filePath != null) {
 
@@ -129,8 +148,6 @@ public class addInquiry extends AppCompatActivity {
                                                 startActivity(intent);
                                             }
                                         });
-
-
                                     }
                                 })
 
@@ -163,15 +180,9 @@ public class addInquiry extends AppCompatActivity {
     {
         super.onActivityResult(requestCode, resultCode, data);
 
-        // checking request code and result code
-        // if request code is PICK_IMAGE_REQUEST and
-        // resultCode is RESULT_OK
-        // then set image in the image view
         if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null && data.getData() != null) {
-            // Get the Uri of data
             filePath = data.getData();
             try {
-                // Setting image on image view using Bitmap
                 Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), filePath);
                 Bitmap newBitmap = Bitmap.createScaledBitmap(bitmap, 200, 200, false);
                 selectedImageView.setImageBitmap(newBitmap);
@@ -180,5 +191,53 @@ public class addInquiry extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
+    }
+
+    private boolean checkConnectivity() {
+        boolean connected = false;
+        ConnectivityManager connectivityManager = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+        if(connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+            //we are connected to a network
+            connected = true;
+        }
+        else {
+            connected = false;
+            alertBuilder("Please make sure that you have a active internet connection", "Check you internet connectivity");
+        }
+        return connected;
+    }
+
+    private boolean validateData() {
+        if (titleEditText.length() == 0 && desEditText.length() == 0 && (value==null || value.length() ==0) ) {
+            alertBuilder("Fill the inquiry details", "Fill all the fields");
+            return false;
+        } else if (titleEditText.length() == 0){
+            alertBuilder("Fill the inquiry details", "Enter a title for the inquiry");
+            return false;
+        } else if (desEditText.length() == 0){
+            alertBuilder("Fill the inquiry details", "Enter the description for the inquiry");
+            return false;
+        } else if (value==null || value.length() ==0){
+            alertBuilder("Fill the inquiry details", "Choose weather you have submit this inquiry before");
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    private void alertBuilder(String message, String title) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(context);  ;
+        builder.setMessage(message)
+                .setCancelable(true)
+                .setNegativeButton("OK", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        //  Action for 'NO' Button
+                        dialog.cancel();
+                    }
+                });
+        AlertDialog alert = builder.create();
+        alert.setTitle(title);
+        alert.show();
     }
 }

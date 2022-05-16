@@ -24,6 +24,16 @@ public class Inquiry {
 
     }
 
+    public Inquiry(String id, String title, Boolean isPreviousSubmitted, String about, String description, String imgPath) {
+        this.id = id;
+        this.title = title;
+        this.isPreviousSubmitted = isPreviousSubmitted;
+        this.about = about;
+        this.description = description;
+        this.imgPath = imgPath;
+        this.id = UUID.randomUUID().toString();
+    }
+
     public String getId() {
         return id;
     }
