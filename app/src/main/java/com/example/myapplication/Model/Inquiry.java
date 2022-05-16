@@ -8,23 +8,26 @@ public class Inquiry {
     String about;
     String description;
     String imgPath;
-
     String id;
+    String userNumber;
+    String userType;
 
-    public Inquiry(String title, Boolean isPreviousSubmitted, String about, String description, String imgPath) {
+    public Inquiry(String title, Boolean isPreviousSubmitted, String about, String description, String imgPath, String userNumber, String userType) {
         this.title = title;
         this.isPreviousSubmitted = isPreviousSubmitted;
         this.about = about;
         this.description = description;
         this.imgPath = imgPath;
         this.id = UUID.randomUUID().toString();
+        this.userNumber = userNumber;
+        this.userType = userType;
     }
 
     public Inquiry() {
 
     }
 
-    public Inquiry(String id, String title, Boolean isPreviousSubmitted, String about, String description, String imgPath) {
+    public Inquiry(String id, String title, Boolean isPreviousSubmitted, String about, String description, String imgPath, String userNumber, String userType) {
         this.id = id;
         this.title = title;
         this.isPreviousSubmitted = isPreviousSubmitted;
@@ -32,6 +35,8 @@ public class Inquiry {
         this.description = description;
         this.imgPath = imgPath;
         this.id = UUID.randomUUID().toString();
+        this.userNumber = userNumber;
+        this.userType = userType;
     }
 
     public String getId() {
@@ -76,5 +81,21 @@ public class Inquiry {
 
     public void setImgPath(String imgPath) {
         this.imgPath = imgPath;
+    }
+
+    public String getUserNumber() {
+        return userNumber;
+    }
+
+    public void setUserNumber(String userNumber) {
+        this.userNumber = userNumber;
+    }
+
+    public String getUserType() {
+        return userType;
+    }
+
+    public void setUserType(String userType) {
+        this.userType = userType;
     }
 }

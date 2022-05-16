@@ -23,6 +23,7 @@ import com.example.myapplication.InquiryList;
 import com.example.myapplication.InquiryView;
 import com.example.myapplication.Model.Inquiry;
 import com.example.myapplication.R;
+import com.example.myapplication.Session.SessionManager;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;

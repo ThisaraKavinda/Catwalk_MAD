@@ -107,7 +107,7 @@ public class SessionManager {
         user.put(KEY_COMPANY, pref.getString(KEY_COMPANY, null));
         user.put(KEY_PASSWORD, pref.getString(KEY_PASSWORD, null));
         user.put(KEY_IMAGE, pref.getString(KEY_IMAGE, null));
-        user.put(KEY_TYPE, pref.getString(KEY_IMAGE, null));
+        user.put(KEY_TYPE, pref.getString(KEY_TYPE, null));
 
         // return user
         return user;

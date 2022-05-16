@@ -101,6 +101,9 @@ public class InquiryUpdate extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.i("info", "update");
+                if (!validateData()) {
+                    return;
+                }
                 _title = title.getText().toString();
                 _des = des.getText().toString();
                 value =((RadioButton)findViewById(radiogroup.getCheckedRadioButtonId())).getText().toString();
@@ -110,9 +113,6 @@ public class InquiryUpdate extends AppCompatActivity {
                 _about = type.getSelectedItem().toString();
 
                 if (!checkConnectivity()) {
-                    return;
-                }
-                if (!validateData()) {
                     return;
                 }
 
@@ -298,7 +298,7 @@ public class InquiryUpdate extends AppCompatActivity {
         } else if (_des.length() == 0){
             alertBuilder("Fill the inquiry details", "Enter the description for the inquiry");
             return false;
-        } else if (value==null || value.length() ==0){
+        } else if (radiogroup.getCheckedRadioButtonId() == -1) {
             alertBuilder("Fill the inquiry details", "Choose weather you have submit this inquiry before");
             return false;
         } else {

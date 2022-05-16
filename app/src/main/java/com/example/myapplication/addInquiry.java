@@ -27,6 +27,7 @@ import android.widget.Toast;
 
 import com.example.myapplication.DAO.DAOInquiry;
 import com.example.myapplication.Model.Inquiry;
+import com.example.myapplication.Session.SessionManager;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
@@ -58,7 +59,11 @@ public class addInquiry extends AppCompatActivity {
 
     String title, des, value, about;
     Boolean isPreviousSubmitted = false;
-    String imgUrl;
+    String imgUrl = "";
+
+    SessionManager session;
+    String userNumber;
+    String userType;
 
     Context context = this;
 
@@ -72,6 +77,11 @@ public class addInquiry extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inquiry);
+
+        session = new SessionManager(getApplicationContext());
+        session.checkLogin();
+        userNumber = session.getUserDetails().get("mobile");
+        userType = session.getUserDetails().get("type");
 
         titleEditText = (EditText) findViewById(R.id.InquiryTitleInput);
         desEditText = (EditText) findViewById(R.id.InquiryDesInput);
@@ -94,6 +104,9 @@ public class addInquiry extends AppCompatActivity {
 
         btnSubmit.setOnClickListener(v -> {
 
+            if (!validateData()) {
+                return;
+            }
             title = titleEditText.getText().toString();
             des = desEditText.getText().toString();
             value =((RadioButton)findViewById(radioGroup.getCheckedRadioButtonId())).getText().toString();
@@ -104,9 +117,6 @@ public class addInquiry extends AppCompatActivity {
 
             String imgPath = null;
 
-            if (!validateData()) {
-                return;
-            }
             if (!checkConnectivity()) {
                 return;
             }
@@ -138,7 +148,7 @@ public class addInquiry extends AppCompatActivity {
                                                 imgUrl = uri.toString();
                                                 Toast.makeText(getApplicationContext(),"Image Uploaded!!",Toast.LENGTH_SHORT).show();
                                                 progressDialog.dismiss();
-                                                Inquiry inquiry = new Inquiry(title, isPreviousSubmitted, about, des, imgUrl);
+                                                Inquiry inquiry = new Inquiry(title, isPreviousSubmitted, about, des, imgUrl, userNumber, userType);
                                                 dao.add(inquiry).addOnSuccessListener(suc -> {
                                                     Toast.makeText(context, "Added successfully", Toast.LENGTH_LONG).show();
                                                 }).addOnFailureListener(er -> {
@@ -171,6 +181,15 @@ public class addInquiry extends AppCompatActivity {
                                         progressDialog.setMessage("Uploaded " + (int)progress + "%");
                                     }
                                 });
+            } else {
+                Inquiry inquiry = new Inquiry(title, isPreviousSubmitted, about, des, imgUrl, userNumber, userType);
+                dao.add(inquiry).addOnSuccessListener(suc -> {
+                    Toast.makeText(context, "Added successfully", Toast.LENGTH_LONG).show();
+                }).addOnFailureListener(er -> {
+                    Toast.makeText(context, "" + er.getMessage(), Toast.LENGTH_LONG).show();
+                });
+                Intent intent = new Intent(getApplicationContext(), ClientHome.class);
+                startActivity(intent);
             }
         });
     }
@@ -218,7 +237,7 @@ public class addInquiry extends AppCompatActivity {
         } else if (desEditText.length() == 0){
             alertBuilder("Fill the inquiry details", "Enter the description for the inquiry");
             return false;
-        } else if (value==null || value.length() ==0){
+        } else if (radioGroup.getCheckedRadioButtonId() == -1 ){
             alertBuilder("Fill the inquiry details", "Choose weather you have submit this inquiry before");
             return false;
         } else {
