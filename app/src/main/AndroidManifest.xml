@@ -10,16 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".AdminLogin"
+            android:exported="false" />
+        <activity
             android:name=".InquiryView"
             android:exported="false" />
         <activity
             android:name=".ClientHome"
             android:exported="true">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name=".ClientLogin"
@@ -46,10 +51,10 @@
             android:exported="false" />
         <activity
             android:name=".addInquiry"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".InquiryList"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".InquiryUpdate"
             android:exported="false" />
@@ -82,7 +87,7 @@
             android:exported="false" />
         <activity
             android:name=".AddArticle"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".ModelListA"
             android:exported="false" />
