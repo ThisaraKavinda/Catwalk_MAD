@@ -38,6 +38,14 @@ public class ClientProfile extends AppCompatActivity {
     private DatabaseReference root = FirebaseDatabase.getInstance().getReference("Clients");
     private StorageReference reference = FirebaseStorage.getInstance().getReference();
     private Uri imageUri;
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(ClientProfile.this, ClientHome.class));
+        finish();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -75,6 +83,8 @@ public class ClientProfile extends AppCompatActivity {
 
         Picasso.get().load(image).into(propic);
         Picasso.get().load(image).into(propicup);
+
+
 
         upload.setOnClickListener(new View.OnClickListener() {
             @Override
