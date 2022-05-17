@@ -12,6 +12,12 @@ import android.widget.LinearLayout;
 public class AdminHome extends AppCompatActivity {
     LinearLayout addarticlebtn,articlelistbtn,modelrqstbtn, inquiriesbtn, modelList, clientList,clientrqsbtn;
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(AdminHome.this, AdminHome.class));
+        finish();
+    }
 
 
     @Override
