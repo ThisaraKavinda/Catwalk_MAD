@@ -27,6 +27,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.myapplication.Model.Inquiry;
+import com.example.myapplication.Session.SessionManager;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
@@ -65,6 +66,10 @@ public class InquiryUpdate extends AppCompatActivity {
     boolean _isSubBef;
     String key;
 
+    SessionManager session;
+    String userNumber;
+    String userType;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,6 +84,11 @@ public class InquiryUpdate extends AppCompatActivity {
         _isSubBef = intent.getBooleanExtra("isSubBef", false);
 
 //        storageReference = storage.getReference();
+
+        session = new SessionManager(getApplicationContext());
+        session.checkLogin();
+        userNumber = session.getUserDetails().get("mobile");
+        userType = session.getUserDetails().get("type");
 
         editbtn = findViewById(R.id.InquiryEditUpdatebtn);
         cancelbtn = findViewById(R.id.InquiryEditCancelbtn);
@@ -161,6 +171,8 @@ public class InquiryUpdate extends AppCompatActivity {
                                                             hashMap.put("imgPath", _imagePath);
                                                             hashMap.put("previousSubmitted", _isSubBef);
                                                             hashMap.put("title", _title);
+                                                            hashMap.put("userNumber", userNumber);
+                                                            hashMap.put("userType", userType);
                                                             database.updateChildren(hashMap);
                                                             Toast.makeText(getApplicationContext(),"Successfully updated the inquiry",Toast.LENGTH_SHORT).show();
                                                             Intent intent = new Intent(getApplicationContext(), InquiryList.class);

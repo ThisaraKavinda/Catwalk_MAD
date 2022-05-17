@@ -71,8 +71,12 @@ public class  InquiryList extends AppCompatActivity {
 
                 for (DataSnapshot dataSnapshot: snapshot.getChildren()) {
                     Inquiry inquiry = dataSnapshot.getValue(Inquiry.class);
-                    if (inquiry.getUserNumber() != null && inquiry.getUserNumber().equals(userNumber)) {
+                    if (userType.equals("admin")) {
                         inquiryList.add(inquiry);
+                    } else {
+                        if (inquiry.getUserNumber() != null && inquiry.getUserNumber().equals(userNumber) && inquiry.getUserType().equals(userType)){
+                            inquiryList.add(inquiry);
+                        }
                     }
                 }
                 myAdapter.notifyDataSetChanged();

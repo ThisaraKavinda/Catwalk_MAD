@@ -47,8 +47,11 @@ public class InquiryView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inquiry_view);
 
+        Log.i("info","view");
+
         Intent intent = getIntent();
         id = intent.getStringExtra("id");
+        Log.i("info", id);
 
         updatebtn = findViewById(R.id.inquiryViewUpdatebtn);
         deletebtn = findViewById(R.id.inquiryViewDeletebtn);
@@ -61,7 +64,9 @@ public class InquiryView extends AppCompatActivity {
         yesRadBtn = findViewById(R.id.inquiryViewSubBefYes);
         noRadBtn = findViewById(R.id.inquiryViewSubBefNo);
 
+        Log.i("info", "details before");
         showDetails();
+        Log.i("info", "details after");
 
         updatebtn.setOnClickListener(new View.OnClickListener() {
             @Override

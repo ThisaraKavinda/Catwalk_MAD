@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="12dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:paddingEnd="10dp">
+
+
+
+            <ImageView
+                android:id="@+id/clientListClientImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/profilepic" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/clientListClientName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    android:text="Umesh Madushan"
+                    android:textColor="#6f6f6f"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/clientListClientCompany"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="Company(pvt)"
+                    android:textColor="#6f6f6f"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/clientListClientLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="Colombo"
+                    android:textColor="#6f6f6f"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="91dp"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/clientListClientViewbtn"
+                    android:layout_width="100dp"
+                    android:layout_height="48dp"
+                    android:text="View"
+                    android:textAlignment="center"
+                    app:backgroundTint="#01D60A"
+                    app:cornerRadius="20dp"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/clientListClientDeletebtn"
+                    android:layout_width="100dp"
+                    android:layout_height="48dp"
+                    android:text="Delete"
+                    android:textAlignment="center"
+                    app:backgroundTint="#D0342C"
+                    app:cornerRadius="20dp"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+                </Button>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>
