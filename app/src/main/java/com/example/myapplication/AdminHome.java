@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 
 public class AdminHome extends AppCompatActivity {
-    LinearLayout addarticlebtn,articlelistbtn,modelrqstbtn, inquiriesbtn, modelList, clientList;
+    LinearLayout addarticlebtn,articlelistbtn,modelrqstbtn, inquiriesbtn, modelList, clientList,clientrqsbtn;
 
 
 
@@ -22,9 +22,11 @@ public class AdminHome extends AppCompatActivity {
         addarticlebtn = findViewById(R.id.add_article_tab);
         articlelistbtn = findViewById(R.id.list_article_tab);
         modelrqstbtn = findViewById(R.id.model_request_list_tab);
+        clientrqsbtn = findViewById(R.id.client_request_list_tab);
         inquiriesbtn = findViewById(R.id.list_inquiries_tab);
         modelList = findViewById(R.id.model_list_tab);
         clientList = findViewById(R.id.client_list_tab);
+
 
         addarticlebtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,6 +62,10 @@ public class AdminHome extends AppCompatActivity {
 
         clientList.setOnClickListener(v -> {
             startActivity(new Intent(getApplicationContext(), ClientsList.class));
+        });
+
+        clientrqsbtn.setOnClickListener(v -> {
+            startActivity(new Intent(getApplicationContext(), ClientRegisterRequests.class));
         });
 
     }

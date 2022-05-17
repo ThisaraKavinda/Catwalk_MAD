@@ -82,6 +82,7 @@
 
 
                     <ImageView
+                        android:id="@+id/client_single_image"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginTop="5dp"
@@ -109,6 +110,7 @@
                                 android:textSize="18sp" />
 
                             <TextView
+                                android:id="@+id/client_single_name"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="0dp"
@@ -125,6 +127,7 @@
                                 android:textSize="18sp" />
 
                             <TextView
+                                android:id="@+id/client_single_company"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="0dp"
@@ -141,6 +144,7 @@
                                 android:textSize="18sp" />
 
                             <TextView
+                                android:id="@+id/client_single_location"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="0dp"
@@ -157,6 +161,7 @@
                                 android:textSize="18sp" />
 
                             <TextView
+                                android:id="@+id/client_single_mobile"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="0dp"
@@ -173,6 +178,7 @@
                                 android:textSize="18sp" />
 
                             <TextView
+                                android:id="@+id/client_single_email"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="0dp"

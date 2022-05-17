@@ -21,6 +21,17 @@ import java.util.ArrayList;
 
 public class ClientRegisterRequests extends AppCompatActivity {
 
+    RecyclerView recyclerView;
+    ArrayList<Clients> list;
+    Button back;
+    String status="Pending";
+
+
+    private final FirebaseFirestore db = FirebaseFirestore.getInstance();
+    DatabaseReference databaseReference;
+    ClientRequestAdapter adapter;
+
+
 
 
     @Override
@@ -28,11 +39,32 @@ public class ClientRegisterRequests extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_client_register_requests);
 
-        DatabaseReference mDatabaseRef = FirebaseDatabase.getInstance().getReference();
-        mDatabaseRef.child("Clients").orderByChild("status").equalTo("Pending").addListenerForSingleValueEvent(new ValueEventListener() {
+        recyclerView = findViewById(R.id.client_request_recycler);
+        databaseReference = FirebaseDatabase.getInstance().getReference("Clients");
+
+        list = new ArrayList<>();
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        adapter = new ClientRequestAdapter(this, list);
+        recyclerView.setAdapter(adapter);
+//        back = findViewById(R.id.modelsregisterrqstbackbtn1);
+//
+//        back.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                startActivity(new Intent(ModelRegisterRequests.this, AdminHome.class));
+//                finish();
+//            }
+//        });
+
+        databaseReference.orderByChild("status").equalTo("Pending").addValueEventListener(new ValueEventListener() {
             @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                int count= (int)dataSnapshot.getChildrenCount();
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                    Clients clients = dataSnapshot.getValue(Clients.class);
+
+                    list.add(clients);
+                }
+                adapter.notifyDataSetChanged();
             }
 
             @Override

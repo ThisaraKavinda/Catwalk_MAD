@@ -126,6 +126,7 @@
                 >
 
                 <LinearLayout
+                    android:id="@+id/client_request_list_tab"
                     android:orientation="vertical"
                     android:padding="16dp"
                     android:gravity="center"

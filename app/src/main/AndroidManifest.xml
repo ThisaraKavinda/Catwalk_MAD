@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".ClientRequestHolder"
+            android:exported="false" />
+        <activity
             android:name=".AdminViewClientProfile"
             android:exported="false" />
         <activity
@@ -18,8 +21,6 @@
         <activity
             android:name=".InquiryView"
             android:exported="false" />
-
-
         <activity
             android:name=".ClientHome"
             android:exported="true">
