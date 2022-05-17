@@ -18,6 +18,8 @@
         <activity
             android:name=".InquiryView"
             android:exported="false" />
+
+
         <activity
             android:name=".ClientHome"
             android:exported="true">

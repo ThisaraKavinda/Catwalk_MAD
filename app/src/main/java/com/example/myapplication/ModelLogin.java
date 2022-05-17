@@ -69,6 +69,8 @@ public class ModelLogin extends AppCompatActivity {
 
                             //get user information
                             Models model = snapshot.child(mobile.getText().toString()).getValue(Models.class);
+
+                            if(model.getStatus().equals("Active")){
                             if (model.getPassword().equals(password.getText().toString())) {
                                 Toast.makeText(ModelLogin.this, "Login Success", Toast.LENGTH_SHORT).show();
 
@@ -86,7 +88,14 @@ public class ModelLogin extends AppCompatActivity {
 
                                 Toast.makeText(ModelLogin.this, "Login failed", Toast.LENGTH_SHORT).show();
                             }
+                        }else{
+                                Toast.makeText(ModelLogin.this, "Your Request Still Pending Or Rejected", Toast.LENGTH_SHORT).show();
+
+
+                            }
+
                         }
+
                         else {
                             Toast.makeText(ModelLogin.this, "Please Register", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(ModelLogin.this, ModelRegister.class);
