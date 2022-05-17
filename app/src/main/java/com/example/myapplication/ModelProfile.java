@@ -41,6 +41,12 @@ public class ModelProfile extends AppCompatActivity {
     private StorageReference reference = FirebaseStorage.getInstance().getReference();
     private Uri imageUri;
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(ModelProfile.this, ModelHome.class));
+        finish();
+    }
 
 
     @Override

@@ -8,9 +8,14 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.example.myapplication.Session.SessionManager;
+import com.squareup.picasso.Picasso;
+
 public class ModelHome extends AppCompatActivity {
      LinearLayout articles;
     ImageView propic;
+
+    SessionManager session;
 
     @Override
     public void onBackPressed() {
@@ -25,6 +30,15 @@ public class ModelHome extends AppCompatActivity {
 
         articles = findViewById(R.id.read_article_tab);
         propic = findViewById(R.id.modelhomepropic);
+
+        session = new SessionManager(getApplicationContext());
+        session.checkLogin();
+        String name = session.getModelDetails().get("mname");
+        String image  = session.getModelDetails().get("mimage");
+
+
+        Picasso.get().load(image).into(propic);
+
 
         articles.setOnClickListener(new View.OnClickListener() {
             @Override
