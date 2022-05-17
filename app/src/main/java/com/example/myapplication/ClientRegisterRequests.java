@@ -31,7 +31,12 @@ public class ClientRegisterRequests extends AppCompatActivity {
     DatabaseReference databaseReference;
     ClientRequestAdapter adapter;
 
-
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(ClientRegisterRequests.this, AdminHome.class));
+        finish();
+    }
 
 
     @Override

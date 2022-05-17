@@ -65,26 +65,33 @@ public class ClientLogin extends AppCompatActivity {
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         //check if model already available
                         if (snapshot.child(mobile.getText().toString()).exists()) {
-
                             //get user information
                             Clients client = snapshot.child(mobile.getText().toString()).getValue(Clients.class);
-                            if (client.getPassword().equals(password.getText().toString())) {
-
-                                Toast.makeText(ClientLogin.this, "Login Success", Toast.LENGTH_SHORT).show();
-
-                                session = new SessionManager(getApplicationContext());
-                                session.createLoginSession(client.getName(),client.getEmail(),client.getMobile(),client.getLocation(),client.getCompany(),client.getPassword(),client.getImageurl(),"client");
-
-                                Intent mhome = new Intent(ClientLogin.this, ClientHome.class);
+                           if(client.getStatus().equals("Active")) {
+                               if (client.getPassword().equals(password.getText().toString())) {
 
 
-                                startActivity(mhome);
-                                finish();
+                                   Toast.makeText(ClientLogin.this, "Login Success", Toast.LENGTH_SHORT).show();
 
-                            } else {
-                                System.out.println("Failed");
+                                   session = new SessionManager(getApplicationContext());
+                                   session.createLoginSession(client.getName(), client.getEmail(), client.getMobile(), client.getLocation(), client.getCompany(), client.getPassword(), client.getImageurl(), "client");
 
-                                Toast.makeText(ClientLogin.this, "Login failed", Toast.LENGTH_SHORT).show();
+                                   Intent mhome = new Intent(ClientLogin.this, ClientHome.class);
+
+
+                                   startActivity(mhome);
+                                   finish();
+
+                               } else {
+                                   System.out.println("Failed");
+
+                                   Toast.makeText(ClientLogin.this, "Login failed", Toast.LENGTH_SHORT).show();
+                               }
+                           }
+                            else{
+                               Toast.makeText(ClientLogin.this, "Your Request Still Pending Or Rejected", Toast.LENGTH_SHORT).show();
+
+
                             }
                         }
                         else {

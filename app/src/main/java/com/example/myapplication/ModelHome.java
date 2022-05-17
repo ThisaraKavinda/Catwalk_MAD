@@ -11,6 +11,13 @@ import android.widget.LinearLayout;
 public class ModelHome extends AppCompatActivity {
      LinearLayout articles;
     ImageView propic;
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(ModelHome.this, ModelHome.class));
+        finish();
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +33,7 @@ public class ModelHome extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
 
         propic.setOnClickListener(new View.OnClickListener() {
             @Override
