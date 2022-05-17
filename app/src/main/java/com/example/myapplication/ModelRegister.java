@@ -283,7 +283,7 @@ public class ModelRegister extends AppCompatActivity {
 
     }
 
-    private int getAge(String age){
+    int getAge(String age){
         Calendar calendar = Calendar.getInstance();
         int year = calendar.get(Calendar.YEAR);
         int birthyear = Integer.parseInt(age);
