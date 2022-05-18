@@ -2,9 +2,11 @@ package com.example.myapplication;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentResolver;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -34,7 +36,7 @@ public class ModelProfile extends AppCompatActivity {
     EditText mname,memail,mbirth,mgender,mpassword;
     TextView mmobile;
     ImageView propic,propicup;
-    Button back,update,upload;
+    Button back,update,upload,delete;
     String image;
     DatabaseReference modelDbref;
     private DatabaseReference root = FirebaseDatabase.getInstance().getReference("Models");
@@ -75,6 +77,7 @@ public class ModelProfile extends AppCompatActivity {
         back = findViewById(R.id.modelprofilebackbtn1);
         update = findViewById(R.id.modelupdatebtn1);
         upload = findViewById(R.id.modelProfilepicbrowsebtn1);
+        delete =findViewById(R.id.modeldeletebtn1);
 
         mname.setText(name);
         memail.setText(email);
@@ -85,6 +88,38 @@ public class ModelProfile extends AppCompatActivity {
 
         Picasso.get().load(image).into(propic);
         Picasso.get().load(image).into(propicup);
+
+        delete.setOnClickListener((view -> {
+            AlertDialog.Builder builder=new AlertDialog.Builder(mmobile.getContext());
+            builder.setTitle("Delete Panel");
+            builder.setMessage("Delete....?");
+
+            builder.setPositiveButton("yes",new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+
+                    FirebaseDatabase.getInstance().getReference().child("Models")
+                            .child(mobile).child("status").setValue("Deleted");
+                    Toast.makeText(ModelProfile.this, "Your Account Deleted Successfully", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(ModelProfile.this,MainActivity.class);
+                    startActivity(intent);
+                    finish();
+
+
+                }
+
+
+
+            });
+
+            builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+
+                }
+            });
+            builder.show();
+        }));
 
         upload.setOnClickListener(new View.OnClickListener() {
             @Override

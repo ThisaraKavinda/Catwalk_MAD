@@ -268,7 +268,7 @@
 
                             </TextView>
                             <Button
-                                android:id="@+id/admindeletebtn1"
+                                android:id="@+id/modeldeletebtn1"
                                 android:layout_width="160dp"
                                 android:layout_height="48dp"
 
