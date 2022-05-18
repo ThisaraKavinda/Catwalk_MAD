@@ -132,6 +132,12 @@ public class ClientRegister extends AppCompatActivity {
             mobile.setError("Mobile Number is compulsory");
             return;
         }
+
+        if(mobile.getText().toString().length()!=10){
+            mobile.setError("Mobile Number must be 10 character");
+            return;
+        }
+
         if(TextUtils.isEmpty(company.getText().toString())){
             company.setError("Company Name  is compulsory");
             return;
