@@ -1,0 +1,154 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="login" />
+    <string name="title_activity_model_request">ModelRequestActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="adrequestsingleadminbackbtn1">BACK</string>
+    <string name="adrequestsingleacceptbtn1">Accept</string>
+    <string name="adrequestsinglerejectbtn1">Reject</string>
+    <string name="addarticlebackbtn1">BACK</string>
+    <string name="addarticlebtn1">Add</string>
+    <string name="cleararticlebtn1">Clear</string>
+    <string name="articletopic">Enter Article Topic</string>
+    <string name="articledescription">Enter Article Description</string>
+    <string name="adminprofilebackbtn1">BACK</string>
+    <string name="adminpicbrowsebtn1">Select Image</string>
+    <string name="updateadminname">Enter Name</string>
+    <string name="updateadminpassword">Enter Password</string>
+    <string name="updateadminmobile">Enter Mobile Number</string>
+    <string name="updateadminemail">Enter Email</string>
+    <string name="adminupdatebtn1">Update</string>
+    <string name="admindeletebtn1">Delete</string>
+    <string name="adrequestadminbackbtn1">BACK</string>
+    <string name="adrequestviewadminbtn1">View</string>
+    <string name="adrequestrejectadminbtn1">Reject</string>
+    <string name="articlelistbackbtn1">BACK</string>
+    <string name="articleviewbtn1">View</string>
+    <string name="articledeletebtn1">Delete</string>
+    <string name="cname">Enter Name</string>
+    <string name="cpassword">Enter Password</string>
+    <string name="cemail">Enter Email</string>
+    <string name="cmobile">Enter Mobile Number</string>
+    <string name="ccompanyname">Enter Company Name</string>
+    <string name="clocation">Enter Location</string>
+    <string name="selectmclientpicbtn1">Select\nImage</string>
+    <string name="cregisterbtn">Register</string>
+    <string name="modelrqstbackbtn1">BACK</string>
+    <string name="clientrequestacceptbtn2">Accept</string>
+    <string name="clientrequestviewbtn2">View</string>
+    <string name="clientsingleprofilebackbtn1">BACK</string>
+
+    <string name="clientsinglerqstbackbtn1">BACK</string>
+    <string name="clientacceptbtn2">Accept</string>
+    <string name="clientrejectbtn1">Reject</string>
+    <string name="clientlistbackbtn1">BACK</string>
+    <string name="clientprofileviewbtn2">View</string>
+    <string name="clientprofiledeletebtn1">Delete</string>
+    <string name="inquirylistbackbtn1">BACK</string>
+    <string name="inquiryviewbtn1">View</string>
+    <string name="inquirydeletebtn1">Delete</string>
+    <string name="iammodelbtn">I\'m A Model</string>
+    <string name="ineedmodelbtn">I Need A Model</string>
+    <string name="modelslistbackbtn1">BACK</string>
+    <string name="modelrequestviewbtn2">View</string>
+    <string name="modelrequestdeletebtn1">Delete</string>
+    <string name="enteremailbtn">Enter Email</string>
+    <string name="enterpassord">Enter Password</string>
+    <string name="loginbtn">LOGIN</string>
+    <string name="mname">Enter Name</string>
+    <string name="mpassword">Enter Password</string>
+    <string name="memail">Enter Email</string>
+    <string name="mmobile">Enter Mobile Number</string>
+    <string name="mdate">Enter Birthday</string>
+    <string name="mmaleradio">Male</string>
+    <string name="mfemaleradio">Male</string>
+    <string name="selectmodelpicbtn1">Select\nImage</string>
+    <string name="mregisterbtn">Register</string>
+    <string name="modelsregisterrqstbackbtn1">BACK</string>
+    <string name="modelrequestacceptbtn1">Accept</string>
+    <string name="modelrequestviewbtn1">View</string>
+    <string name="modelsingleprofilebackbtn1">BACK</string>
+    <string name="modeldeletebtn1">Delete</string>
+    <string name="modelsinglerqstbackbtn1">BACK</string>
+    <string name="modelacceptbtn2">Accept</string>
+    <string name="modelrejectbtn1">Reject</string>
+    <string name="updatearticlebackbtn1">BACK</string>
+    <string name="articletopicupdate">Enter Article Topic</string>
+    <string name="articledescriptionupdate">Enter Article Description</string>
+    <string name="updatearticlebtn1">Update</string>
+    <string name="deletearticlebtn2">Delete</string>
+
+    <string name="clientAddModelRequestbackbtn1">Back</string>
+
+    <string name="predefined_type">Choose a country</string>
+    <string name="clientAddModelRequestTitleInput">Enter here</string>
+    <string name="clientAddModelRequestGenderInputM">Male</string>
+    <string name="clientAddModelRequestGenderInputF">Female</string>
+    <string name="clientAddModelRequestGenderInputA">Anyone</string>
+    <string name="clientAddModelRequestHeightInput">Enter here</string>
+    <string name="clientAddModelRequestPaymentInput">Per hour</string>
+    <string name="clientAddModelRequestTimeInput">Number of hours</string>
+    <string name="clientAddModelRequestDesInput">Enter here</string>
+    <string name="clientAddModelRequestSubmitbtn">SUBMIT</string>
+    <string name="modelprofilebackbtn1">BACK</string>
+    <string name="modelProfilepicbrowsebtn1">Select Image</string>
+    <string name="modelProfileNameInput">Nishadi Sanjeewani</string>
+    <string name="modelProfilePasswordInput">***********</string>
+    <string name="modelProfileMobileInput">0777334445</string>
+    <string name="modelProfileEmailInput">nishadi@gmail.com</string>
+    <string name="modelProfileDobInput">25.02.19997</string>
+    <string name="modelProfileHeightInput">5 feet 6 inches</string>
+    <string name="clientRequestedModelListbackbtn1">BACK</string>
+    <string name="clientRequestedModelListConfirmbtn1">Confirm</string>
+    <string name="clientRequestedModelListConfirmbtn2">Confirm</string>
+    <string name="clientRequestedModelListConfirmbtn3">Confirm</string>
+    <string name="clientRequestedModelListCancelbtn1">Cancel</string>
+    <string name="clientRequestedModelListCancelbtn2">Cancel</string>
+    <string name="clientRequestedModelListCancelbtn3">Cancel</string>
+    <string name="clientViewAdbackbtn1">BACK</string>
+    <string name="clientViewAdDiscountInput">Enter here             %</string>
+    <string name="clientViewAdRequestbtn">Request</string>
+    <string name="clientViewAdCanceltbtn">Cancel</string>
+    <string name="clientViewHistorybackbtn1">BACK</string>
+    <string name="Inquirybackbtn1">BACK</string>
+    <string name="InquiryTitleInput">Enter a title in short</string>
+    <string name="InquiryYesInput">Yes</string>
+    <string name="InquiryNoInput">No</string>
+    <string name="InquiryDesInput">Describe your inquiry here</string>
+    <string name="InquirySubmitbtn">SUBMIT</string>
+    <string name="InquiryUpdatebackbtn1">BACK</string>
+    <string name="inquiryUpdateupdatebtn1">Update</string>
+    <string name="inquiryUpdatedeletebtn1">Delete</string>
+    <string name="modelArticleListBackbtn1">BACK</string>
+    <string name="modelHistoryBackbtn1">BACK</string>
+    <string name="clientprofilebackbtn1">BACK</string>
+    <string name="clientpicbrowsebtn1">Select Image</string>
+    <string name="clientupdatebtn1">Update</string>
+    <string name="clientdeletebtn1">Delete</string>
+    <string name="modelrequestbackbtn1">BACK</string>
+    <string name="modelrequestViewbtn1">View</string>
+    <string name="modelrequestViewbtn2">View</string>
+    <string name="modelrequestViewbtn3">View</string>
+    <string name="modelrequestCancelbtn1">Cancel</string>
+    <string name="modelrequestCancelbtn2">Cancel</string>
+    <string name="modelrequestCancelbtn3">Cancel</string>
+    <string-array name="model_types">
+        <item>Commercial</item>
+        <item>Commercial</item>
+        <item>Commercial</item>
+        <item>Commercial</item>
+    </string-array>
+    <string-array name="inquiry_types">
+        <item>Models</item>
+        <item>Clients</item>
+        <item>Payments</item>
+        <item>Application</item>
+    </string-array>
+
+</resources>
