@@ -132,6 +132,12 @@ public class ModelRegister extends AppCompatActivity {
             password.setError("Password is compulsory");
             return;
         }
+
+        if(password.getText().toString().length()<8){
+            password.setError("Password must be more than 8 character");
+            return;
+        }
+
         if(TextUtils.isEmpty(email.getText().toString())){
             email.setError("Email is compulsory");
             return;
