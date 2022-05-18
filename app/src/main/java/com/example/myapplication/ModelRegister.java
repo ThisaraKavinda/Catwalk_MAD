@@ -140,6 +140,13 @@ public class ModelRegister extends AppCompatActivity {
             mobile.setError("Mobile Number is compulsory");
             return;
         }
+
+        if(mobile.getText().toString().length()!=10){
+            mobile.setError("Mobile Number must be 10 character");
+            return;
+        }
+
+
         if(TextUtils.isEmpty(birthday.getText().toString())){
             birthday.setError("Company Name  is compulsory");
             return;
