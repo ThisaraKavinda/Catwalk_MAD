@@ -12,7 +12,7 @@ import com.example.myapplication.Session.SessionManager;
 import com.squareup.picasso.Picasso;
 
 public class ModelHome extends AppCompatActivity {
-     LinearLayout articles;
+     LinearLayout articles,logout;
     ImageView propic;
 
     SessionManager session;
@@ -30,6 +30,7 @@ public class ModelHome extends AppCompatActivity {
 
         articles = findViewById(R.id.read_article_tab);
         propic = findViewById(R.id.modelhomepropic);
+        logout = findViewById(R.id.model_logout_tab);
 
         session = new SessionManager(getApplicationContext());
         session.checkLogin();
@@ -56,6 +57,10 @@ public class ModelHome extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
+        });
+
+        logout.setOnClickListener(v -> {
+            session.logoutUser();
         });
     }
 }
