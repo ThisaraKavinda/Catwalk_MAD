@@ -2,9 +2,11 @@ package com.example.myapplication;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentResolver;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -33,7 +35,7 @@ public class ClientProfile extends AppCompatActivity {
     EditText cname,cemail,clocation,ccompany,cpassword;
     TextView cmobile;
     ImageView propic,propicup;
-    Button back,upload,update;
+    Button back,upload,update,delete;
     String image;
     private DatabaseReference root = FirebaseDatabase.getInstance().getReference("Clients");
     private StorageReference reference = FirebaseStorage.getInstance().getReference();
@@ -73,6 +75,7 @@ public class ClientProfile extends AppCompatActivity {
         back = findViewById(R.id.clientprofilebackbtn1);
         upload = findViewById(R.id.clientpicbrowsebtn1);
         update = findViewById(R.id.clientupdatebtn1);
+        delete = findViewById(R.id.clientdeletebtn1);
 
         cname.setText(name);
         cemail.setText(email);
@@ -83,6 +86,38 @@ public class ClientProfile extends AppCompatActivity {
 
         Picasso.get().load(image).into(propic);
         Picasso.get().load(image).into(propicup);
+
+        delete.setOnClickListener((view -> {
+            AlertDialog.Builder builder=new AlertDialog.Builder(cmobile.getContext());
+            builder.setTitle("Delete Panel");
+            builder.setMessage("Delete....?");
+
+            builder.setPositiveButton("yes",new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+
+                    FirebaseDatabase.getInstance().getReference().child("Clients")
+                            .child(mobile).child("status").setValue("Deleted");
+                    Toast.makeText(ClientProfile.this, "Your Account Deleted Successfully", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(ClientProfile.this,MainActivity.class);
+                    startActivity(intent);
+                    finish();
+
+
+                }
+
+
+
+            });
+
+            builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+
+                }
+            });
+            builder.show();
+        }));
 
 
 
