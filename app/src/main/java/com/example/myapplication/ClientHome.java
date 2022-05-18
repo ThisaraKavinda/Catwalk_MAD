@@ -19,7 +19,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 public class ClientHome extends AppCompatActivity {
-    LinearLayout newrequest,adresponse,hiredmodels,adslist, addInquiry, inquiryList;
+    LinearLayout newrequest,adresponse,hiredmodels,adslist, addInquiry, inquiryList,logout;
     ImageView propic;
 
     SessionManager session;
@@ -49,6 +49,7 @@ public class ClientHome extends AppCompatActivity {
         propic = findViewById(R.id.clientpropic);
         addInquiry = findViewById(R.id.client_add_inquiry_tab);
         inquiryList = findViewById(R.id.client_inquiry_list_tab);
+        logout = findViewById(R.id.client_logout_tab);
 
 //        Intent clienthomeIntent = getIntent();
 //
@@ -116,6 +117,10 @@ public class ClientHome extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
+        });
+
+        logout.setOnClickListener(v -> {
+            session.logoutUser();
         });
     }
 }

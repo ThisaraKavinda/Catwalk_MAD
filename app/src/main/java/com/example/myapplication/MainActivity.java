@@ -11,6 +11,14 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     private Button modelbtn,clientbtn;
     TextView adminbtn;
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(MainActivity.this, MainActivity.class));
+        finish();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

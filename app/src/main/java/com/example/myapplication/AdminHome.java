@@ -18,7 +18,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class AdminHome extends AppCompatActivity {
-    LinearLayout addarticlebtn,articlelistbtn,modelrqstbtn, inquiriesbtn, modelList, clientList,clientrqsbtn;
+    LinearLayout addarticlebtn,articlelistbtn,modelrqstbtn, inquiriesbtn, modelList, clientList,clientrqsbtn,logout;
     TextView modelcount,clientcount;
 
     @Override
@@ -43,6 +43,7 @@ public class AdminHome extends AppCompatActivity {
         clientList = findViewById(R.id.client_list_tab);
         modelcount = findViewById(R.id.modelcount);
         clientcount = findViewById(R.id.clientcount);
+        logout = findViewById(R.id.admin_logout_tab);
 
         getmodelcount();
         getclientcount();
@@ -85,6 +86,9 @@ public class AdminHome extends AppCompatActivity {
 
         clientrqsbtn.setOnClickListener(v -> {
             startActivity(new Intent(getApplicationContext(), ClientRegisterRequests.class));
+        });
+        logout.setOnClickListener(v -> {
+            startActivity(new Intent(getApplicationContext(), MainActivity.class));
         });
 
 
