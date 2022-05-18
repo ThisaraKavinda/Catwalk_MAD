@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -8,9 +9,17 @@ import android.text.Layout;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class AdminHome extends AppCompatActivity {
     LinearLayout addarticlebtn,articlelistbtn,modelrqstbtn, inquiriesbtn, modelList, clientList,clientrqsbtn;
+    TextView modelcount,clientcount;
 
     @Override
     public void onBackPressed() {
@@ -32,7 +41,11 @@ public class AdminHome extends AppCompatActivity {
         inquiriesbtn = findViewById(R.id.list_inquiries_tab);
         modelList = findViewById(R.id.model_list_tab);
         clientList = findViewById(R.id.client_list_tab);
+        modelcount = findViewById(R.id.modelcount);
+        clientcount = findViewById(R.id.clientcount);
 
+        getmodelcount();
+        getclientcount();
 
         addarticlebtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,5 +87,56 @@ public class AdminHome extends AppCompatActivity {
             startActivity(new Intent(getApplicationContext(), ClientRegisterRequests.class));
         });
 
+
+
+
+
+
     }
+
+
+    private  void getmodelcount(){
+
+        DatabaseReference mdatabaseref = FirebaseDatabase.getInstance().getReference();
+        mdatabaseref.child("Models").orderByChild("status").equalTo("Pending").addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                int count = (int)snapshot.getChildrenCount();
+                String mcount = String.valueOf(count);
+                modelcount.setText("("+mcount+")");
+
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+
+    }
+
+    private  void getclientcount(){
+
+        DatabaseReference mdatabaseref = FirebaseDatabase.getInstance().getReference();
+        mdatabaseref.child("Clients").orderByChild("status").equalTo("Pending").addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                int count = (int)snapshot.getChildrenCount();
+                String ccount = String.valueOf(count);
+                clientcount.setText("("+ccount+")");
+
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+
+    }
+
 }
